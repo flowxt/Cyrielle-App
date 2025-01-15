@@ -1,3 +1,5 @@
+import CardList from "./components/CardList";
+
 export default function Home() {
   return (
     <>
@@ -62,9 +64,10 @@ export default function Home() {
           <span className="text-red-600">solutions</span>{" "}
         </h2>
         <p className="text-xl text-center p-4">
-          En Scènes Acting vous apporte des solutions novatrices pour répondre à
-          vos attentes.
+          "En Scènes Acting" vous apporte des solutions novatrices pour répondre
+          à vos attentes.
         </p>
+        <CardList />
       </main>
     </>
   );
