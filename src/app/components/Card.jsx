@@ -1,6 +1,6 @@
 export default function Card({ title, subtitle, image, listItems, buttonText }) {
     return (
-      <div className="card bg-white shadow-md rounded-lg p-4 w-96 shadow-xl shadow-gray-800 min-h-[450px] flex flex-col justify-between">
+      <div className="card bg-white shadow-md rounded-lg p-4 w-[320px] shadow-xl shadow-gray-800 min-h-[450px] flex flex-col justify-between">
         {/* Titre principal */}
         <h2 className="text-xl font-bold mb-4 text-red-700">{title}</h2>
   

@@ -18,38 +18,10 @@ export default function Home() {
                 </strong>
                 et Immersives
               </h1>
-
-              {/* <p className="mt-4 max-w-lg text-white sm:text-xl/relaxed">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Nesciunt illo tenetur fuga ducimus numquam ea!
-              </p> */}
-
-              {/* <div className="mt-8 flex flex-wrap gap-4 text-center">
-                <a
-                  href="#"
-                  className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
-                >
-                  Get Started
-                </a>
-
-                <a
-                  href="#"
-                  className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
-                >
-                  Learn More
-                </a>
-              </div> */}
             </div>
           </div>
         </section>
-        {/* <h1 className="text-5xl bg-black text-center text-white">
-          Créateur d'Expérience Interactives et Immersives
-        </h1>
-        <img
-          src="/reactbg.png"
-          alt="fond"
-          className="h-96 w-full object-cover object-center"
-        /> */}
+
         <div className="bg-gradient-to-b from-gray-200 to-zinc-300">
           <h3 className="md:text-2xl  lg:text-3xl p-16 text-center max-w-3xl mx-auto">
             "Libérer le potentiel de vos équipes grâce à des{" "}
