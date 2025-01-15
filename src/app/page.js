@@ -1,4 +1,5 @@
 import CardList from "./components/CardList";
+import ContentHome from "./components/ContentHome";
 
 export default function Home() {
   return (
@@ -68,7 +69,11 @@ export default function Home() {
           à vos attentes.
         </p>
         <CardList />
+        <div className="caroussel h-48 text-center ">
+          <h2>ICI IL VA Y AVOIR LE CAROUSSEL</h2>
+        </div>
       </main>
+      <ContentHome />
     </>
   );
 }
