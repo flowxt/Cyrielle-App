@@ -2,7 +2,7 @@ export default function ContentHome() {
     return (
         <>
       <section>
-        <div className=" mx-auto  px-4 py-8 sm:px-6 lg:px-8 border-t-2 border-gray-900 bg-gradient-to-l from-gray-200 to-zinc-400">
+        <div className=" mx-auto  px-4 py-8 sm:px-6 lg:px-8 border-t-2 border-gray-900 bg-gradient-to-b from-gray-200 to-zinc-400">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8 ">
             <div>
               <div className="max-w-lg md:max-w-none ">
@@ -36,7 +36,7 @@ export default function ContentHome() {
       {/* --------------------------------------------------------------------------------------------------- */}
          <section>
             
-         <div className="mx-auto  px-4 py-8 sm:px-6 lg:px-8 border-t-2 border-gray-900 bg-gradient-to-r from-gray-200 to-zinc-300">
+         <div className="mx-auto  px-4 py-8 sm:px-6 lg:px-8 border-t-2 border-gray-900 bg-gradient-to-t from-gray-200 to-zinc-400">
            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8 ">
            <div>
                <img
@@ -68,7 +68,7 @@ export default function ContentHome() {
         {/* --------------------------------------------------------------------------------------------------- */}
 
        <section>
-        <div className="mx-auto  px-4 py-8 sm:px-6 lg:px-8 border-t-2 border-gray-900 bg-gradient-to-l from-gray-200 to-zinc-400">
+        <div className="mx-auto  px-4 py-8 sm:px-6 lg:px-8 border-t-2 border-gray-900 bg-gradient-to-b from-gray-200 to-zinc-400">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8 ">
             <div>
               <div className="max-w-lg md:max-w-none ">
