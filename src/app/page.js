@@ -46,6 +46,20 @@ export default function Home() {
         </div>
       </main>
       <ContentHome />
+      <div className="bg-gray-400 text-white flex flex-col lg:flex-row">
+        <h3 className=" text-4xl  lg:text-6xl pt-16 text-center max-w-3xl mx-auto ">
+          Créateur de souvenirs uniques
+        </h3>
+        <p className="text-xl md:text-xl  lg:text-2xl p-16 text-center max-w-3xl mx-auto font-thin">
+          <span className="font-bold  md:text-2xl lg:text-4xl">
+            "En scènes" nom féminin (latin scena, du grec skênê)
+          </span>
+          <br />
+          Concepteurs et interprètes de scénarios de jeux théâtralisés grandeur
+          nature, nous proposons des expériences divertissantes et interactives
+          au travers d’une expérience émotionnelle.
+        </p>
+      </div>
     </>
   );
 }
