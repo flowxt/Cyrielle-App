@@ -33,8 +33,8 @@ export default function Home() {
       </header>
       <main className="bg-gradient-to-t from-gray-300 to-zinc-500 pt-8 border-t-2 border-gray-900">
         <h2 className="text-4xl text-center p-16">
-          Vos <span className="text-red-600">défis </span>| Nos{" "}
-          <span className="text-red-600">solutions</span>{" "}
+          Vos <span className="text-red-700">défis </span>| Nos{" "}
+          <span className="text-red-700">solutions</span>{" "}
         </h2>
         <p className="text-xl text-center p-4">
           "En Scènes Acting" vous apporte des solutions novatrices pour répondre

@@ -2,11 +2,11 @@ import Link from 'next/link';
 
 const NavBar = () => {
   return (
-    <header className="bg-white dark:bg-gray-900">
+    <header className="bg-gray-900">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="md:flex md:items-center md:gap-12">
-            <a className="block text-teal-600 dark:text-teal-600" href="#">
+            <a className="block text-teal-600" href="#">
               <span className="sr-only">Home</span>
               <svg className="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -21,37 +21,37 @@ const NavBar = () => {
             <nav aria-label="Global">
               <ul className="flex items-center gap-6 text-sm">
                 <li>
-                  <Link href="/" className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75">
+                  <Link href="/" className="transition text-white hover:text-white/75">
                     Accueil
                   </Link>
                 </li>
                 <li>
-                  <Link href="/team-building" className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75">
+                  <Link href="/team-building" className="transition text-white hover:text-white/75">
                     Team Building
                   </Link>
                 </li>
                 <li>
-                  <Link href="/nos-concepts" className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75">
+                  <Link href="/nos-concepts" className="transition text-white hover:text-white/75">
                     Nos Concepts
                   </Link>
                 </li>
                 <li>
-                  <Link href="/nos-formations" className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75">
+                  <Link href="/nos-formations" className="transition text-white hover:text-white/75">
                     Nos Formations
                   </Link>
                 </li>
                 <li>
-                  <Link href="/agenda" className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75">
+                  <Link href="/agenda" className="transition text-white hover:text-white/75">
                     Agenda
                   </Link>
                 </li>
                 <li>
-                  <Link href="/galerie-scenarios" className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75">
+                  <Link href="/galerie-scenarios" className="transition text-white hover:text-white/75">
                     Galerie - Scénarios
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blog" className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75">
+                  <Link href="/blog" className="transition text-white hover:text-white/75">
                     Blog
                   </Link>
                 </li>
@@ -63,7 +63,7 @@ const NavBar = () => {
             <div className="sm:flex sm:gap-4">
               <div className="hidden sm:flex">
                 <Link
-                  className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+                  className="rounded-md px-5 py-2.5 text-sm font-medium text-teal-600 bg-gray-800 text-white hover:text-white/75"
                   href="/contact"
                 >
                   Parlons-en
@@ -73,7 +73,7 @@ const NavBar = () => {
 
             <div className="block md:hidden">
               <button
-                className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+                className="rounded p-2 text-gray-600 transition bg-gray-800 text-white hover:text-white/75"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
