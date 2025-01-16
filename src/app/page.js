@@ -22,7 +22,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="bg-gradient-to-b from-gray-200 to-zinc-300">
+        <div className="bg-gradient-to-b from-gray-200 to-gray-300">
           <h3 className="md:text-2xl  lg:text-3xl p-16 text-center max-w-3xl mx-auto">
             "Libérer le potentiel de vos équipes grâce à des{" "}
             <span className="text-red-600">expériences</span> sur mesure, où
@@ -31,7 +31,7 @@ export default function Home() {
           </h3>
         </div>
       </header>
-      <main className="bg-gradient-to-t from-gray-300 to-zinc-500 pt-8 border-t-2 border-gray-900">
+      <main className="bg-gradient-to-t from-gray-300 to-gray-400 pt-8 border-t-2 border-gray-900">
         <h2 className="text-4xl text-center p-16">
           Vos <span className="text-red-700">défis </span>| Nos{" "}
           <span className="text-red-700">solutions</span>{" "}
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
       </main>
       <ContentHome />
-      <div className="bg-gray-400 text-white flex flex-col lg:flex-row">
+      <div className="bg-gradient-to-b from-gray-500 to-gray-400 text-white border-t-2 border-gray-700 flex flex-col lg:flex-row ">
         <h3 className=" text-4xl  lg:text-6xl pt-16 text-center max-w-3xl mx-auto ">
           Créateur de souvenirs uniques
         </h3>
