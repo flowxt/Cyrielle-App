@@ -51,8 +51,8 @@ export default function Home() {
           Créateur de souvenirs uniques
         </h3>
         <p className="text-xl md:text-xl  lg:text-2xl p-16 text-center max-w-3xl mx-auto font-thin">
-          <span className="font-bold  md:text-2xl lg:text-4xl">
-            "En scènes" nom féminin (latin scena, du grec skênê)
+          <span className="font-bold  md:text-2xl lg:text-3xl">
+            "En scènes", <br /> nom féminin (latin scena, du grec skênê)
           </span>
           <br />
           Concepteurs et interprètes de scénarios de jeux théâtralisés grandeur
