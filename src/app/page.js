@@ -12,7 +12,7 @@ export default function Home() {
             <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
               <h1 className="text-3xl font-extrabold text-white sm:text-5xl">
                 Créateurs d'Expériences
-                <strong className="block font-extrabold text-rose-500">
+                <strong className="block font-extrabold text-red-600">
                   {" "}
                   Intéractives{" "}
                 </strong>
