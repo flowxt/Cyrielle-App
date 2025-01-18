@@ -63,7 +63,7 @@ const NavBar = () => {
             <div className="sm:flex sm:gap-4">
               <div className="hidden sm:flex">
                 <Link
-                  className="rounded-md px-5 py-2.5 text-sm font-medium text-teal-600 bg-gray-800 text-white hover:text-white/75"
+                  className="rounded-3xl px-5 py-2.5 text-sm font-medium text-teal-600 bg-red-800 text-xl text-white hover:bg-red-700/75"
                   href="/contact"
                 >
                   Parlons-en

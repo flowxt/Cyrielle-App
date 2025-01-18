@@ -50,13 +50,13 @@ const Footer = () => {
       </svg>
     </div>
 
-    <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-400">
+    <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-400 font-poppins">
     contact@enscenes.com
 <br />
 <span className='text-red-600'>Tel : 06.13.28.79.85</span>
     </p>
 
-    <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
+    <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12 font-poppins">
       <li>
         <a
           className=" transition text-white hover:text-white/75"
@@ -111,7 +111,7 @@ const Footer = () => {
         </a>
       </li>
     </ul>
-    <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-400">
+    <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-400 font-poppins">
     Suivez nous sur les réseaux sociaux
     </p>
     <ul className="mt-6 flex justify-center gap-6 md:gap-8">
@@ -168,7 +168,7 @@ const Footer = () => {
 </li>
 
     </ul>
-    <button className="mt-12 px-6 py-3 text-white bg-red-700 rounded-3xl hover:bg-red-600 mx-auto flex justify-center items-center">Rencontrons nous</button>
+    <button className="mt-12 px-6 py-3 text-white bg-red-700 rounded-3xl hover:bg-red-600 mx-auto flex justify-center items-center font-poppins">Rencontrons nous</button>
   </div>
 </footer>
   );
