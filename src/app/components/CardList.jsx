@@ -1,25 +1,28 @@
 import Card from "./Card";
+import carte1 from "../../assets/images/carte1.png";
+import carte2 from "../../assets/images/carte2.png";
+import carte3 from "../../assets/images/carte3.png";
 
 export default function CardList() {
   const cards = [
     {
       title: "Team Building",
       subtitle: "Fédérez et engagez vos équipes",
-      image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: carte1,
       listItems: ["Révéler l'équipe", "Libérer la réflexion", "Fidéliser ses collaborateurs"],
       buttonText: "Activité de cohésion",
     },
     {
       title: "Seminaires",
       subtitle: "Réunissez vos équipes pour un moment insolite",
-      image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: carte2,
       listItems: ["Capter l'attention", "Souvenir d'une expérience mémorable", "Réussir ensemble"],
       buttonText: "Nos concepts",
     },
     {
       title: "Formations",
       subtitle: "Découvrez ce que le jeu peut vous apporter",
-      image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: carte3,
       listItems: ["Construire ensemble", "Découvrir les mécanismes des jeux", "Prendre confiance en soi"],
       buttonText: "Notre catalogue",
     },

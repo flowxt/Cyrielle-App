@@ -23,7 +23,7 @@ export default function Home() {
         </section>
 
         <div className="bg-gradient-to-b from-gray-200 to-gray-300">
-          <h3 className="md:text-2xl  lg:text-3xl p-16 text-center max-w-3xl mx-auto font-roboto font-light">
+          <h3 className="md:text-2xl  lg:text-4xl p-16 text-center max-w-3xl mx-auto font-roboto font-light">
             "Libérer le potentiel de vos équipes grâce à des{" "}
             <span className="text-red-600">expériences</span> sur mesure, où
             chaque participant est un acteur clé de la{" "}
@@ -36,7 +36,7 @@ export default function Home() {
           Vos <span className="text-red-700">défis </span>| Nos{" "}
           <span className="text-red-700">solutions</span>{" "}
         </h2>
-        <p className="text-xl text-center p-4 font-roboto font-roboto font-light">
+        <p className="text-xl md:text-2xl lg:text-3xl text-center p-4 font-roboto font-roboto font-light ">
           "En Scènes Acting" vous apporte des solutions novatrices pour répondre
           à vos attentes.
         </p>
