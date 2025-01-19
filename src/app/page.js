@@ -16,21 +16,26 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-gray-900/75 sm:bg-transparent sm:from-gray-900/95 sm:to-gray-900/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
 
-          <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex  lg:items-center lg:px-8">
-            <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right ">
-              <h1 className="text-3xl font-extrabold text-white lg:text-6xl bg-neutral-900/75 font-poppins">
-                Créateurs d'Expériences
-                <strong className="block font-extrabold text-red-600">
-                  Intéractives
-                </strong>
-                et Immersives
+          <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:justify-end lg:px-8">
+            <div className="absolute top-0 left-0 p-4">
+              <img
+                src="/logo-blanc.png"
+                alt="Logo Blanc"
+                className="h-12 sm:h-16 w-auto"
+              />
+            </div>
+            <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right lg:ml-auto">
+              <h1 className="text-3xl font-extrabold text-white lg:text-4xl bg-neutral-900/50 font-poppins uppercase">
+                Créateurs
+                <br /> d'Expériences <br />
+                Intéractives et Immersives
               </h1>
             </div>
           </div>
         </section>
 
         <div className="bg-gradient-to-b from-gray-200 to-gray-300">
-          <h3 className="md:text-2xl  lg:text-4xl p-16 text-center max-w-3xl mx-auto font-roboto font-light">
+          <h3 className="md:text-2xl  lg:text-3xl p-12 text-center max-w-3xl mx-auto font-roboto">
             "Libérer le potentiel de vos équipes grâce à des{" "}
             <span className="text-red-600">expériences</span> sur mesure, où
             chaque participant est un acteur clé de la{" "}

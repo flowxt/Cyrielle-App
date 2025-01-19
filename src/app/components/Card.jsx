@@ -8,7 +8,7 @@ export default function Card({ title, subtitle, image, listItems, buttonText }) 
 
       {/* Image */}
       <div className="overflow-hidden rounded-t-lg mb-4 h-72 relative">
-        <Image src={image} alt={title} layout="fill" objectFit="cover" />
+        <Image src={image} alt={title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" objectFit="cover" />
       </div>
 
       {/* Petit titre */}

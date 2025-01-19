@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-neutral-950">
   <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
     <div className="flex justify-center text-teal-300">
-      <img src='/logo-blanc.png' alt="logo" className="h-20 w-52" />
+      <img src='/logo-blanc.png' alt="logo" className="h-16 w-48 sm:h-20 sm:w-52" />
     </div>
 
     <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-400 font-poppins">
