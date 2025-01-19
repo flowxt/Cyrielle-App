@@ -1,6 +1,7 @@
 import CardList from "./components/CardList";
 import ContentHome from "./components/ContentHome";
 import Team from "./components/Team";
+import Carousel from "./components/Carousel";
 
 export default function Home() {
   return (
@@ -54,8 +55,8 @@ export default function Home() {
           à vos attentes.
         </p>
         <CardList />
-        <div className="caroussel h-48 text-center ">
-          <h2>ICI IL VA Y AVOIR LE CAROUSSEL</h2>
+        <div className="caroussel h-48 text-center min-h-screen flex items-center justify-center ">
+          <Carousel />
         </div>
       </main>
       <ContentHome />
