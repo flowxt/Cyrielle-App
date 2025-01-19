@@ -14,12 +14,13 @@ const NavBar = () => {
 
           <div className="hidden md:block ">
             <nav aria-label="Global">
-              <ul className="flex items-center gap-6 lg:text-lg ">
+              <ul className="flex items-center gap-6 lg:text-xl ">
                 <li>
                   <Link href="/" className="transition text-white hover:text-red-500/75">
                     Accueil
                   </Link>
                 </li>
+                
                 <li>
                   <Link href="/team-building" className="transition text-white hover:text-red-500/75">
                     Team Building

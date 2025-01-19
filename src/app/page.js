@@ -1,5 +1,6 @@
 import CardList from "./components/CardList";
 import ContentHome from "./components/ContentHome";
+import Team from "./components/Team";
 
 export default function Home() {
   return (
@@ -72,6 +73,7 @@ export default function Home() {
           au travers d’une expérience émotionnelle.
         </p>
       </div>
+      <Team />
     </>
   );
 }
