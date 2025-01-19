@@ -33,7 +33,7 @@ export default function Carousel() {
 
     return (
         <div className="relative">
-            <div className="embla overflow-hidden " ref={emblaRef}>
+            <div className="embla overflow-hidden" ref={emblaRef}>
                 <div className="embla__container flex gap-x-1">
                     {images.map((src, index) => (
                         <div
@@ -44,7 +44,7 @@ export default function Carousel() {
                             <img
                                 src={src}
                                 alt={`Image ${index + 1}`}
-                                className="w-full h-full object-cover cursor-pointer"
+                                className="w-full h-full object-cover cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105"
                             />
                         </div>
                     ))}
