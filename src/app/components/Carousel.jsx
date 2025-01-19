@@ -1,8 +1,10 @@
 'use client';
 
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
+import Lightbox from 'yet-another-react-lightbox';
+import 'yet-another-react-lightbox/styles.css';
 
 export default function Carousel() {
     const autoplay = useRef(
@@ -18,24 +20,31 @@ export default function Carousel() {
     // Liste des images
     const images = Array.from({ length: 17 }, (_, i) => `/images/caroussel/img${i + 1}.png`);
 
+    const [isOpen, setIsOpen] = useState(false);
+    const [photoIndex, setPhotoIndex] = useState(0);
+
     const scrollPrev = () => emblaApi && emblaApi.scrollPrev();
     const scrollNext = () => emblaApi && emblaApi.scrollNext();
 
+    const openLightbox = (index) => {
+        setPhotoIndex(index);
+        setIsOpen(true);
+    };
+
     return (
         <div className="relative">
-            {/* Conteneur avec un fond dégradé aux bords */} 
-            {/* ajout du bg black et des border red  */}
-            <div className="embla overflow-hidden  " ref={emblaRef}>
-                <div className="embla__container flex gap-x-2">
+            <div className="embla overflow-hidden p-8" ref={emblaRef}>
+                <div className="embla__container flex gap-x-1">
                     {images.map((src, index) => (
                         <div
                             key={index}
                             className="embla__slide flex-shrink-0 flex justify-center items-center w-[20%] max-w-[250px] h-[450px] rounded-lg overflow-hidden shadow-2xl"
+                            onClick={() => openLightbox(index)}
                         >
                             <img
                                 src={src}
                                 alt={`Image ${index + 1}`}
-                                className="w-full h-full object-cover "
+                                className="w-full h-full object-cover cursor-pointer"
                             />
                         </div>
                     ))}
@@ -43,7 +52,7 @@ export default function Carousel() {
             </div>
 
             {/* Ombres dégradées à gauche et à droite du carousel  */}
-             <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-black to-transparent z-10"></div>
+            <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-black to-transparent z-10"></div>
             <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-black to-transparent z-10"></div>
 
             <button
@@ -58,6 +67,16 @@ export default function Carousel() {
             >
                 &gt;
             </button>
+
+            {isOpen && (
+                <Lightbox
+                    slides={images.map((src) => ({ src }))}
+                    index={photoIndex}
+                    open={isOpen}
+                    close={() => setIsOpen(false)}
+                    onIndexChange={setPhotoIndex}
+                />
+            )}
         </div>
     );
 }
