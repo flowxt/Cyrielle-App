@@ -4,7 +4,7 @@ export default function Team() {
             <div className="container-team text-center py-12 flex flex-col items-center gap-8">
                 <h2 className="text-4xl font-poppins font-semibold pb-4">Notre équipe</h2>
                 <p className="font-roboto text-lg font-light">Un duo complémentaire et passionné à l'écoute de vos besoins, garants d'une expérience unique et immersive.</p>
-                <div className="container flex items-center justify-center gap-8 py-8 items-center">
+                <div className="container flex flex-col lg:flex-row items-center justify-center gap-8 py-8 items-center ">
                 <div className="container-Cyrielle flex flex-row-reverse items-center gap-8">
                     <img src='/Cyrielle.jpg' alt="Cyrielle" className="border-2 border-red-700 rounded-xl shadow-2xl shadow-neutral-900 h-80"/>
                     <div className="content-cyrielle flex flex-col text-end">
