@@ -61,7 +61,7 @@ export default function Home() {
       </main>
       <ContentHome />
       <Team />
-      <div className="bg-gradient-to-b from-gray-500 to-gray-400 text-white border-t-2 border-gray-700 flex flex-col lg:flex-row ">
+      <div className="bg-gradient-to-b from-gray-500 to-gray-400 text-white flex flex-col lg:flex-row ">
         <h3 className=" text-4xl  lg:text-6xl pt-16 text-center max-w-3xl mx-auto lg:pl-12 max-w-3xl mx-auto font-poppins">
           Créateur de souvenirs uniques
         </h3>

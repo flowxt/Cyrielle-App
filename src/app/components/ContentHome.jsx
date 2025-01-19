@@ -73,7 +73,7 @@ export default function ContentHome() {
 
        <section>
         <div className="mx-auto  px-4 py-8 sm:px-6 lg:px-8 border-t-2 border-gray-900 bg-gradient-to-b from-gray-200 to-gray-400">
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8 ">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8 lg:pb-12">
             <div>
               <div className="max-w-lg md:max-w-none ">
                 <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl font-poppins">

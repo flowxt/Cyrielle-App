@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Card({ title, subtitle, image, listItems, buttonText }) {
   return (
-    <div className="card bg-gray-100 shadow-md rounded-lg p-4 w-[380px] shadow-xl shadow-gray-800 min-h-[450px] flex flex-col justify-between lg:hover:-translate-y-1 lg:hover:scale-105 transition duration-500 ease-in-out">
+    <div className="card bg-gray-100 shadow-md rounded-lg p-4 w-[380px] shadow-xl shadow-gray-800 min-h-[450px] flex flex-col justify-between lg:hover:-translate-y-1 lg:hover:scale-105 transition duration-500 ease-in-out ">
       {/* Titre principal */}
       <h2 className="text-xl font-bold mb-4 text-red-700 font-poppins">{title}</h2>
 

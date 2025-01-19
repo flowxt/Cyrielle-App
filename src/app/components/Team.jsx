@@ -3,7 +3,7 @@
 export default function Team() {
     return (
         <>
-            <div className="container-team text-center py-12 flex flex-col items-center gap-8">
+            <div className="container-team text-center py-12 flex flex-col items-center gap-8 border-t-2 border-b-2 border-red-700">
                 <h2 className="text-4xl font-poppins font-semibold pb-4">Notre équipe</h2>
                 <p className="font-roboto text-lg font-light px-8">Un duo complémentaire et passionné à l'écoute de vos besoins, garants d'une expérience unique et immersive.</p>
                 <div className="container flex flex-col lg:flex-row items-center justify-center gap-8 py-8">
