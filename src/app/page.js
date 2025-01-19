@@ -55,7 +55,7 @@ export default function Home() {
           à vos attentes.
         </p>
         <CardList />
-        <div className="caroussel h-48 text-center min-h-screen flex items-center justify-center ">
+        <div className="caroussel text-center flex items-center justify-center pb-12">
           <Carousel />
         </div>
       </main>
