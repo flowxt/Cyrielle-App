@@ -43,11 +43,12 @@ export default function ContentHome() {
          <div className="mx-auto  px-4 py-8 sm:px-6 lg:px-8 border-t-2 border-gray-900 bg-gradient-to-t from-gray-200 to-gray-400">
            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8 ">
            <div>
-               <img
-                 src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                 className="rounded hidden md:block"
-                 alt="Content illustration"
-               />
+           <Image
+                                src={Image4}
+                                alt="Content illustration"
+                                className="rounded hidden md:block"
+                                priority
+                            />
              </div>
              <div>
                <div className="max-w-lg md:max-w-none ">
@@ -90,11 +91,12 @@ Que vous nous donniez carte blanche ou un cahier des charges, nous nous adaptons
             </div>
   
             <div>
-              <img
-                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                className="rounded"
-                alt="Content illustration"
-              />
+            <Image
+                                src={Image4}
+                                alt="Content illustration"
+                                className="rounded"
+                                priority
+                            />
             </div>
           </div>
         </div>
