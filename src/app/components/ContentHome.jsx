@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Image4 from '../../assets/images/image4.png';
+import Image5 from '../../assets/images/image5.png';
 
 export default function ContentHome() {
     return (
@@ -44,9 +45,9 @@ export default function ContentHome() {
            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8 ">
            <div>
            <Image
-                                src={Image4}
+                                src={Image5}
                                 alt="Content illustration"
-                                className="rounded hidden md:block"
+                                className="rounded hidden md:block max-h-96 object-cover"
                                 priority
                             />
              </div>
