@@ -25,7 +25,7 @@ export default function Carousel() {
         <div className="relative">
             {/* Conteneur avec un fond dégradé aux bords */} 
             {/* ajout du bg black et des border red  */}
-            <div className="embla overflow-hidden  p-8" ref={emblaRef}>
+            <div className="embla overflow-hidden  " ref={emblaRef}>
                 <div className="embla__container flex gap-x-2">
                     {images.map((src, index) => (
                         <div
@@ -42,18 +42,18 @@ export default function Carousel() {
                 </div>
             </div>
 
-            {/* Ombres dégradées à gauche et à droite du carousel */}
-            {/* <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-black to-transparent z-10"></div>
-            <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-black to-transparent z-10"></div> */}
+            {/* Ombres dégradées à gauche et à droite du carousel  */}
+             <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-black to-transparent z-10"></div>
+            <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-black to-transparent z-10"></div>
 
             <button
-                className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-400 text-white p-2 rounded-full ml-2 h-16 w-10 z-10"
+                className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-400 text-white p-2 rounded-full ml-8 h-16 w-10 z-10"
                 onClick={scrollPrev}
             >
                 &lt;
             </button>
             <button
-                className="absolute top-1/2 right-0 transform -translate-y-1/2 text-white p-2 rounded-full h-16 w-10 bg-gray-400 mr-2 z-10"
+                className="absolute top-1/2 right-0 transform -translate-y-1/2 text-white p-2 rounded-full h-16 w-10 bg-gray-400 mr-8 z-10"
                 onClick={scrollNext}
             >
                 &gt;
