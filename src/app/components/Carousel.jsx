@@ -44,7 +44,7 @@ export default function Carousel() {
                             <img
                                 src={src}
                                 alt={`Image ${index + 1}`}
-                                className="w-full h-full object-cover cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105"
+                                className="w-full h-full object-cover cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-110"
                             />
                         </div>
                     ))}
