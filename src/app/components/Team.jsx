@@ -22,9 +22,9 @@ export default function Team() {
                             </p>
                         </div>
                     </div>
-                <div className="container-Matthieu flex flex-col lg:flex-row items-center gap-8">
+                <div className="container-Matthieu flex flex-col lg:flex-row items-center justify-center gap-8 py-8 ">
                    <img src='/matthieu.jpg' alt="Matthieu" className="border-2 border-red-700 rounded-xl shadow-2xl shadow-neutral-900 h-80" />
-                   <div className="content-matthieu flex flex-col text-start">
+                   <div className="content-matthieu flex flex-col lg:text-start items-center"> 
                    <h3 className="text-xl font-poppins font-semibold">Matthieu <span className="text-red-700">Vernisse</span> </h3>
                <p className="font-roboto text-lg font-light">
 
