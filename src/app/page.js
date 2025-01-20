@@ -46,8 +46,8 @@ export default function Home() {
           </h3>
         </div>
       </header>
-      <main className="bg-gradient-to-t from-gray-300 to-gray-400 pt-8 border-t-2 border-gray-900">
-        <h2 className="text-4xl text-center p-16 font-poppins">
+      <main className="bg-gradient-to-t from-gray-300 to-gray-400 pt-6 border-t-2 border-gray-900">
+        <h2 className="text-4xl text-center p-6 font-poppins">
           Vos <span className="text-red-700">défis </span>| Nos{" "}
           <span className="text-red-700">solutions</span>{" "}
         </h2>
