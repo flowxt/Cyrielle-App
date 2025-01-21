@@ -13,6 +13,7 @@
     "embla-carousel-autoplay": "^8.5.2",
     "embla-carousel-react": "^8.5.2",
     "framer-motion": "^11.18.1",
+    "gsap": "^3.12.7",
     "next": "15.1.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
