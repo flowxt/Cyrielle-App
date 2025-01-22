@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import CardTBComplete from '../components/CardTBComplete';
+import CustomButton from '../components/CustomButton';
 
 export default function TeamBuilding() {
   const containerRef = useRef(null);
@@ -115,6 +116,7 @@ export default function TeamBuilding() {
       <main className="flex flex-col">
         <section className="flex-grow py-8 px-4 min-h-screen bg-gradient-to-b from-gray-200 to-gray-400">
           <CardTBComplete />
+          <CustomButton text="Découvrez nos différents concepts" additionalClasses="bg-black" />
         </section>
 
         <section ref={containerRef} className="grid grid-cols-1 md:grid-cols-2 p-6 relative min-h-[200vh]">
