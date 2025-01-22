@@ -22,7 +22,7 @@ export default function Concepts() {
           <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right lg:ml-auto">
             <h1 className="text-3xl font-extrabold text-white lg:text-4xl bg-neutral-900/50 font-poppins uppercase font-semibold">
           
-            SPECTACLES INTERACTIVES<br />
+            SPECTACLES INTERACTIFS<br />
 ESCAPE GAME ITINÉRANTS
             </h1>
           </div>
