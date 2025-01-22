@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import CardTBComplete from '../components/CardTBComplete';
 import CustomButton from '../components/CustomButton';
+import CardTB from '../components/CardTB';
 
 export default function TeamBuilding() {
   const containerRef = useRef(null);
@@ -58,7 +59,7 @@ export default function TeamBuilding() {
           <img
             src="/tb-img.png"
             alt="Team Building"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0"></div>
 
@@ -114,10 +115,11 @@ export default function TeamBuilding() {
       </header>
     
       <main className="flex flex-col">
-        <section className="flex-grow py-8 px-4 min-h-screen bg-gradient-to-b from-gray-200 to-gray-400">
+        <section className="flex-grow flex flex-col py-8 px-4 min-h-screen bg-gradient-to-b from-gray-200 to-gray-400">
           <CardTBComplete />
           <CustomButton text="Découvrez nos différents concepts" additionalClasses="bg-black" />
         </section>
+ 
 
         <section ref={containerRef} className="grid grid-cols-1 md:grid-cols-2 p-6 relative min-h-[200vh]">
           <div className="md:h-screen text-center py-6 sticky top-0 bg-gradient-to-t from-gray-200 to-gray-400 flex flex-col justify-center rounded-lg">
