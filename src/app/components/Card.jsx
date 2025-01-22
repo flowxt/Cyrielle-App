@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import CustomButton from './CustomButton';
 
 export default function Card({ title, subtitle, image, listItems, buttonText }) {
   return (
@@ -23,9 +24,10 @@ export default function Card({ title, subtitle, image, listItems, buttonText }) 
 
       {/* Bouton */}
       {buttonText && (
-        <button className="mt-4 bg-red-800 text-white px-4 py-2 block mx-auto rounded hover:bg-gray-200 hover:text-gray-800 font-poppins font-semibold   lg:text-xl">
-          {buttonText}
-        </button>
+       <CustomButton 
+       text={buttonText} 
+       additionalClasses="mt-4 lg:text-xl font-semibold" 
+     />
       )}
     </div>
   );

@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
+import CardTBComplete from '../components/CardTBComplete';
 
 export default function TeamBuilding() {
   const containerRef = useRef(null);
@@ -35,6 +36,20 @@ export default function TeamBuilding() {
     ["50%", "0%"]
   );
 
+  const textVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  };
+  
+  const staggerContainer = {
+    hidden: { opacity: 1 },
+    visible: { 
+      opacity: 1, 
+      transition: { staggerChildren: 0.2, delayChildren: 0.3 } 
+    },
+  };
+
+
   return (
     <>
       <header>
@@ -47,7 +62,7 @@ export default function TeamBuilding() {
           <div className="absolute inset-0"></div>
 
           <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:justify-end lg:px-8">
-            <div className="absolute top-20 left-0 p-4">
+            <div className="absolute top-10 left-0 p-4">
               <img
                 src="/logo-blanc.png"
                 alt="Logo"
@@ -55,7 +70,7 @@ export default function TeamBuilding() {
               />
             </div>
             <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right lg:ml-auto">
-              <h1 className="text-3xl font-extrabold text-white lg:text-4xl bg-neutral-900/50 font-poppins uppercase font-semibold">
+              <h1 className="text-3xl font-extrabold text-white lg:text-4xl bg-neutral-900/50 font-poppins uppercase font-semibold mt-12">
                 ACTIVITÉS DE COHÉSION<br />
                 UNE ÉQUIPE PRÊTE À RELEVER DES DÉFIS
               </h1>
@@ -63,23 +78,47 @@ export default function TeamBuilding() {
           </div>
         </section>
 
-        <div className="bg-gradient-to-b from-gray-200 to-gray-300 ">
-          <h3 className="text-2xl md:text-3xl lg:text-4xl p-6 text-center max-w-3xl mx-auto font-roboto font-semibold">
-            Découvrez nos activités stimulantes et <span className="text-red-700">fédératrice</span>.
-          </h3>
-          <p className="md:text-lg lg:text-xl font-roboto text-center max-w-3xl mx-auto px-6">
-            À la recherche de solutions innovantes pour renforcer la cohésion, le partage et l'engagement tout en vivant des expériences inoubliables ?
-          </p>
-          <p className="md:text-lg lg:text-xl font-roboto text-center max-w-3xl mx-auto pb-6">
-            Transmettez des valeurs d'équipe en participant à des activités insolites qui favorisent la réflexion collective.
-            <br /><br />
-            À chaque besoin, un format adapté pour une expérience inédite de team building.
-          </p>
-        </div>
+        <div className="bg-gradient-to-b from-gray-200 to-gray-300">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={staggerContainer}
+        className="max-w-3xl mx-auto text-center px-6 py-6"
+      >
+        <motion.h3
+          variants={textVariants}
+          className="text-2xl md:text-3xl lg:text-4xl font-roboto font-semibold"
+        >
+          Découvrez nos activités stimulantes et{" "}
+          <span className="text-red-700">fédératrice</span>.
+        </motion.h3>
+        <motion.p
+          variants={textVariants}
+          className="md:text-lg lg:text-xl font-roboto mt-4"
+        >
+          À la recherche de solutions innovantes pour renforcer la cohésion, le partage et l'engagement tout en vivant des expériences inoubliables ?
+        </motion.p>
+        <motion.p
+          variants={textVariants}
+          className="md:text-lg lg:text-xl font-roboto mt-4"
+        >
+          Transmettez des valeurs d'équipe en participant à des activités insolites qui favorisent la réflexion collective.
+          <br />
+          <br />
+          À chaque besoin, un format adapté pour une expérience inédite de team building.
+        </motion.p>
+      </motion.div>
+    </div>
       </header>
-      <main>
-      <section ref={containerRef} className="grid grid-cols-1 md:grid-cols-2 gap-4 p-6 relative min-h-[200vh]">
-    <div className="md:h-screen text-center py-6 sticky top-0 bg-gradient-to-t from-gray-200 to-gray-400 flex flex-col justify-center">
+    
+      <main className="flex flex-col">
+        <section className="flex-grow py-8 px-4 min-h-screen bg-gradient-to-b from-gray-200 to-gray-400">
+          <CardTBComplete />
+        </section>
+
+        <section ref={containerRef} className="grid grid-cols-1 md:grid-cols-2 p-6 relative min-h-[200vh]">
+          <div className="md:h-screen text-center py-6 sticky top-0 bg-gradient-to-t from-gray-200 to-gray-400 flex flex-col justify-center rounded-lg">
       <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 font-semibold">
         Réinventons <span className="text-red-700">votre équipe</span>
       </h2>

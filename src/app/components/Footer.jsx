@@ -1,5 +1,6 @@
 // components/Footer.jsx
 import Link from 'next/link';
+import CustomButton from './CustomButton';
 
 const Footer = () => {
   return (
@@ -127,7 +128,7 @@ const Footer = () => {
 </li>
 
     </ul>
-    <button className="mt-12 px-6 py-3 text-white bg-red-700 rounded-3xl hover:bg-red-600 mx-auto flex justify-center items-center font-poppins">Rencontrons nous</button>
+<CustomButton text="Rencontrons-nous" additionalClasses="rounded-full" />
   </div>
 </footer>
   );
