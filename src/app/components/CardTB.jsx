@@ -3,15 +3,22 @@ import CustomButton from './CustomButton';
 
 export default function CardTB({ imageSrc, title, content, buttonText }) {
   return (
-    <div className="max-w-sm mx-auto mb-8 w-full md:w-80 h-auto bg-white rounded-lg shadow-lg overflow-hidden">
-      <div className="w-full h-48 md:h-56 overflow-hidden">
-        <img src={imageSrc} alt="image" className="w-full h-full object-cover" />
+    <article className="group flex flex-col h-full shadow-xl rounded-xl overflow-hidden">
+      <img
+        alt=""
+        src={imageSrc}
+        className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+      />
+  
+      <div className="p-4 flex flex-col flex-grow">
+        <a href="#">
+          <h3 className="text-lg font-medium text-red-700 font-semibold font-poppins">{title}</h3>
+        </a>
+  
+        <p className="mt-2 text-sm/relaxed text-gray-500 flex-grow font-roboto font-light" dangerouslySetInnerHTML={{ __html: content }} />
+        
+        <CustomButton text={buttonText} additionalClasses="mt-4 lg:text-xl font-semibold self-start" />
       </div>
-      <div className="p-4">
-        <h1 className="text-xl font-bold mb-2">{title}</h1>
-        <p dangerouslySetInnerHTML={{ __html: content }}></p>
-        <CustomButton text={buttonText} />
-      </div>
-    </div>
+    </article>
   );
 }

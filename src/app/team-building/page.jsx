@@ -5,7 +5,8 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import CardTBComplete from '../components/CardTBComplete';
 import CustomButton from '../components/CustomButton';
-import CardTB from '../components/CardTB';
+
+
 
 export default function TeamBuilding() {
   const containerRef = useRef(null);
@@ -31,13 +32,13 @@ export default function TeamBuilding() {
     [0, 0.5],
     ["0%", "-50%"]
   );
-
+  
   const secondImageY = useTransform(
     scrollYProgress,
     [0.3, 1],
     ["50%", "0%"]
   );
-
+  
   const textVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
@@ -56,19 +57,24 @@ export default function TeamBuilding() {
     <>
       <header>
         <section className="relative">
-          <img
-            src="/tb-img.png"
-            alt="Team Building"
-            className="absolute inset-0 w-full h-full object-cover object-center"
-          />
+          <Image
+                src="/tb1.png"
+                alt="Team Building"
+                fill
+                className="absolute inset-0 w-full h-full object-cover object-center"
+              />
           <div className="absolute inset-0"></div>
 
           <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:justify-end lg:px-8">
             <div className="absolute top-10 left-0 p-4">
-              <img
-                src="/logo-blanc.png"
-                alt="Logo"
-                className="h-12 sm:h-16 w-auto"
+            
+              <Image
+              src='/logo-blanc.png'
+              alt='logo-en-scenes-acting'
+              className="w-40 sm:w-40 lg:w-48 xl:w-56"
+              width={150}
+              height={64}
+
               />
             </div>
             <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right lg:ml-auto">
@@ -115,11 +121,10 @@ export default function TeamBuilding() {
       </header>
     
       <main className="flex flex-col">
-        <section className="flex-grow flex flex-col py-8 px-4 min-h-screen bg-gradient-to-b from-gray-200 to-gray-400">
-          <CardTBComplete />
-          <CustomButton text="Découvrez nos différents concepts" additionalClasses="bg-black" />
-        </section>
- 
+   <section className='max-w-7xl mx-auto px-4 py-8'>
+    <CardTBComplete />
+    <CustomButton text="Découvrez nos différents concepts" additionalClasses="mx-auto mt-8 bg-black hover:bg-gray-900 text-xl" />
+    </section>
 
         <section ref={containerRef} className="grid grid-cols-1 md:grid-cols-2 p-6 relative min-h-[200vh]">
           <div className="md:h-screen text-center py-6 sticky top-0 bg-gradient-to-t from-gray-200 to-gray-400 flex flex-col justify-center rounded-lg">
@@ -154,10 +159,10 @@ export default function TeamBuilding() {
               className="absolute inset-0"
             >
               <Image
-                src="/tb-img.png"
+                src="/cohesion.png"
                 alt="Team Building"
-                layout="fill"
-                objectFit="cover"
+                fill
+                style={{ objectFit: 'cover' }}
                 className="rounded-lg"
               />
             </motion.div>
@@ -172,11 +177,12 @@ export default function TeamBuilding() {
               <Image
                 src="/carte2.png"
                 alt="Team Building"
-                layout="fill"
-                objectFit="cover"
+                fill
+                style={{ objectFit: 'cover' }}
                 className="rounded-lg"
               />
             </motion.div>
+            
           </div>
         </section>
       </main>
