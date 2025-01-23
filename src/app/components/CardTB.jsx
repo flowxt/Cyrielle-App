@@ -3,9 +3,9 @@ import CustomButton from './CustomButton';
 
 export default function CardTB({ imageSrc, title, content, buttonText }) {
   return (
-    <article className="group flex flex-col h-full shadow-xl rounded-xl overflow-hidden">
+    <article className="group flex flex-col h-full shadow-xl rounded-xl overflow-hidden ">
       <img
-        alt=""
+        alt="image de cohésion d'équipe"
         src={imageSrc}
         className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
       />

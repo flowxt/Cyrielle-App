@@ -103,25 +103,25 @@ export default function TeamBuilding() {
         </motion.h3>
         <motion.p
           variants={textVariants}
-          className="md:text-lg lg:text-xl font-roboto"
+          className="md:text-lg lg:text-xl font-roboto font-light"
         >
           À la recherche de solutions innovantes pour renforcer la cohésion, le partage et l'engagement tout en vivant des expériences inoubliables ?
         </motion.p>
         <motion.p
           variants={textVariants}
-          className="md:text-lg lg:text-xl font-roboto mt-4 mb-10"
+          className="md:text-lg lg:text-xl font-roboto mt-4 mb-10 font-light"
         >
-          Transmettez des valeurs d'équipe en participant à des activités insolites qui favorisent la réflexion collective.
+          Transmettez des <b>valeurs d'équipe</b> en participant à des <b>activités insolites</b> qui favorisent la <b>réflexion collective</b>.
           <br />
           <br />
-          À chaque besoin, un format adapté pour une expérience inédite de team building.
+          À chaque besoin, un format adapté pour une expérience inédite de <b>team building</b>.
         </motion.p>
       </motion.div>
     </div>
       </header>
     
       <main className="flex flex-col">
-   <section className='max-w-7xl mx-auto px-4 py-8'>
+   <section className='max-w-7xl mx-auto px-4 py-8 '>
     <CardTBComplete />
     <CustomButton text="Découvrez nos différents concepts" additionalClasses="mx-auto mt-8 bg-black hover:bg-gray-900 text-xl " />
     {/* A crrer un bouton avec un bg black ici plutot que de prendre */}
