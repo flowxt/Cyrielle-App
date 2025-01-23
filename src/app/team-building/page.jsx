@@ -66,7 +66,7 @@ export default function TeamBuilding() {
           <div className="absolute inset-0"></div>
 
           <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:justify-end lg:px-8">
-            <div className="absolute top-0 left-0 p-4">
+            <div className="absolute top-10 sm:top-0 left-0 p-4">
             
               <Image
               src='/logo-blanc.png'
@@ -96,7 +96,7 @@ export default function TeamBuilding() {
       >
         <motion.h3
           variants={textVariants}
-          className="text-2xl md:text-4xl lg:text-5xl font-roboto  my-10"
+          className="text-3xl md:text-4xl lg:text-5xl font-roboto  my-10"
         >
           Découvrez nos activités<br /> stimulantes et{" "}
           <span className="text-red-700">fédératrice</span>
