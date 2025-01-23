@@ -66,7 +66,7 @@ export default function TeamBuilding() {
           <div className="absolute inset-0"></div>
 
           <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:justify-end lg:px-8">
-            <div className="absolute top-10 left-0 p-4">
+            <div className="absolute top-0 left-0 p-4">
             
               <Image
               src='/logo-blanc.png'
@@ -96,20 +96,20 @@ export default function TeamBuilding() {
       >
         <motion.h3
           variants={textVariants}
-          className="text-2xl md:text-3xl lg:text-4xl font-roboto font-semibold"
+          className="text-2xl md:text-4xl lg:text-5xl font-roboto  my-10"
         >
-          Découvrez nos activités stimulantes et{" "}
-          <span className="text-red-700">fédératrice</span>.
+          Découvrez nos activités<br /> stimulantes et{" "}
+          <span className="text-red-700">fédératrice</span>
         </motion.h3>
         <motion.p
           variants={textVariants}
-          className="md:text-lg lg:text-xl font-roboto mt-4"
+          className="md:text-lg lg:text-xl font-roboto"
         >
           À la recherche de solutions innovantes pour renforcer la cohésion, le partage et l'engagement tout en vivant des expériences inoubliables ?
         </motion.p>
         <motion.p
           variants={textVariants}
-          className="md:text-lg lg:text-xl font-roboto mt-4"
+          className="md:text-lg lg:text-xl font-roboto mt-4 mb-10"
         >
           Transmettez des valeurs d'équipe en participant à des activités insolites qui favorisent la réflexion collective.
           <br />
@@ -123,7 +123,8 @@ export default function TeamBuilding() {
       <main className="flex flex-col">
    <section className='max-w-7xl mx-auto px-4 py-8'>
     <CardTBComplete />
-    <CustomButton text="Découvrez nos différents concepts" additionalClasses="mx-auto mt-8 bg-black hover:bg-gray-900 text-xl" />
+    <CustomButton text="Découvrez nos différents concepts" additionalClasses="mx-auto mt-8 bg-black hover:bg-gray-900 text-xl " />
+    {/* A crrer un bouton avec un bg black ici plutot que de prendre */}
     </section>
 
         <section ref={containerRef} className="grid grid-cols-1 md:grid-cols-2 p-6 relative min-h-[200vh]">

@@ -12,10 +12,10 @@ export default function CardTB({ imageSrc, title, content, buttonText }) {
   
       <div className="p-4 flex flex-col flex-grow">
         <a href="#">
-          <h3 className="text-lg font-medium text-red-700 font-semibold font-poppins">{title}</h3>
+          <h3 className="text-2xl md:text-3xl lg:text-4xl font-medium text-red-700 font-semibold font-poppins pb-4">{title}</h3>
         </a>
   
-        <p className="mt-2 text-sm/relaxed text-gray-500 flex-grow font-roboto font-light" dangerouslySetInnerHTML={{ __html: content }} />
+        <p className="text-xl mt-2 text-sm/relaxed text-gray-500 flex-grow font-roboto font-light" dangerouslySetInnerHTML={{ __html: content }} />
         
         <CustomButton text={buttonText} additionalClasses="mt-4 lg:text-xl font-semibold self-start" />
       </div>
