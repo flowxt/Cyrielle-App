@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import CardTBComplete from '../components/CardTBComplete';
 import CustomButton from '../components/CustomButton';
+import Hero from '../components/Hero';
 
 
 
@@ -55,70 +56,26 @@ export default function TeamBuilding() {
 
   return (
     <>
-      <header>
-        <section className="relative">
-          <Image
-                src="/tb1.png"
-                alt="Team Building"
-                fill
-                className="absolute inset-0 w-full h-full object-cover object-center"
-              />
-          <div className="absolute inset-0"></div>
+<Hero
+        backgroundImageSrc="/tb1.png" // Image de fond pour cette page
+        title="ACTIVITÉS DE COHÉSION UNE ÉQUIPE PRÊTE À RELEVER DES DÉFIS"
+        subtitle={
+          <>
+            Découvrez nos activités stimulantes et{" "}
+            <span className="text-red-700">fédératrice</span>
+          </>
+        }
+        description={
+          <>
+           À la recherche de solutions innovantes pour renforcer la cohésion, le partage et l'engagement tout en vivant des expériences inoubliables ?
+<br /><br />
+Transmettez des <b>valeurs d'équipe</b> en participant à des <b>activités insolites</b> qui favorise la <b>réflexion collective</b>.
 
-          <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:justify-end lg:px-8">
-            <div className="absolute top-10 sm:top-0 left-0 p-4">
-            
-              <Image
-              src='/logo-blanc.png'
-              alt='logo-en-scenes-acting'
-              className="w-40 sm:w-40 lg:w-48 xl:w-56"
-              width={150}
-              height={64}
+A chaque besoin, un format adapté pour une expérience inédite de <b>team building</b>.
 
-              />
-            </div>
-            <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right lg:ml-auto">
-              <h1 className="text-3xl font-extrabold text-white lg:text-4xl bg-neutral-900/50 font-poppins uppercase font-semibold mt-12">
-                ACTIVITÉS DE COHÉSION<br />
-                UNE ÉQUIPE PRÊTE À RELEVER DES DÉFIS
-              </h1>
-            </div>
-          </div>
-        </section>
-
-        <div className="bg-gradient-to-b from-gray-200 to-gray-300">
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        variants={staggerContainer}
-        className="max-w-3xl mx-auto text-center px-6 py-6"
-      >
-        <motion.h3
-          variants={textVariants}
-          className="text-3xl md:text-4xl lg:text-5xl font-roboto  my-10"
-        >
-          Découvrez nos activités<br /> stimulantes et{" "}
-          <span className="text-red-700">fédératrice</span>
-        </motion.h3>
-        <motion.p
-          variants={textVariants}
-          className="md:text-lg lg:text-xl font-roboto font-light"
-        >
-          À la recherche de solutions innovantes pour renforcer la cohésion, le partage et l'engagement tout en vivant des expériences inoubliables ?
-        </motion.p>
-        <motion.p
-          variants={textVariants}
-          className="md:text-lg lg:text-xl font-roboto mt-4 mb-10 font-light"
-        >
-          Transmettez des <b>valeurs d'équipe</b> en participant à des <b>activités insolites</b> qui favorisent la <b>réflexion collective</b>.
-          <br />
-          <br />
-          À chaque besoin, un format adapté pour une expérience inédite de <b>team building</b>.
-        </motion.p>
-      </motion.div>
-    </div>
-      </header>
+          </>
+        }
+      />
     
       <main className="flex flex-col">
    <section className='max-w-7xl mx-auto px-4 py-8 '>

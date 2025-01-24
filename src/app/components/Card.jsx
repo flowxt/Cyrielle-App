@@ -26,7 +26,7 @@ export default function Card({ title, subtitle, image, listItems, buttonText }) 
       {buttonText && (
        <CustomButton 
        text={buttonText} 
-       additionalClasses="mt-4 lg:text-xl font-semibold" 
+       additionalClasses="mt-4 lg:text-lg " 
      />
       )}
     </div>
