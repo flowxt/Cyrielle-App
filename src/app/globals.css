@@ -41,7 +41,7 @@
   animation: move-x 1s infinite;
 }
 
-
+/* Code pour l'animation des cartes  */
   body {
     overflow-x: hidden;
   }
