@@ -42,16 +42,16 @@
 }
 
 /* Code pour l'animation des cartes  */
-  body {
+  /* body {
     overflow-x: hidden;
   }
   
   /* Masquer la barre de défilement horizontal sur les éléments avec défilement automatique */
-  .your-scrolling-element::-webkit-scrollbar {
+  /* .your-scrolling-element::-webkit-scrollbar {
     display: none;
   }
-  
-  .your-scrolling-element {
+   */
+  /* .your-scrolling-element {
     -ms-overflow-style: none;  /* Pour Internet Explorer et Edge */
-    scrollbar-width: none;  /* Pour Firefox */
-  }
+    /* scrollbar-width: none;  Pour Firefox */
+  /* } */
