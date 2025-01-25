@@ -24,20 +24,6 @@ const cardData = [
   // Ajoutez plus de cartes ici
 ];
 
-const cardVariants = {
-  hidden: (direction) => ({
-    opacity: 0,
-    x: direction === 'left' ? -100 : direction === 'right' ? 100 : 0,
-    y: direction === 'bottom' ? 100 : 0,
-  }),
-  visible: {
-    opacity: 1,
-    x: 0,
-    y: 0,
-    transition: { duration: 0.8, ease: 'easeOut' },
-  },
-};
-
 const CardTBComplete = () => {
   return (
     <section className="py-8 px-4">
@@ -45,17 +31,25 @@ const CardTBComplete = () => {
         {cardData.map((card, index) => (
           <motion.div
             key={index}
-            custom={index % 3 === 0 ? 'left' : index % 3 === 1 ? 'bottom' : 'right'}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            variants={cardVariants}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ 
+              opacity: 1, 
+              y: 0,
+              x: 0,
+              transition: { 
+                duration: 0.8,
+                delay: index * 0.2
+              }
+            }}
+            viewport={{ once: true, amount: 0.3 }}
+            custom={index}
           >
             <CardTB
               imageSrc={card.imageSrc}
               title={card.title}
               content={card.content}
               buttonText={card.buttonText}
+              index={index}
             />
           </motion.div>
         ))}
