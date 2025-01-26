@@ -87,16 +87,8 @@ Que ce soit pour <b>découvrir ou redécouvrir ce et/ou ceux qui nous entourent<
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:pb-12 font-semibold">Fabriquons <span className="text-red-700">des souvenirs</span></h2>
               <p className="text-lg">
               En scènes acting® casse les codes pour vous faire vivre des expériences insolites et immersives.
-
-
 Plongez dans nos univers vivants où les interactions sociales seront essentielles.
-
-​
-
 Le temps de quelques heures, vivez une aventure unique, où le passé et le présent se mêlent pour une expérience insolite.
-
-​
-
 Rejoignez nous pour vous créer des souvenirs inoubliables !
               </p>
               <button className="mt-12 px-6 py-3 text-white bg-red-800  hover:bg-red-700 mx-auto flex justify-center items-center font-poppins">Créons ensemble ces moments</button>
