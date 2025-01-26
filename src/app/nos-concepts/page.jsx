@@ -4,48 +4,9 @@ import Carousel from "../components/Carousel";
 
 import Hero from '../components/Hero';
 import CustomButton from "../components/CustomButton";
-import CardConcept from "../components/CardConcept";
 
 
 export default function Concepts() {
-  // const cardsData = [
-  //   {
-  //     imageSrc: '/carte2.png',
-  //     title: 'Story Game',
-  //     content: 'Préparez vous à devenir acteurs de l’histoire qui se déroulent sous vos yeux. <br /><br />Observer, fouillez et tentez de résoudre des énigmes qui vous mèneront à découvrir de mystérieux secrets.<br /><br />',
-  //     tags: ['Fashion', 'Products'],
-  //     listItems: ['Par équipe de 4 à 6 personnes', 'Jusqu\'à 60 personnes ', 'Durée: 1h30']
-  //   },
-  //   {
-  //     imageSrc: '/carte2.png',
-  //     title: 'Story Game',
-  //     content: 'Préparez vous à devenir acteurs de l’histoire qui se déroulent sous vos yeux. <br /><br />Observer, fouillez et tentez de résoudre des énigmes qui vous mèneront à découvrir de mystérieux secrets.<br /><br />',
-  //     tags: ['Fashion', 'Products'],
-  //     listItems: ['Par équipe de 4 à 6 personnes', 'Jusqu\'à 60 personnes ', 'Durée: 1h30']
-  //   },
-  //   {
-  //     imageSrc: '/carte2.png',
-  //     title: 'Story Game',
-  //     content: 'Préparez vous à devenir acteurs de l’histoire qui se déroulent sous vos yeux. <br /><br />Observer, fouillez et tentez de résoudre des énigmes qui vous mèneront à découvrir de mystérieux secrets.<br /><br />',
-  //     tags: ['Fashion', 'Products'],
-  //     listItems: ['Par équipe de 4 à 6 personnes', 'Jusqu\'à 60 personnes ', 'Durée: 1h30']
-  //   },
-  //   {
-  //     imageSrc: '/carte2.png',
-  //     title: 'Story Game',
-  //     content: 'Préparez vous à devenir acteurs de l’histoire qui se déroulent sous vos yeux. <br /><br />Observer, fouillez et tentez de résoudre des énigmes qui vous mèneront à découvrir de mystérieux secrets.<br /><br />',
-  //     tags: ['Fashion', 'Products'],
-  //     listItems: ['Par équipe de 4 à 6 personnes', 'Jusqu\'à 60 personnes ', 'Durée: 1h30']
-  //   },
-  //   {
-  //     imageSrc: '/carte2.png',
-  //     title: 'Story Game',
-  //     content: 'Préparez vous à devenir acteurs de l’histoire qui se déroulent sous vos yeux. <br /><br />Observer, fouillez et tentez de résoudre des énigmes qui vous mèneront à découvrir de mystérieux secrets.<br /><br />',
-  //     tags: ['Fashion', 'Products'],
-  //     listItems: ['Par équipe de 4 à 6 personnes', 'Jusqu\'à 60 personnes ', 'Durée: 1h30']
-  //   }
-  //   // Ajoutez plus de cartes ici
-  // ];
     return (
       <>
      <Hero
@@ -67,18 +28,7 @@ Que ce soit pour <b>découvrir ou redécouvrir ce et/ou ceux qui nous entourent<
     <main>
 <section>
   <h2>Nos concepts</h2>
-  {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center mx-auto">
-      {cardsData.map((card, index) => (
-        <CardConcept
-          key={index}
-          imageSrc={card.imageSrc}
-          title={card.title}
-          content={card.content}
-          tags={card.tags}
-          listItems={card.listItems}
-        />
-      ))}
-    </div> */}
+  <p>Ici y aura 5 cartes</p>
 </section>
 <Carousel />
 
@@ -87,8 +37,16 @@ Que ce soit pour <b>découvrir ou redécouvrir ce et/ou ceux qui nous entourent<
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:pb-12 font-semibold">Fabriquons <span className="text-red-700">des souvenirs</span></h2>
               <p className="text-lg">
               En scènes acting® casse les codes pour vous faire vivre des expériences insolites et immersives.
+
+
 Plongez dans nos univers vivants où les interactions sociales seront essentielles.
+
+​
+
 Le temps de quelques heures, vivez une aventure unique, où le passé et le présent se mêlent pour une expérience insolite.
+
+​
+
 Rejoignez nous pour vous créer des souvenirs inoubliables !
               </p>
               <button className="mt-12 px-6 py-3 text-white bg-red-800  hover:bg-red-700 mx-auto flex justify-center items-center font-poppins">Créons ensemble ces moments</button>
