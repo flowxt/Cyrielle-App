@@ -1,17 +1,24 @@
-import React from 'react';
+import React from "react";
+import { motion } from "framer-motion";
 
 const CardConcept = ({ image, title, paragraph, listItems }) => {
   return (
-    <div className="max-w-sm rounded-lg overflow-hidden shadow-md m-4 bg-white ">
+    <motion.div
+      whileHover={{ scale: 1.05, boxShadow: "0px 10px 15px rgba(0, 0, 0, 0.2)" }}
+      whileTap={{ scale: 0.98 }}
+      className="max-w-sm rounded-lg overflow-hidden shadow-md m-4 bg-white"
+    >
       <img className="w-full h-48 object-cover" src={image} alt={title} />
-      <div className="px-6 py-4 ">
-        <div className="font-bold text-xl mb-2 text-red-700 bg-gray-400 text-center font-poppins font-light ">{title}</div>
+      <div className="px-6 py-4">
+        <div className="font-bold text-xl mb-2 text-red-700 bg-gray-400 text-center font-poppins font-light">
+          {title}
+        </div>
         <p className="text-gray-600 text-base font-roboto font-light">
-          {paragraph.split('\n').map((line, index) => (
+          {paragraph.split("\n").map((line, index) => (
             <span key={index}>
-              {line.split('**').map((part, i) => (
+              {line.split("**").map((part, i) =>
                 i % 2 === 1 ? <strong key={i}>{part}</strong> : part
-              ))}
+              )}
               <br />
             </span>
           ))}
@@ -27,7 +34,7 @@ const CardConcept = ({ image, title, paragraph, listItems }) => {
           ))}
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

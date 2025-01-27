@@ -54,7 +54,9 @@ A chaque besoin, un format adapté pour une expérience inédite de <b>team buil
       <main className="flex flex-col">
    <section className='max-w-7xl mx-auto px-4 py-8 '>
     <CardTBComplete />
-    <CustomButton text="Découvrez nos différents concepts" additionalClasses="mx-auto mt-8 bg-black hover:bg-gray-900 text-xl " />
+    <div className='flex justify-center'>
+    <button className='mx-auto mt-8 p-2 bg-black text-lg lg:text-xl text-white mx-auto'>Découvrez nos différents concepts</button>
+    </div>
     {/* A crrer un bouton avec un bg black ici plutot que de prendre */}
     </section>
 
