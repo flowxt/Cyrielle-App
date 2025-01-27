@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Carousel from "../components/Carousel";
-
+import CardConceptFull from "../components/CardConceptFull";
 import Hero from '../components/Hero';
 import CustomButton from "../components/CustomButton";
 
@@ -26,10 +26,7 @@ Que ce soit pour <b>découvrir ou redécouvrir ce et/ou ceux qui nous entourent<
         }
       />
     <main>
-<section>
-  <h2>Nos concepts</h2>
-  <p>Ici y aura 5 cartes</p>
-</section>
+  <CardConceptFull />
 <Carousel />
 
    <section className="grid grid-cols-1 bg-gradient-to-t from-gray-200 to-gray-400  md:grid-cols-5 pb-12">
