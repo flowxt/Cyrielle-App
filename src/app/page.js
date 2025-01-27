@@ -10,7 +10,7 @@ export default function Home() {
         <section className="relative">
           <video
             className="absolute inset-0 w-full h-full object-cover"
-            src="/videos/movie-home.mp4"
+            src="/videos/movie-home.webm"
             autoPlay
             loop
             muted
