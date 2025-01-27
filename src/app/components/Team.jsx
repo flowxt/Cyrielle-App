@@ -13,7 +13,7 @@ export default function Team() {
   alt="Cyrielle"
   className="border-2 border-red-700 rounded-xl shadow-2xl shadow-neutral-900 h-80 transition-transform duration-300 ease-in-out hover:scale-105 hover:rotate-3 hover:shadow-[10px_10px_30px_rgba(0,0,0,0.4)]"
 />
-              <div className="content-cyrielle flex flex-col text-center lg:text-start">
+              <div className="content-cyrielle flex flex-col text-start">
                 <h3 className="text-xl font-poppins font-semibold">
                   Cyrielle <span className="text-red-700">Schepens</span>
                 </h3>
@@ -36,14 +36,14 @@ export default function Team() {
                 </ul>
               </div>
             </div>
-            <div className="container-Matthieu flex flex-col lg:flex-row items-center gap-8 py-8">
+            <div className="container-Matthieu flex flex-col lg:flex-row items-center gap-8 py-4">
               <img
                 src="/matthieu.jpg"
                 alt="Matthieu"
                 className="border-2 border-red-700 rounded-xl shadow-2xl shadow-neutral-900 h-80 transition-transform duration-300 ease-in-out hover:scale-105 hover:rotate-3 hover:shadow-[10px_10px_30px_rgba(0,0,0,0.4)]"
                 // className="border-2 border-red-700 rounded-xl shadow-2xl shadow-neutral-900 h-80" si je veux remettre sans les animations
               />
-              <div className="content-matthieu flex flex-col lg:text-start text-center">
+              <div className="content-matthieu flex flex-col text-start text-center">
                 <h3 className="text-xl font-poppins font-semibold">
                   Matthieu <span className="text-red-700">Vernisse</span>
                 </h3>

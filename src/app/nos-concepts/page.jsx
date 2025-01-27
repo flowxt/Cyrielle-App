@@ -27,9 +27,9 @@ export default function Concepts() {
   <CardConceptFull />
 <Carousel />
 
-   <section className="grid grid-cols-1 bg-gradient-to-t from-gray-200 to-gray-400  md:grid-cols-5 pb-12">
-            <div className="md:col-span-3 px-12 text-center py-6">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:pb-12 font-semibold">Fabriquons <span className="text-red-700">des souvenirs</span></h2>
+   <section className="grid grid-cols-1 bg-gradient-to-t from-gray-200 to-gray-400  md:grid-cols-5 py-12">
+            <div className="md:col-span-3 px-12 text-center py-2">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:pb-6 lg:pt-6 font-semibold">Fabriquons <span className="text-red-700">des souvenirs</span></h2>
               <p className="text-lg font-roboto font-thin">
               En scènes acting® casse les codes pour vous faire vivre des expériences insolites et immersives. Plongez dans nos univers vivants où les interactions sociales seront essentielles. Le temps de quelques heures, vivez une aventure unique, où le passé et le présent se mêlent pour une expérience insolite. Rejoignez nous pour vous créer des souvenirs inoubliables !
               </p>
