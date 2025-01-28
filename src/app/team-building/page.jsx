@@ -73,9 +73,11 @@ export default function TeamBuilding() {
             </div>
             <div>
             <Image
-                                src={Image4}
+                                src="/images/caroussel/img2.webp"
                                 alt="Content illustration"
                                 className="rounded"
+                                width={600}
+                                height={600}
                                 priority
                             />
             </div>

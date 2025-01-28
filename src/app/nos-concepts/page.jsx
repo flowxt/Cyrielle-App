@@ -10,7 +10,7 @@ export default function Concepts() {
     return (
       <>
      <Hero
-        backgroundImageSrc="/carte2.png"
+        backgroundImageSrc="/carte2.webp"
         title="SPECTACLE INTERACTIF & ESCAPE GAME ITINERANT"
         subtitle={
           <>
@@ -38,7 +38,7 @@ export default function Concepts() {
             <div className="md:col-span-2 grid grid-rows-2 md:gap-4 lg:pt-6 mr-6">
               <div className="relative w-full h-full hidden md:block">
                 <Image
-                  src="/tb-img.png"
+                  src="/tb1.webp"
                   alt="Team Building"
                   layout="fill"
                   objectFit="cover"
@@ -47,7 +47,7 @@ export default function Concepts() {
               </div>
               <div className="relative w-full h-full ">
                 <Image
-                  src="/tb-img.png"
+                  src="/tb1.webp"
                   alt="Team Building"
                   layout="fill"
                   objectFit="cover"

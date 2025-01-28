@@ -28,6 +28,9 @@ const Hero = ({
           src={backgroundImageSrc}
           alt="Background"
           fill
+          priority
+          sizes="100vw"
+  quality={75}
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0"></div>
