@@ -4,6 +4,7 @@ import React, { useRef, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import Lightbox from 'yet-another-react-lightbox';
+import Image from 'next/image';
 import 'yet-another-react-lightbox/styles.css';
 
 export default function Carousel() {
@@ -18,7 +19,7 @@ export default function Carousel() {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [autoplay.current]);
 
     // Liste des images
-    const images = Array.from({ length: 17 }, (_, i) => `/images/caroussel/img${i + 1}.png`);
+    const images = Array.from({ length: 17 }, (_, i) => `/images/caroussel/img${i + 1}.webp`);
 
     const [isOpen, setIsOpen] = useState(false);
     const [photoIndex, setPhotoIndex] = useState(0);
@@ -41,9 +42,11 @@ export default function Carousel() {
                             className="embla__slide flex-shrink-0 flex justify-center items-center w-[20%] max-w-[250px] h-[450px] rounded-lg overflow-hidden shadow-2xl"
                             onClick={() => openLightbox(index)}
                         >
-                            <img
+                            <Image
                                 src={src}
                                 alt={`Image ${index + 1}`}
+                                width={250} // Largeur de l'image
+                                height={450} // Hauteur de l'image
                                 className="w-full h-full object-cover cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-110"
                             />
                         </div>

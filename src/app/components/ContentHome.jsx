@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Image4 from '../../assets/images/image4.png';
+
 import Image5 from '../../assets/images/image5.png';
 import CustomButton from './CustomButton';
 
@@ -28,10 +28,13 @@ export default function ContentHome() {
 
                         <div>
                             <Image
-                                src={Image4}
+                                src="/images/caroussel/img2.webp"
                                 alt="Content illustration"
                                 className="rounded hidden md:block"
                                 priority
+                                width={3142} // Largeur réelle de l'image
+                                height={2086}
+                            
                             />
                         </div>
                     </div>
@@ -94,11 +97,13 @@ Que vous nous donniez carte blanche ou un cahier des charges, nous nous adaptons
   
             <div>
             <Image
-                                src={Image4}
-                                alt="Content illustration"
-                                className="rounded"
-                                priority
-                            />
+                src="/images/caroussel/img2.webp"
+                alt="Content illustration"
+                className="rounded"
+                priority
+                width={3142} // Largeur réelle de l'image
+                height={2086} // Hauteur réelle de l'image
+              />
             </div>
           </div>
         </div>
