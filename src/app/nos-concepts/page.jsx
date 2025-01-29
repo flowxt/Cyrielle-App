@@ -63,6 +63,7 @@ export default function Concepts() {
           <p className="text-lg lg:text-xl font-roboto text-center max-w-3xl mx-auto px-6 pb-6 font-roboto font-thin">Donnez nous carte blanche ou livrez nous un cahier des charges, nous mettrons tout en œuvre pour vous créer un événement sur mesure et clé en main.</p>
           <CustomButton text="Je vous explique ce que je veux" />
         </div>
+        
       
     </main>
     </>
