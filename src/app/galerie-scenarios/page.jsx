@@ -1,11 +1,27 @@
-import React from "react";
-
+"use client";
+import ContentHome from '../components/ContentHome';
+import Hero from '../components/Hero';
+import PhotoGallery from '../components/PhotoGallery';
 
 export default function Galerie() {
   return (
-    <div>
-      <h1 className="text-3xl bg-red-400">Galerie - Scénarios</h1>
- 
-    </div>
+    <>
+    <Hero
+    backgroundImageSrc="/images/caroussel/img2.webp" // Image de fond pour cette page
+    title="VIVEZ L'AVENTURE DE L'INTERIEUR"
+    subtitle={
+      <>
+       <span className='text-red-700'>Coopérez</span>| Analyser | Résoudre
+      </>
+    }
+    description={
+      <>
+       Plongez avec nous dans ces moments partagés avec nos spect'acteurs!<br /><br /> De nos aventures Story Game, jeu de rôle grandeur nature dans des lieux splendides à nos aventures au château;  nos scénarios vous embarquent au cœur de l'histoire, préparez vous vos missions n'auront rien d'ordinaire.<br /><br />Vous êtes prêts ?
+      </>
+    }
+  />
+  <PhotoGallery />
+  
+  </>
   );
 }
