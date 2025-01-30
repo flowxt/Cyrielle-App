@@ -67,7 +67,7 @@ const PhotoGallery = () => {
             <img
               src={src}
               alt={`Team Building ${index + 1}`}
-              className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+              className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
             />
           </motion.div>
         ))}
