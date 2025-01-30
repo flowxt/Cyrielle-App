@@ -13,7 +13,7 @@ const StoryGameSection = ({ videos }) => {
       {/* Contenu */}
       <div className="relative z-10 container mx-auto px-4">
         {/* Titre */}
-        <h2 className="text-4xl font-bold text-center mb-16">STORY GAME</h2>
+        <h2 className="text-4xl font-bold text-center mb-16 font-poppins">STORY GAME</h2>
 
         {/* Grille des vidéos */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -34,10 +34,10 @@ const StoryGameSection = ({ videos }) => {
               </div>
 
               {/* Titre de la vidéo */}
-              <h3 className="text-2xl font-bold mt-6 mb-4">{video.title}</h3>
+              <h3 className="text-2xl font-bold mt-6 mb-4 font-poppins">{video.title}</h3>
 
               {/* Bouton */}
-              <button className={`px-8 py-3 rounded-full font-semibold transition-all ${
+              <button className={`px-8 py-3 rounded-full font-semibold font-roboto transition-all ${
                 index % 2 === 0 
                   ? 'bg-red-700 text-white hover:bg-red-800' 
                   : 'bg-white text-red-700 hover:bg-gray-100'
