@@ -10,12 +10,12 @@ const Gallery = () => {
   // Données pour les vidéos
   const storyGameVideos = [
     {
-      src: "/videos/aventure1.mp4",
+      src: "/videos/aventure2.mp4",
       title: "Toxique",
       buttonText: "Que se passe-t-il ?",
     },
     {
-      src: "/videos/aventure2.mp4",
+      src: "/videos/aventure1.mp4",
       title: "Nuptial",
       buttonText: "Découvrir l'histoire",
     },
@@ -23,12 +23,12 @@ const Gallery = () => {
 
   const chateauVideos = [
     {
-      src: "/videos/aventure3.mp4",
+      src: "/videos/aventure4.mp4",
       title: "Le dragon d'Elbevor et la princesse De Benevix",
       buttonText: "Que va t il se passer ?",
     },
     {
-      src: "/videos/aventure4.mp4",
+      src: "/videos/aventure1.mp4",
       title: "Polyxène et le mystérieux message",
       buttonText: "Que cache ce message ?",
     },
@@ -38,7 +38,7 @@ const Gallery = () => {
       buttonText: "De quoi est-elle accusée ?",
     },
     {
-      src: "/videos/aventure1.mp4",
+      src: "/videos/aventure4.mp4",
       title: "Disparition inquiétante",
       buttonText: "Qui a bien pu disparaître ?",
     },
