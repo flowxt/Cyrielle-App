@@ -1,5 +1,5 @@
 "use client";
-import ContentHome from '../components/ContentHome';
+
 import Hero from '../components/Hero';
 import PhotoGallery from '../components/PhotoGallery';
 
