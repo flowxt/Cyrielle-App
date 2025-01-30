@@ -2,7 +2,7 @@ import React from "react";
 
 const ChateauVideoSection = ({ videos }) => {
   return (
-    <section className="relative min-h-screen py-16">
+    <section className="relative min-h-screen pt-16">
       {/* Fond bicolore */}
       <div className="absolute inset-0 flex z-0">
         <div className="w-1/2 bg-red-700"></div>
@@ -12,7 +12,7 @@ const ChateauVideoSection = ({ videos }) => {
       {/* Contenu */}
       <div className="relative z-10 container mx-auto px-4">
         {/* Titre */}
-        <h2 className="text-4xl font-bold text-center mb-16 text-black font-poppins">NOS AVENTURES AU CHÂTEAU</h2>
+        <h2 className="text-4xl font-bold text-center mb-16 text-black font-poppins my-16">NOS AVENTURES AU CHÂTEAU</h2>
 
         {/* Grille des vidéos */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
