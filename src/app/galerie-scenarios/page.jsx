@@ -4,6 +4,7 @@
 import Hero from "../components/Hero";
 import PhotoGallery from "../components/PhotoGallery";
 import StoryGameSection from "../components/StoryGame";
+import ChateauVideoSection from "../components/ChateauVideoSection";
 
 const Gallery = () => {
   // Données pour les vidéos
@@ -23,23 +24,23 @@ const Gallery = () => {
   const chateauVideos = [
     {
       src: "/videos/aventure3.mp4",
-      title: "Aventure 3",
-      buttonText: "Voir plus",
+      title: "Le dragon d'Elbevor et la princesse De Benevix",
+      buttonText: "Que va t il se passer ?",
     },
     {
       src: "/videos/aventure4.mp4",
-      title: "Aventure 4",
-      buttonText: "Voir plus",
+      title: "Polyxène et le mystérieux message",
+      buttonText: "Que cache ce message ?",
     },
     {
       src: "/videos/aventure5.mp4",
-      title: "Aventure 5",
-      buttonText: "Voir plus",
+      title: "Le jugement de la comtesse",
+      buttonText: "De quoi est-elle accusée ?",
     },
     {
       src: "/videos/aventure1.mp4",
-      title: "Aventure 6",
-      buttonText: "Voir plus",
+      title: "Disparition inquiétante",
+      buttonText: "Qui a bien pu disparaître ?",
     },
   ];
 
@@ -72,6 +73,7 @@ const Gallery = () => {
 
        {/* Section STORY GAME */}
        <StoryGameSection videos={storyGameVideos} />
+       <ChateauVideoSection videos={chateauVideos} />
     </>
   );
 };
