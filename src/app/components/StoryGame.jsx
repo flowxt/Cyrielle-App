@@ -1,15 +1,8 @@
-// components/StoryGameSection.jsx
 import React from "react";
 
 const StoryGameSection = ({ videos }) => {
   return (
-    <section className="relative min-h-screen py-16">
-      {/* Fond bicolore */}
-      <div className="absolute inset-0 flex z-0">
-        <div className="w-1/2 bg-white"></div>
-        <div className="w-1/2 bg-red-700"></div>
-      </div>
-
+    <section className="relative min-h-screen py-16 bg-gradient-to-r from-white to-red-900">
       {/* Contenu */}
       <div className="relative z-10 container mx-auto px-4">
         {/* Titre */}
@@ -32,16 +25,8 @@ const StoryGameSection = ({ videos }) => {
                   loop
                 />
               </div>
-
-              {/* Titre de la vidéo */}
-              <h3 className="text-2xl font-bold mt-6 mb-4 font-poppins">{video.title}</h3>
-
-              {/* Bouton */}
-              <button className={`px-8 py-3 rounded-full font-semibold font-roboto transition-all ${
-                index % 2 === 0 
-                  ? 'bg-red-700 text-white hover:bg-red-800' 
-                  : 'bg-white text-red-700 hover:bg-gray-100'
-              }`}>
+              <h3 className="text-2xl font-bold mt-6">{video.title}</h3>
+              <button className={`mt-4 px-6 py-2 rounded-full transition-colors ${index % 2 === 0 ? 'bg-white text-red-700 hover:bg-gray-100' : 'bg-red-700 text-white hover:bg-red-800'}`}>
                 {video.buttonText}
               </button>
             </div>

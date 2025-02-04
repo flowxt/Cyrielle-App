@@ -75,6 +75,7 @@ const ContactForm = () => {
                   onChange={handleChange}
                   className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 font-roboto"
                   required
+                  placeholder="Saisissez votre prénom"
                 />
               </div>
               <div>
@@ -88,6 +89,7 @@ const ContactForm = () => {
                   onChange={handleChange}
                   className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 font-roboto"
                   required
+                   placeholder="Saisissez votre nom"
                 />
               </div>
             </div>
@@ -105,6 +107,7 @@ const ContactForm = () => {
                   onChange={handleChange}
                   className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 font-roboto"
                   required
+                  placeholder="Saisissez votre code postal"
                 />
               </div>
               <div>
@@ -118,6 +121,7 @@ const ContactForm = () => {
                   onChange={handleChange}
                   className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 font-roboto"
                   required
+                  placeholder="Saisissez votre ville"
                 />
               </div>
             </div>
@@ -134,6 +138,7 @@ const ContactForm = () => {
                 onChange={handleChange}
                 className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 font-roboto"
                 required
+                placeholder="Saisissez votre numéro de téléphone"
               />
             </div>
 
@@ -149,6 +154,7 @@ const ContactForm = () => {
                 onChange={handleChange}
                 className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 font-roboto"
                 required
+                placeholder="Saisissez votre adresse email"
               />
             </div>
 
@@ -164,6 +170,7 @@ const ContactForm = () => {
                 onChange={handleChange}
                 className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 resize-none font-roboto"
                 required
+                placeholder="Redigez votre message"
               />
             </div>
 
@@ -178,6 +185,7 @@ const ContactForm = () => {
                 value={formData.enigmaAnswer}
                 onChange={handleChange}
                 className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 font-roboto"
+                placeholder="Facultatif"
               />
             </div>
 

@@ -1,4 +1,3 @@
-// PhotoGallery.jsx
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
@@ -61,7 +60,9 @@ const PhotoGallery = () => {
             key={index}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="overflow-hidden rounded-lg shadow-lg cursor-pointer"
+            className={`overflow-hidden rounded-lg shadow-lg cursor-pointer ${
+              index % 5 === 0 ? "col-span-2 row-span-2" : ""
+            }`}
             onClick={() => setSelectedImage(src)}
           >
             <img

@@ -47,21 +47,22 @@ const NavBar = () => {
                     Nos Formations
                   </Link>
                 </li>
-                <li>
-                  <Link href="/agenda" className="transition text-white hover:text-red-500/75" onClick={closeMenu}>
-                    Agenda
-                  </Link>
-                </li>
+            
                 <li>
                   <Link href="/galerie-scenarios" className="transition text-white hover:text-red-500/75" onClick={closeMenu}>
                     Galerie - Scénarios
                   </Link>
                 </li>
                 <li>
+                  <Link href="/agenda" className="transition text-white hover:text-red-500/75" onClick={closeMenu}>
+                    Témoignages
+                  </Link>
+                </li>
+                {/* <li>
                   <Link href="/blog" className="transition text-white hover:text-red-500/75" onClick={closeMenu}>
                     Blog
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </nav>
           </div>

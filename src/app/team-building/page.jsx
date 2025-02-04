@@ -5,7 +5,7 @@ import Image from 'next/image';
 import CardTBComplete from '../components/CardTBComplete';
 import CustomButton from '../components/CustomButton';
 import Hero from '../components/Hero';
-import Image4 from '../../assets/images/image4.png';
+
 
 
 
