@@ -56,3 +56,20 @@
     /* scrollbar-width: none;  Pour Firefox */
   /* } */
 
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-scroll {
+    animation: scroll 90s linear infinite;
+    display: inline-block;
+  }
+  .animate-scroll:hover,
+.animate-scroll:active {
+  animation-play-state: paused;
+}
