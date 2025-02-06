@@ -124,21 +124,22 @@ const NavBar = () => {
                   Nos Formations
                 </Link>
               </li>
-              <li>
-                <Link href="/agenda" className="block text-white hover:text-red-500/75" onClick={closeMenu}>
-                  Agenda
-                </Link>
-              </li>
+             
               <li>
                 <Link href="/galerie-scenarios" className="block text-white hover:text-red-500/75" onClick={closeMenu}>
                   Galerie - Scénarios
                 </Link>
               </li>
               <li>
+                <Link href="/agenda" className="block text-white hover:text-red-500/75" onClick={closeMenu}>
+                  Témoignages
+                </Link>
+              </li>
+              {/* <li>
                 <Link href="/blog" className="block text-white hover:text-red-500/75" onClick={closeMenu}>
                   Blog
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/contact" className="block text-white hover:text-red-500/75" onClick={closeMenu}>
                   Parlons-en
