@@ -147,7 +147,7 @@ const reviews = [
 
 const GoogleReviews = () => {
   return (
-    <div className="bg-gray-50 py-12 overflow-hidden ">
+    <div className="bg-gray-50 py-12 overflow-hidden">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Témoignages de nos <span className='p-2 px-4 bg-red-900 text-white'>clients</span></h2>
       <div className="relative w-full overflow-hidden">
         <div className="animate-scroll whitespace-nowrap ">
