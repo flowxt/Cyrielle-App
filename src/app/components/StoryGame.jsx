@@ -2,11 +2,11 @@ import React from "react";
 
 const StoryGameSection = ({ videos }) => {
   return (
-    <section className="relative py-16 bg-gradient-to-r from-white to-red-900">
+    <section className="relative py-16 bg-gradient-to-r from-white to-red-700">
       {/* Contenu */}
       <div className="relative z-10 container mx-auto px-4">
         {/* Titre */}
-        <h2 className="text-4xl font-bold text-center mb-16 font-poppins">STORY GAME</h2>
+        <h2 className="text-4xl font-bold text-center mb-16 font-poppins">STORY <span className="text-white bg-gradient-to-l from-red-700 to red-900">GAME</span></h2>
 
         {/* Grille des vidéos */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
