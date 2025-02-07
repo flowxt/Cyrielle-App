@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Team() {
     return (
       <>
-        <section className="container-team text-center py-6 flex flex-col items-center gap-8 border-t-2 border-b-2 border-red-700 bg-gradient-to-b from-gray-200 to-gray-500">
+        <section className="container-team text-center py-6 flex flex-col items-center gap-8 border-t-2 border-red-800 bg-gradient-to-b from-gray-200 to-gray-500">
           <h2 className="text-4xl font-poppins font-semibold">Notre équipe</h2>
           <p className="font-roboto text-lg font-light px-4">
             Un duo complémentaire et passionné à l'écoute de vos besoins, garants d'une <strong>expérience unique et immersive.</strong>
