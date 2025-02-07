@@ -72,21 +72,26 @@ export default function Team() {
               </div>
             </div>
           </div>
-          <div className="text-gray-100 flex flex-col lg:flex-row ">
-        <h3 className=" text-4xl  lg:text-6xl pt-16 text-center max-w-3xl mx-auto lg:pl-12 max-w-3xl mx-auto font-poppins">
-          Créateur de souvenirs uniques
-        </h3>
-        <p className="text-xl md:text-xl  lg:text-2xl p-16 text-center max-w-3xl mx-auto font-thin font-roboto">
-          <span className="font-bold  md:text-2xl lg:text-3xl">
-            "En scènes", <br /> nom féminin (latin scena, du grec skênê)
-          </span>
-          <br />
-          Concepteurs et interprètes de scénarios de{" "}
-          <strong>jeux théâtralisés</strong> grandeur nature, nous proposons des
-          expériences divertissantes et interactives au travers d’une expérience
-          émotionnelle.
-        </p>
-      </div>
+          <div className="text-gray-100 flex flex-col lg:flex-row items-center justify-center gap-8 py-16 px-4">
+  <div className="max-w-3xl text-center">
+    {/* Titre avec dégradé */}
+    <h3 className="text-4xl lg:text-6xl font-poppins font-semibold mb-8 animate-fade-in">
+      Créateur de 
+      <br />
+      <span className="text-transparent bg-gradient-to-r from-red-700 to-red-800 bg-clip-text">souvenirs uniques</span>
+    </h3>
+    {/* Paragraphe avec animation et mise en évidence */}
+    <p className="text-xl lg:text-2xl font-roboto font-light leading-relaxed animate-fade-in">
+      <span className="font-bold text-2xl lg:text-3xl block mb-4">
+        "En scènes", <br /> 
+        <span className="text-gray-400 text-lg italic">nom féminin</span> (latin scena, du grec skênê)
+      </span>
+      Concepteurs et interprètes de scénarios de{" "}
+      <strong className="text-red-800">jeux théâtralisés</strong> grandeur nature, nous proposons des
+      expériences divertissantes et interactives au travers d’une expérience émotionnelle.
+    </p>
+  </div>
+</div>
         </section>
       </>
     );
