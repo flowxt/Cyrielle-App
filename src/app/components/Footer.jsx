@@ -11,124 +11,76 @@ const Footer = () => {
     </div>
 
     <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-400 font-poppins">
-    contact@enscenes.com
-<br />
-<span className='text-red-600'>Tel : 06.13.28.79.85</span>
-    </p>
+  <a href="mailto:contact@enscenes.com" className="text-gray-400">contact@enscenes.com</a>
+  <br />
+  <a href="tel:+33613287985" className="text-red-700">Tel : 06.13.28.79.85</a>
+</p>
 
-    <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12 font-poppins">
-      <li>
-        <a
-          className=" transition text-white hover:text-white/75"
-          href="#"
-        >
-          Accueil
-        </a>
-      </li>
+<ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12 font-poppins">
+          <li>
+            <Link href="/" className="transition text-white hover:text-white/75">
+              Accueil
+            </Link>
+          </li>
 
-      <li>
-        <a
-          className=" transition text-white hover:text-white/75"
-          href="#"
-        >
-          Team Building
-        </a>
-      </li>
+          <li>
+            <Link href="/team-building" className="transition text-white hover:text-white/75">
+              Team Building
+            </Link>
+          </li>
 
-      <li>
-        <a
-          className="transition text-white hover:text-white/75"
-          href="#"
-        >
-          Nos concepts
-        </a>
-      </li>
+          <li>
+            <Link href="/nos-concepts" className="transition text-white hover:text-white/75">
+              Nos concepts
+            </Link>
+          </li>
 
-      <li>
-        <a
-          className="transition text-white hover:text-white/75"
-          href="#"
-        >
-          Nos formations
-        </a>
-      </li>
+          <li>
+            <Link href="/nos-formations" className="transition text-white hover:text-white/75">
+              Nos formations
+            </Link>
+          </li>
 
-      <li>
-        <a
-          className="transition text-white hover:text-white/75"
-          href="#"
-        >
-          Agenda
-        </a>
-      </li>
+          <li>
+            <Link href="/galerie-scenarios" className="transition text-white hover:text-white/75">
+              Galerie - Scénarios
+            </Link>
+          </li>
 
-      <li>
-        <a
-          className="transition text-white hover:text-white/75"
-          href="#"
-        >
-          Galerie - Scénarios
-        </a>
-      </li>
-    </ul>
+          <li>
+            <Link href="/agenda" className="transition text-white hover:text-white/75">
+              Temoignages
+            </Link>
+          </li>
+        </ul>
     <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-400 font-poppins">
     Suivez nous sur les réseaux sociaux
     </p>
-    <ul className="mt-6 flex justify-center gap-6 md:gap-8">
-      <li>
-        <a
-          href="#"
-          rel="noreferrer"
-          target="_blank"
-          className=" transition text-white hover:text-white/75"
-        >
-          <span className="sr-only">Facebook</span>
-          <svg className="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              fillRule="evenodd"
-              d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </a>
-      </li>
-
-      <li>
-        <a
-          href="#"
-          rel="noreferrer"
-          target="_blank"
-          className="transition text-white hover:text-white/75"
-        >
-          <span className="sr-only">Instagram</span>
-          <svg className="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              fillRule="evenodd"
-              d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </a>
-      </li>
-
-      <li>
-  <a
-    href="#"
-    rel="noreferrer"
-    target="_blank"
-    className="transition text-white hover:text-white/75"
-  >
-    <span className="sr-only">LinkedIn</span>
-    <svg className="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-      <path
-        d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.75 20h-2.5v-10h2.5v10zm-1.25-11.25c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.25 11.25h-2.5v-5.5c0-1.38-1.12-2.5-2.5-2.5s-2.5 1.12-2.5 2.5v5.5h-2.5v-10h2.5v1.5c.69-.89 1.79-1.5 3-1.5 2.21 0 4 1.79 4 4v6z"
-      />
-    </svg>
-  </a>
-</li>
-
-    </ul>
-<CustomButton text="Rencontrons-nous" additionalClasses="rounded-full" />
+    <div className="mt-8 flex justify-center space-x-6">
+          <a href="https://www.linkedin.com/company/en-scenes/" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-red-400">
+            <span className="sr-only">LinkedIn</span>
+            <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 11.28h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.88v1.37h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v5.58z"/>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/en_scenes_acting/" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-red-400">
+            <span className="sr-only">Instagram</span>
+            <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.16c3.2 0 3.584.012 4.85.07 1.17.054 1.97.24 2.42.4.59.2 1.02.44 1.47.88.45.45.68.88.88 1.47.16.45.35 1.25.4 2.42.058 1.27.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.4 2.42-.2.59-.44 1.02-.88 1.47-.45.45-.88.68-1.47.88-.45.16-1.25.35-2.42.4-1.27.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.42-.4-.59-.2-1.02-.44-1.47-.88-.45-.45-.68-.88-.88-1.47-.16-.45-.35-1.25-.4-2.42-.058-1.27-.07-1.65-.07-4.85s.012-3.584.07-4.85c.054-1.17.24-1.97.4-2.42.2-.59.44-1.02.88-1.47.45-.45.88-.68 1.47-.88.45-.16 1.25-.35 2.42-.4 1.27-.058 1.65-.07 4.85-.07zm0-2.16c-3.26 0-3.67.014-4.95.072-1.28.058-2.17.24-2.93.51-.8.28-1.47.65-2.12 1.3-.65.65-1.02 1.32-1.3 2.12-.27.76-.45 1.65-.51 2.93-.058 1.28-.072 1.69-.072 4.95s.014 3.67.072 4.95c.058 1.28.24 2.17.51 2.93.28.8.65 1.47 1.3 2.12.65.65 1.32 1.02 2.12 1.3.76.27 1.65.45 2.93.51 1.28.058 1.69.072 4.95.072s3.67-.014 4.95-.072c1.28-.058 2.17-.24 2.93-.51.8-.28 1.47-.65 2.12-1.3.65-.65 1.02-1.32 1.3-2.12.27-.76.45-1.65.51-2.93.058-1.28.072-1.69.072-4.95s-.014-3.67-.072-4.95c-.058-1.28-.24-2.17-.51-2.93-.28-.8-.65-1.47-1.3-2.12-.65-.65-1.32-1.02-2.12-1.3-.76-.27-1.65-.45-2.93-.51-1.28-.058-1.69-.072-4.95-.072zm0 5.84c-3.4 0-6.16 2.76-6.16 6.16s2.76 6.16 6.16 6.16 6.16-2.76 6.16-6.16-2.76-6.16-6.16-6.16zm0 10.16c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm6.4-11.2c-.8 0-1.44-.64-1.44-1.44s.64-1.44 1.44-1.44 1.44.64 1.44 1.44-.64 1.44-1.44 1.44z"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/EnScenesacting/" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-red-400">
+            <span className="sr-only">Facebook</span>
+            <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M22.675 0h-21.35c-.733 0-1.325.592-1.325 1.325v21.351c0 .733.592 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.794.715-1.794 1.763v2.312h3.587l-.467 3.622h-3.12v9.294h6.116c.733 0 1.325-.591 1.325-1.324v-21.35c0-.733-.592-1.325-1.325-1.325z"/>
+            </svg>
+          </a>
+        </div>
+       
+          <Link href="/contact">
+            <CustomButton text="Rencontrons-nous" additionalClasses="rounded-full" />
+          </Link>
+   
   </div>
 </footer>
   );

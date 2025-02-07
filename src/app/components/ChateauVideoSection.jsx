@@ -2,7 +2,7 @@ import React from "react";
 
 const ChateauVideoSection = ({ videos }) => {
   return (
-    <section className="relative min-h-screen py-16 bg-gradient-to-r from-white to-red-900">
+    <section className="relative py-16 bg-gradient-to-r from-white to-red-900">
       {/* Contenu */}
       <div className="relative z-10 container mx-auto px-4">
         {/* Titre */}
