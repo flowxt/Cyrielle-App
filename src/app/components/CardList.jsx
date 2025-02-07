@@ -29,7 +29,7 @@ export default function CardList() {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center gap-6 py-16 ">
+    <div className="flex flex-wrap justify-center gap-6 py-12 ">
       {cards.map((card, index) => (
         <Card
           key={index}

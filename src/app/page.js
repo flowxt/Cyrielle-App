@@ -37,21 +37,25 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="bg-gradient-to-b from-gray-200 via-gray-100 to-gray-300">
-          <h3 className="text-xl font-light md:text-2xl lg:text-3xl p-12 text-center max-w-3xl mx-auto font-roboto">
-            "Libérer le potentiel de vos équipes grâce à des{" "}
-            <span className="text-red-600 font-semibold transform hover:scale-105 transition duration-300">
-              expériences
-            </span>{" "}
-            sur mesure, où chaque participant est un acteur clé de la{" "}
-            <span className="text-red-600 font-semibold transform hover:scale-105 transition duration-300">
-              réussite collective
-            </span>
-            "
-          </h3>
+        <div className="bg-gray-200 backdrop-blur-sm py-12">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="border-2 border-red-600 rounded-lg p-8 shadow-xl bg-white/80 transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:translate-y-2">
+              <h3 className="text-xl font-light md:text-2xl lg:text-3xl text-center mx-auto font-roboto leading-relaxed">
+                "Libérer le potentiel de vos équipes grâce à des{" "}
+                <span className="text-red-600 font-semibold transform hover:scale-105 transition duration-300">
+                  expériences
+                </span>{" "}
+                sur mesure, où chaque participant est un acteur clé de la{" "}
+                <span className="text-red-600 font-semibold transform hover:scale-105 transition duration-300">
+                  réussite collective
+                </span>
+                "
+              </h3>
+            </div>
+          </div>
         </div>
       </header>
-      <main className="pt-6 border-t-2 border-gray-900 bg-gradient-to-b from-gray-300 to-gray-400">
+      <main className="pt-2  bg-gradient-to-b from-gray-200 to-gray-400">
         <h2 className="text-2xl md:text-3xl lg:text-4xl text-center p-6 font-poppins font-semibold">
           Vos <span className="text-red-700">défis </span>| Nos{" "}
           <span className="text-red-700">solutions</span>{" "}
@@ -61,7 +65,7 @@ export default function Home() {
           à vos attentes.
         </p>
         <CardList />
-        <div className="caroussel text-center flex items-center justify-center pb-12">
+        <div className="caroussel text-center flex items-center justify-center pb-8">
           <Carousel />
         </div>
 
