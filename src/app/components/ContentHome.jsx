@@ -13,15 +13,15 @@ export default function ContentHome() {
                         <div>
                             <div className="max-w-lg md:max-w-none">
                                 <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl font-poppins pb-4">
-                                    Prêts à embarquer dans un <strong className="text-red-600">team building</strong> unique.
+                                    Prêts à embarquer dans un <strong>team building en Haute-Savoie</strong> unique.
                                 </h2>
 
                                 <p className="mt-4 text-gray-700 lg:text-2xl font-roboto font-light">
-                                    Permettez à vos collaborateurs de créer du lien de manière durable, de reconnaître leurs compétences respectives pour une <b>meilleure efficacité</b> tout en passant un moment ludique.
+                                    Permettez à vos collaborateurs de créer du lien de manière durable, de reconnaître leurs <strong>compétences</strong> respectives pour une <b>meilleure efficacité</b> tout en passant un moment ludique en <strong>Haute-Savoie</strong>.
                                     <br /><br />
-                                    On revient à l’essentiel du team building en <b>remobilisant vos équipes</b> autour d’une <b>activité fédératrice</b> où chacun trouvera sa place au sein du groupe pour révéler son potentiel.
+                                    On revient à l’essentiel du <strong>team building</strong> en <b>remobilisant vos équipes</b> autour d’une <b>activité fédératrice</b> où chacun trouvera sa place au sein du groupe pour révéler son potentiel.
                                     <br /><br />
-                                    Nous créons des <b>scénarios sur mesure</b>, pour embarquer les participants dans un autre univers leur permettant d’oser et de trouver leur mode de fonctionnement pour atteindre une <b>victoire collective</b>.
+                                    Nous créons des <strong>scénarios sur mesure</strong>, pour embarquer les participants dans un autre univers leur permettant d’oser et de trouver leur mode de fonctionnement pour atteindre une <b>victoire collective</b>.
                                 </p>
                                 <CustomButton text="Je veux en apprendre plus" />
                             </div>
@@ -59,7 +59,7 @@ export default function ContentHome() {
              <div>
                <div className="max-w-lg md:max-w-none ">
                  <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl font-poppins">
-                 Vivez une <strong className="text-red-600">conférence</strong> dont vous vous souviendrez.
+                 Vivez une <strong>conférence</strong> dont vous vous souviendrez.
                  </h2>
    
                  <p className="mt-4 text-gray-700 lg:text-2xl font-roboto font-light">
@@ -82,7 +82,7 @@ export default function ContentHome() {
             <div>
               <div className="max-w-lg md:max-w-none ">
                 <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl font-poppins">
-                Captez de nouveaux visiteurs avec un <strong className="text-red-600">concept ludique</strong>.
+                Captez de nouveaux visiteurs avec un <strong>concept ludique</strong>.
                 </h2>
   
                 <p className="mt-4 text-gray-700 lg:text-2xl font-roboto font-light">

@@ -91,7 +91,7 @@ const PhotoGallery = () => {
       {/* Call-to-Action (CTA) */}
       <div className="text-center py-12 bg-white">
         <h2 className="text-3xl font-bold mb-4">
-          Prêt pour une expérience inoubliable ?
+          Prêt pour une <strong>expérience</strong> inoubliable en <strong>Haute-Savoie</strong> ?
         </h2>
         <button
           onClick={() => alert("Contactez-nous !")}

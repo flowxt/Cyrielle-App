@@ -38,7 +38,7 @@ export default function Home() {
         </section>
 
         <div className="bg-gradient-to-b from-gray-200 to-gray-300">
-          <h3 className="md:text-2xl  lg:text-3xl p-12 text-center max-w-3xl mx-auto font-roboto">
+          <h3 className="text-xl font-light md:text-2xl  lg:text-3xl p-12 text-center max-w-3xl mx-auto font-roboto">
             "Libérer le potentiel de vos équipes grâce à des{" "}
             <span className="text-red-600">expériences</span> sur mesure, où
             chaque participant est un acteur clé de la{" "}
@@ -47,11 +47,11 @@ export default function Home() {
         </div>
       </header>
       <main className="pt-6 border-t-2 border-gray-900 bg-gradient-to-b from-gray-300 to-gray-400">
-        <h2 className="text-4xl text-center p-6 font-poppins">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl text-center p-6 font-poppins font-semibold">
           Vos <span className="text-red-700">défis </span>| Nos{" "}
           <span className="text-red-700">solutions</span>{" "}
         </h2>
-        <p className="text-xl md:text-2xl lg:text-3xl text-center p-4 font-roboto font-roboto font-light ">
+        <p className="text-lg md:text-xl lg:text-2xl text-center p-4 font-roboto font-roboto font-light ">
           "En Scènes Acting" vous apporte des solutions novatrices pour répondre
           à vos attentes.
         </p>
@@ -72,9 +72,10 @@ export default function Home() {
             "En scènes", <br /> nom féminin (latin scena, du grec skênê)
           </span>
           <br />
-          Concepteurs et interprètes de scénarios de jeux théâtralisés grandeur
-          nature, nous proposons des expériences divertissantes et interactives
-          au travers d’une expérience émotionnelle.
+          Concepteurs et interprètes de scénarios de{" "}
+          <strong>jeux théâtralisés</strong> grandeur nature, nous proposons des
+          expériences divertissantes et interactives au travers d’une expérience
+          émotionnelle.
         </p>
       </div>
     </>

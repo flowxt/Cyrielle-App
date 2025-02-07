@@ -6,7 +6,7 @@ export default function Team() {
         <div className="container-team text-center py-6 flex flex-col items-center gap-8 border-t-2 border-b-2 border-red-700">
           <h2 className="text-4xl font-poppins font-semibold">Notre équipe</h2>
           <p className="font-roboto text-lg font-light px-4">
-            Un duo complémentaire et passionné à l'écoute de vos besoins, garants d'une expérience unique et immersive.
+            Un duo complémentaire et passionné à l'écoute de vos besoins, garants d'une <strong>expérience unique et immersive.</strong>
           </p>
           <div className="container flex flex-col lg:flex-row items-center justify-center gap-8 py-4">
             <div className="container-Cyrielle flex flex-col lg:flex-row-reverse items-center gap-8">

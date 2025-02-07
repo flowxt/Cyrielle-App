@@ -19,7 +19,7 @@ export default function Concepts() {
         }
         description={
           <>
-            <b>Plongez les spect'acteurs</b> au cœur d'<b>aventures ludiques et immersives</b>, c'est notre métier. Que ce soit pour <b>découvrir ou redécouvrir ce et/ou ceux qui nous entourent</b>, nos jeux s'adaptent à chaque environnement pour offrir une <b>expérience authentique et enrichissante</b>.
+            <b>Plongez les spect'acteurs</b> au cœur d'<strong>aventures ludiques et immersives en Haute-Savoie</strong>, c'est notre métier. Que ce soit pour <b>découvrir ou redécouvrir ce et/ou ceux qui nous entourent</b>, nos jeux s'adaptent à chaque environnement pour offrir une <strong>expérience authentique et enrichissante</strong>.
           </>
         }
       />
@@ -31,7 +31,7 @@ export default function Concepts() {
             <div className="md:col-span-3 px-12 text-center py-2">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:pb-6 lg:pt-6 font-semibold">Fabriquons <span className="text-red-700">des souvenirs</span></h2>
               <p className="text-lg font-roboto font-thin">
-              En scènes acting® casse les codes pour vous faire vivre des expériences insolites et immersives. Plongez dans nos univers vivants où les interactions sociales seront essentielles. Le temps de quelques heures, vivez une aventure unique, où le passé et le présent se mêlent pour une expérience insolite. Rejoignez nous pour vous créer des souvenirs inoubliables !
+              En scènes acting® casse les codes pour vous faire vivre des expériences insolites et immersives. Plongez dans nos univers vivants où les interactions sociales seront essentielles. Le temps de quelques heures, vivez une aventure unique, où le passé et le présent se mêlent pour une <strong>expérience insolite</strong>. Rejoignez nous pour vous créer des <strong>souvenirs inoubliables</strong> !
               </p>
               <button className="mt-12 px-6 py-3 text-white bg-red-800  hover:bg-red-700 mx-auto flex justify-center items-center font-poppins">Créons ensemble ces moments</button>
             </div>
@@ -60,7 +60,7 @@ export default function Concepts() {
           <h3 className="text-2xl md:text-3xl  lg:text-4xl p-12 text-center max-w-3xl mx-auto font-roboto">
           Une idée précise de <span className="text-red-700">l'événement</span> que vous aimeriez créer ?
           </h3>
-          <p className="text-lg lg:text-xl font-roboto text-center max-w-3xl mx-auto px-6 pb-6 font-roboto font-thin">Donnez nous carte blanche ou livrez nous un cahier des charges, nous mettrons tout en œuvre pour vous créer un événement sur mesure et clé en main.</p>
+          <p className="text-lg lg:text-xl font-roboto text-center max-w-3xl mx-auto px-6 pb-6 font-roboto font-thin">Donnez nous carte blanche ou livrez nous un cahier des charges, nous mettrons tout en œuvre pour vous créer un <strong>événement sur mesure</strong> et clé en main.</p>
           <CustomButton text="Je vous explique ce que je veux" />
         </div>
         

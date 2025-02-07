@@ -41,7 +41,7 @@ export default function TeamBuilding() {
         }
         description={
           <>
-           À la recherche de solutions innovantes pour renforcer la cohésion, le partage et l'engagement tout en vivant des expériences inoubliables ? <br /><br />Transmettez des <b>valeurs d'équipe</b> en participant à des <b>activités insolites</b> qui favorise la <b>réflexion collective</b>. A chaque besoin, un format adapté pour une expérience inédite de <b>team building</b>.
+           À la recherche de solutions innovantes pour renforcer la cohésion, le partage et l'engagement tout en vivant des expériences inoubliables ? <br /><br />Transmettez des <strong>valeurs d'équipe</strong> en participant à des <strong>activités insolites</strong> qui favorise la <b>réflexion collective</b>. A chaque besoin, un format adapté pour une expérience inédite de <strong>team building</strong>.
 
           </>
         }
@@ -66,7 +66,7 @@ export default function TeamBuilding() {
                 </h2>
   
                 <p className="mt-4 text-gray-700 lg:text-xl font-roboto font-light">
-                Chez En Scènes Acting, nous sommes dévoués à <b>transformer votre équipe</b> en une force unifiée, prête à relever tous les <b>défis</b>.<br /><br /> Nos concepts de team building innovants vous offrent des <b>expériences uniques</b> conçues pour <b>stimuler la collaboration</b>, <b>renforcer les liens</b> et favoriser la croissance collective.<br /><br /> Nos <b>activités ludiques</b> sont conçues pour engager pleinement votre équipe, les plongeant dans des <b>scénarios interactifs</b> où chaque membre joue un rôle crucial. <br /><br /> Improvisations théâtrales, jeux de rôle stratégiques et des défis de résolution de problèmes, nous encourageons la <b>communication</b>, la <b>créativité</b> et le <b>leadership</b>. <br /><br /> Nous croyons fermement que le succès d'une équipe repose sur la force de ses <b>liens</b>, et nous sommes là pour vous aider à les renforcer.Nous pouvons transformer votre équipe en une <b>véritable force sur la scène professionnelle</b>.
+                Chez En Scènes Acting, nous sommes dévoués à <b>transformer votre équipe</b> en une force unifiée, prête à relever tous les <strong>défis</strong>.<br /><br /> Nos concepts de team building innovants vous offrent des <strong>expériences uniques</strong> conçues pour <b>stimuler la collaboration</b>, <b>renforcer les liens</b> et favoriser la croissance collective.<br /><br /> Nos <strong>activités ludiques en Haute Savoie</strong> sont conçues pour engager pleinement votre équipe, les plongeant dans des <b>scénarios interactifs</b> où chaque membre joue un rôle crucial. <br /><br /> Improvisations théâtrales, jeux de rôle stratégiques et des défis de résolution de problèmes, nous encourageons la <strong>communication</strong>, la <b>créativité</b> et le <strong>leadership</strong>. <br /><br /> Nous croyons fermement que le succès d'une équipe repose sur la force de ses <b>liens</b>, et nous sommes là pour vous aider à les renforcer.Nous pouvons transformer votre équipe en une <b>véritable force sur la scène professionnelle</b>.
                 </p>
                 <CustomButton text="Créons ensemble votre team building" />
               </div>
