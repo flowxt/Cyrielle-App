@@ -18,37 +18,37 @@ const Footer = () => {
 
 <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12 font-poppins">
           <li>
-            <Link href="/" className="transition text-white hover:text-white/75">
+            <Link href="/" className="transition text-white hover:text-red-800">
               Accueil
             </Link>
           </li>
 
           <li>
-            <Link href="/team-building" className="transition text-white hover:text-white/75">
+            <Link href="/team-building" className="transition text-white hover:text-red-800">
               Team Building
             </Link>
           </li>
 
           <li>
-            <Link href="/nos-concepts" className="transition text-white hover:text-white/75">
+            <Link href="/nos-concepts" className="transition text-white hover:text-red-800">
               Nos concepts
             </Link>
           </li>
 
           <li>
-            <Link href="/nos-formations" className="transition text-white hover:text-white/75">
+            <Link href="/nos-formations" className="transition text-white hover:text-red-800">
               Nos formations
             </Link>
           </li>
 
           <li>
-            <Link href="/galerie-scenarios" className="transition text-white hover:text-white/75">
+            <Link href="/galerie-scenarios" className="transition text-white hover:text-red-800">
               Galerie - Scénarios
             </Link>
           </li>
 
           <li>
-            <Link href="/agenda" className="transition text-white hover:text-white/75">
+            <Link href="/agenda" className="transition text-white hover:text-red-800">
               Temoignages
             </Link>
           </li>

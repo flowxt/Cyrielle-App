@@ -148,17 +148,17 @@ const reviews = [
 const GoogleReviews = () => {
   return (
     <div className="bg-gray-50 py-12 overflow-hidden">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-24 mt-12">Témoignages de nos <span className='p-2 px-4 bg-red-900 text-white'>clients</span></h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-24 mt-12 font-poppins">Témoignages de nos <span className='p-2 px-4 bg-red-800 text-white '>clients</span></h2>
       <div className="relative w-full overflow-hidden mb-24">
         <div className="animate-scroll whitespace-nowrap ">
           {reviews.concat(reviews).map((review, index) => ( // Duplique les avis pour un défilement continu
             <div key={index} className="inline-block w-80 mx-4 bg-gray-200 p-6 rounded-lg shadow-xl h-80 ">
               <div className="flex items-center mb-4">
                 <div>
-                  <h3 className="text-xl font-semibold ">{review.author_name}</h3>
+                  <h3 className="text-xl font-semibold font-poppins">{review.author_name}</h3>
                 </div>
               </div>
-              <p className="text-gray-800 break-words whitespace-normal overflow-hidden overflow-ellipsis h-48">
+              <p className="text-gray-800 break-words whitespace-normal overflow-hidden overflow-ellipsis h-48 font-roboto font-thin">
                 {review.text}
               </p>
               <div className="mt-4">

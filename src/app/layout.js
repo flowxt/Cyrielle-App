@@ -27,7 +27,10 @@ const roboto = Roboto({
 export const metadata = {
   title: "En Scène Acting",
   description:
-    "Créateur d'expériences interactives, En scènes acting vous embarque dans ses team building, conférences et concepts insolites. ",
+    "Créateur d'expériences interactives, En scènes acting vous embarque dans ses team building, conférences et concepts insolites.",
+  icons: {
+    icon: "/logoES.jpg",
+  },
 };
 
 export default function RootLayout({ children }) {

@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Image from 'next/image';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -50,158 +51,149 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <section className="bg-gradient-to-b from-gray-200 to-gray-400 py-12">
+    <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="max-w-2xl mx-auto bg-white rounded-lg shadow-xl overflow-hidden"
+        className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 bg-white rounded-2xl shadow-2xl overflow-hidden"
       >
-        <div className="px-6 py-8 sm:p-10">
-          <h2 className="text-3xl font-bold text-red-700 text-center mb-8 font-poppins">
+        {/* Colonne image */}
+        <div className="hidden lg:block relative h-full">
+          <Image
+            src="/carte2.png"
+            alt="Équipe en teambuilding"
+            layout="fill"
+            objectFit="cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-red-700/20 to-transparent" />
+        </div>
+
+        {/* Colonne formulaire */}
+        <div className="px-6 py-8 sm:p-10 lg:p-12">
+          <h2 className="text-3xl font-bold text-red-700 text-center mb-8 font-poppins relative">
             Contactez-nous
+            <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-red-600 rounded-full" />
           </h2>
+
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Nom et Prénom */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 font-roboto">
-                  Prénom
-                </label>
+            {/* Champs de formulaire révisés */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="relative">
                 <input
                   type="text"
                   name="firstName"
                   value={formData.firstName}
                   onChange={handleChange}
-                  className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 font-roboto"
-                  required
-                  placeholder="Saisissez votre prénom"
+                  placeholder="Prénom"
+                  className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto transition-all"
                 />
+                <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">👤</span>
               </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 font-roboto">
-                  Nom
-                </label>
+              <div className="relative">
                 <input
                   type="text"
                   name="lastName"
                   value={formData.lastName}
                   onChange={handleChange}
-                  className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 font-roboto"
-                  required
-                   placeholder="Saisissez votre nom"
+                  placeholder="Nom"
+                  className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto transition-all"
                 />
+                <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">👤</span>
               </div>
-            </div>
-
-            {/* Code Postal et Ville */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 font-roboto">
-                  Code Postal
-                </label>
+              <div className="relative">
                 <input
                   type="text"
                   name="postalCode"
                   value={formData.postalCode}
                   onChange={handleChange}
-                  className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 font-roboto"
-                  required
-                  placeholder="Saisissez votre code postal"
+                  placeholder="Code Postal"
+                  className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto transition-all"
                 />
+                <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">📮</span>
               </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 font-roboto">
-                  Ville
-                </label>
+              <div className="relative">
                 <input
                   type="text"
                   name="city"
                   value={formData.city}
                   onChange={handleChange}
-                  className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 font-roboto"
-                  required
-                  placeholder="Saisissez votre ville"
+                  placeholder="Ville"
+                  className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto transition-all"
                 />
+                <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">🏙️</span>
+              </div>
+              <div className="relative">
+                <input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder="Téléphone"
+                  className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto pl-12 transition-all"
+                />
+                <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">📱</span>
+              </div>
+              <div className="relative">
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Email"
+                  className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto transition-all"
+                />
+                <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">📧</span>
               </div>
             </div>
 
-            {/* Téléphone */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 font-roboto">
-                Téléphone
-              </label>
-              <input
-                type="tel"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 font-roboto"
-                required
-                placeholder="Saisissez votre numéro de téléphone"
-              />
-            </div>
-
-            {/* Email */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 font-roboto">
-                Email
-              </label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 font-roboto"
-                required
-                placeholder="Saisissez votre adresse email"
-              />
-            </div>
-
-            {/* Message */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 font-roboto">
-                Message
-              </label>
+            {/* Message avec emoji */}
+            <div className="relative">
               <textarea
                 name="message"
-                rows="4"
                 value={formData.message}
                 onChange={handleChange}
-                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 resize-none font-roboto"
-                required
-                placeholder="Redigez votre message"
+                placeholder="Votre message"
+                className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto pl-12 resize-none transition-all"
               />
+              <span className="absolute left-4 top-5 text-gray-400">💬</span>
             </div>
 
-            {/* Réponse à l'énigme */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 font-roboto">
-                Réponse à l'énigme <span className="text-gray-500">(si ça vous parle)</span>
+            {/* Énigme stylisée */}
+            <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-600">
+              <label className="block text-sm font-medium text-red-800 font-poppins">
+                Énigme TeamBuilding ✨
+                <span className="text-red-600 font-normal block mt-1 text-xs">
+                  "Seulement si cela vous parle"
+                </span>
               </label>
               <input
                 type="text"
                 name="enigmaAnswer"
                 value={formData.enigmaAnswer}
                 onChange={handleChange}
-                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 font-roboto"
-                placeholder="Facultatif"
+                placeholder="Votre réponse"
+                className="mt-2 block w-full px-4 py-2 bg-white border-2 border-red-100 rounded-lg focus:border-red-600 focus:ring-0 font-roboto"
               />
             </div>
 
-            {/* Bouton Envoyer */}
-            <div>
-              <button
-                type="submit"
-                className="w-full bg-red-700 text-white px-6 py-3 rounded-lg hover:bg-red-800 transition-colors font-roboto font-semibold"
-              >
-                Envoyer
-              </button>
-            </div>
+            {/* Bouton révisé */}
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              type="submit"
+              className="w-full bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-xl hover:shadow-xl transition-all font-poppins font-semibold text-lg flex items-center justify-center gap-2"
+            >
+              <span>✉️</span>
+              Envoyer votre message
+            </motion.button>
           </form>
         </div>
       </motion.div>
     </div>
+  </section>
   );
 };
 
