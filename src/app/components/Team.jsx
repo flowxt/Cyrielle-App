@@ -4,9 +4,9 @@ export default function Team() {
     return (
       <>
         <section className="container-team text-center py-6 flex flex-col items-center gap-8 border-t-2 border-red-800 bg-gradient-to-b from-gray-200 to-gray-500">
-          <h2 className="text-4xl font-poppins font-semibold">Notre équipe</h2>
+          <h2 className="text-4xl font-poppins font-semibold">Notre <span className='text-gray-100 bg-gradient-to-r from-red-700 to-red-800 p-2 '>équipe</span></h2>
           <p className="font-roboto text-lg font-light px-4">
-            Un duo complémentaire et passionné à l'écoute de vos besoins, garants d'une <strong>expérience unique et immersive.</strong>
+            Un duo complémentaire et passionné à l'écoute de vos besoins, garants d'une <strong className='text-gray-100 bg-gradient-to-r from-red-700 to-red-800 p-2'>expérience unique et immersive.</strong>
           </p>
           <div className="container flex flex-col lg:flex-row items-center justify-center gap-8 py-4">
             <div className="container-Cyrielle flex flex-col lg:flex-row-reverse items-center gap-8">
