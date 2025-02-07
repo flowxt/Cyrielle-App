@@ -51,7 +51,7 @@ const Gallery = () => {
         title="VIVEZ L'AVENTURE DE L'INTÉRIEUR"
         subtitle={
           <>
-            <span className="text-red-700">Coopérez</span> | Analysez | Résolvez
+            <strong className="text-red-700">Coopérez</strong> | Analysez | Résolvez
           </>
         }
         description={
@@ -59,9 +59,7 @@ const Gallery = () => {
             Plongez avec nous dans ces moments partagés avec nos spect'acteurs!
             <br />
             <br />
-            De nos aventures Story Game, jeu de rôle grandeur nature dans des lieux splendides, à nos
-            aventures au château, nos scénarios vous embarquent au cœur de l'histoire. Préparez-vous,
-            vos missions n'auront rien d'ordinaire.
+            De nos <strong>aventures Story Game, jeu de rôle</strong> grandeur nature dans des lieux splendides en <strong>Haute-Savoie</strong>, à nos aventures au château, nos scénarios vous embarquent au cœur de l'histoire. Préparez-vous, vos missions n'auront rien d'ordinaire.
             <br />
             <br />
             Vous êtes prêts ?

@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Team() {
     return (
       <>
-        <div className="container-team text-center py-6 flex flex-col items-center gap-8 border-t-2 border-b-2 border-red-700">
+        <section className="container-team text-center py-6 flex flex-col items-center gap-8 border-t-2 border-b-2 border-red-700 bg-gradient-to-b from-gray-200 to-gray-500">
           <h2 className="text-4xl font-poppins font-semibold">Notre équipe</h2>
           <p className="font-roboto text-lg font-light px-4">
             Un duo complémentaire et passionné à l'écoute de vos besoins, garants d'une <strong>expérience unique et immersive.</strong>
@@ -22,19 +22,19 @@ export default function Team() {
                   Cyrielle <span className="text-red-700">Schepens</span>
                 </h3>
                 <ul className="font-roboto text-lg font-light list-none">
-                  <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-200 before:animate-move-x">
+                  <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-400 before:animate-move-x">
                     Scénariste
                   </li>
-                  <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-200 before:animate-move-x">
+                  <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-400 before:animate-move-x">
                     Coordinatrice des équipes
                   </li>
-                  <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-200 before:animate-move-x">
+                  <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-400 before:animate-move-x">
                     Metteuse en scène
                   </li>
-                  <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-200 before:animate-move-x">
+                  <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-400 before:animate-move-x">
                     Créatrice de concepts originaux
                   </li>
-                  <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-200 before:animate-move-x">
+                  <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-400 before:animate-move-x">
                     Comédienne
                   </li>
                 </ul>
@@ -53,26 +53,41 @@ export default function Team() {
                   Matthieu <span className="text-red-700">Vernisse</span>
                 </h3>
                 <ul className="font-roboto text-lg font-light list-none">
-                  <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-200 before:animate-move-x">
+                  <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-400 before:animate-move-x">
                     Architecte scénographe
                   </li>
-                  <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-200 before:animate-move-x">
+                  <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-400 before:animate-move-x">
                     Graphiste - Illustrateur
                   </li>
-                  <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-200 before:animate-move-x">
+                  <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-400 before:animate-move-x">
                     Concepteur d'environnements immersifs
                   </li>
-                  <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-200 before:animate-move-x">
+                  <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-400 before:animate-move-x">
                     Maître de l'esthétique et du storytelling
                   </li>
-                  <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-200 before:animate-move-x">
+                  <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-400 before:animate-move-x">
                     Comédien
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-        </div>
+          <div className="text-gray-100 flex flex-col lg:flex-row ">
+        <h3 className=" text-4xl  lg:text-6xl pt-16 text-center max-w-3xl mx-auto lg:pl-12 max-w-3xl mx-auto font-poppins">
+          Créateur de souvenirs uniques
+        </h3>
+        <p className="text-xl md:text-xl  lg:text-2xl p-16 text-center max-w-3xl mx-auto font-thin font-roboto">
+          <span className="font-bold  md:text-2xl lg:text-3xl">
+            "En scènes", <br /> nom féminin (latin scena, du grec skênê)
+          </span>
+          <br />
+          Concepteurs et interprètes de scénarios de{" "}
+          <strong>jeux théâtralisés</strong> grandeur nature, nous proposons des
+          expériences divertissantes et interactives au travers d’une expérience
+          émotionnelle.
+        </p>
+      </div>
+        </section>
       </>
     );
   }
