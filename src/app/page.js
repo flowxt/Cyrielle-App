@@ -46,7 +46,7 @@ export default function Home() {
           </h3>
         </div>
       </header>
-      <main className="bg-gradient-to-t from-gray-300 to-gray-400 pt-6 border-t-2 border-gray-900">
+      <main className="pt-6 border-t-2 border-gray-900 bg-gradient-to-b from-gray-300 to-gray-400">
         <h2 className="text-4xl text-center p-6 font-poppins">
           Vos <span className="text-red-700">défis </span>| Nos{" "}
           <span className="text-red-700">solutions</span>{" "}
@@ -59,8 +59,9 @@ export default function Home() {
         <div className="caroussel text-center flex items-center justify-center pb-12">
           <Carousel />
         </div>
+
+        <ContentHome />
       </main>
-      <ContentHome />
       <Team />
       <div className="bg-gradient-to-b from-gray-500 to-gray-400 text-white flex flex-col lg:flex-row ">
         <h3 className=" text-4xl  lg:text-6xl pt-16 text-center max-w-3xl mx-auto lg:pl-12 max-w-3xl mx-auto font-poppins">
