@@ -37,12 +37,17 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="bg-gradient-to-b from-gray-200 to-gray-300">
-          <h3 className="text-xl font-light md:text-2xl  lg:text-3xl p-12 text-center max-w-3xl mx-auto font-roboto">
+        <div className="bg-gradient-to-b from-gray-200 via-gray-100 to-gray-300">
+          <h3 className="text-xl font-light md:text-2xl lg:text-3xl p-12 text-center max-w-3xl mx-auto font-roboto">
             "Libérer le potentiel de vos équipes grâce à des{" "}
-            <span className="text-red-600">expériences</span> sur mesure, où
-            chaque participant est un acteur clé de la{" "}
-            <span className="text-red-600">réussite collective</span>"
+            <span className="text-red-600 font-semibold transform hover:scale-105 transition duration-300">
+              expériences
+            </span>{" "}
+            sur mesure, où chaque participant est un acteur clé de la{" "}
+            <span className="text-red-600 font-semibold transform hover:scale-105 transition duration-300">
+              réussite collective
+            </span>
+            "
           </h3>
         </div>
       </header>
