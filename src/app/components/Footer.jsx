@@ -7,16 +7,16 @@ const Footer = () => {
     <footer className="bg-neutral-950">
   <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
     <div className="flex justify-center text-teal-300">
-      <img src='/logo-blanc.png' alt="logo" className="h-16 w-48 sm:h-20 sm:w-52" />
+      <img src='/logo-blanc.png' alt="logo" className="h-16 w-48  sm:w-52" />
     </div>
 
-    <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-400 font-poppins">
+    <p className="mx-auto mt-4 max-w-md text-center leading-relaxed text-gray-400 font-poppins">
   <a href="mailto:contact@enscenes.com" className="text-gray-400">contact@enscenes.com</a>
   <br />
   <a href="tel:+33613287985" className="text-red-700">Tel : 06.13.28.79.85</a>
 </p>
 
-<ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12 font-poppins">
+<ul className="mt-4 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12 font-poppins">
           <li>
             <Link href="/" className="transition text-white hover:text-red-800">
               Accueil
