@@ -76,7 +76,7 @@ export default function Team() {
   <div className="max-w-3xl text-center">
     {/* Titre avec dégradé */}
     <h3 className="text-4xl lg:text-6xl font-poppins font-semibold mb-8 animate-fade-in">
-      Créateur de 
+      Créateurs de 
       <br />
       <span className="text-transparent bg-gradient-to-r from-red-700 to-red-800 bg-clip-text">souvenirs uniques</span>
     </h3>
