@@ -8,26 +8,30 @@ import Link from 'next/link';
 gsap.registerPlugin(ScrollTrigger);
 
 const images = [
+  //Bloc 1 
   "/images/caroussel/img1.webp",
-  "/images/caroussel/img2.webp",
-  "/images/caroussel/img3.webp",
   "/images/caroussel/img4.webp",
+  "/images/petite2.webp",
+  "/images/caroussel/img3.webp",
   "/images/caroussel/img5.webp",
-  "/images/caroussel/img6.webp",
-  "/images/caroussel/img7.webp",
+  //bloc 2
   "/images/caroussel/img8.webp",
+  "/images/caroussel/img7.webp",
   "/images/caroussel/img9.webp",
-  "/images/caroussel/img10.webp",
+  "/images/petite3bloc2.webp",
+  "/images/caroussel/img16.webp",
+  //bloc 3
   "/images/caroussel/img11.webp",
-  "/images/caroussel/img12.webp",
+  "/images/caroussel/img10.webp",
   "/images/caroussel/img13.webp",
   "/images/caroussel/img14.webp",
-  "/images/caroussel/img15.webp",
-  "/images/caroussel/img16.webp",
-  "/images/caroussel/img1.webp",
-  "/images/caroussel/img2.webp",
-  "/images/caroussel/img3.webp",
-  "/images/caroussel/img4.webp",
+  "/images/petite4bloc3.png",
+  //bloc 4 et dernier bloc
+  "/images/caroussel/img17.webp",
+  "/images/IMG_2493.jpg",
+  "/images/imagenum2.png",
+  "/images/imagenum3.png",
+  "/images/imagenum4.png",
 ];
 
 const PhotoGallery = () => {
@@ -92,9 +96,9 @@ const PhotoGallery = () => {
 
       <div className="text-center py-12 bg-white">
         <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">
-          Prêt pour une <strong>expérience</strong> inoubliable en <strong>Haute-Savoie</strong> ?
+          Prêt pour une <strong>expérience</strong> inoubliable <br />en <strong>Haute-Savoie</strong> ?
         </h2>
-        <Link href="/contact" className="bg-red-700 text-white px-8 py-3 rounded-lg hover:bg-red-800 transition-colors">
+        <Link href="/contact" className="bg-red-800 text-white px-8 py-3 rounded-lg hover:bg-red-900 transition-colors font-poppins mt-4 inline-block">
           Contactez-nous dès maintenant !
         </Link>
       </div>

@@ -23,6 +23,7 @@ const StoryGameSection = ({ videos }) => {
                   autoPlay 
                   muted 
                   loop
+                  playsInline
                 />
               </div>
               <h3 className="text-2xl font-bold mt-6">{video.title}</h3>

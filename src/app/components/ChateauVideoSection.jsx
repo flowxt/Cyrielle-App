@@ -19,6 +19,7 @@ const ChateauVideoSection = ({ videos }) => {
                   autoPlay
                   muted
                   loop
+                  playsInline
                 />
               </div>
               <h3 className={`text-2xl text-center font-poppins font-bold mt-6 ${index < 2 ? 'text-red-800' : 'text-white'}`}>{video.title}</h3>
