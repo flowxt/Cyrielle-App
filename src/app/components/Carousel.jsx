@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import Lightbox from 'yet-another-react-lightbox';
@@ -31,6 +31,23 @@ export default function Carousel() {
         setPhotoIndex(index);
         setIsOpen(true);
     };
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (emblaApi) {
+                emblaApi.reInit();
+            }
+        };
+
+        // Forcer le recalcul des dimensions lors du montage du composant
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [emblaApi]);
 
     return (
         <div className="relative my-8 ">
