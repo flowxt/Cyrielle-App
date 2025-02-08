@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Link from 'next/link';
+
 
 // Initialiser GSAP ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
@@ -90,15 +92,12 @@ const PhotoGallery = () => {
 
       {/* Call-to-Action (CTA) */}
       <div className="text-center py-12 bg-white">
-        <h2 className="text-3xl font-bold mb-4">
+        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">
           Prêt pour une <strong>expérience</strong> inoubliable en <strong>Haute-Savoie</strong> ?
         </h2>
-        <button
-          onClick={() => alert("Contactez-nous !")}
-          className="bg-red-700 text-white px-8 py-3 rounded-lg hover:bg-red-800 transition-colors"
-        >
+        <Link href="/contact" className="bg-red-700 text-white px-8 py-3 rounded-lg hover:bg-red-800 transition-colors">
           Contactez-nous dès maintenant !
-        </button>
+        </Link>
       </div>
     </div>
   );
