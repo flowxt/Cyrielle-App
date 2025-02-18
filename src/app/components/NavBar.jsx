@@ -1,154 +1,105 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  useEffect(() => {
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
+  const navLinks = [
+    ['Accueil', '/'],
+    ['Team Building', '/team-building'],
+    ['Concepts', '/nos-concepts'],
+    ['Formations', '/nos-formations'],
+    ['Galerie', '/galerie-scenarios'],
+    ['Témoignages', '/agenda'],
+  ];
 
   return (
-    <header className="bg-neutral-950">
-      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 lg:py-8">
-        <div className="flex h-16 items-center justify-between">
-          <div className="md:flex md:items-center md:gap-12">
-            <a className="block text-teal-600" href="#">
-              <span className="sr-only">Home</span>
-              <img src='./logoES.jpg' alt="logo" className="h-16 w-16" />
-            </a>
-          </div>
+    <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-lg border-b border-red-800/30' : 'bg-transparent'}`}>
+      <div className="mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 lg:h-20">
+          {/* Logo simplifié */}
+          <Link 
+            href="/" 
+            className="z-50"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <img 
+              src='./logoES.jpg' 
+              alt="logo" 
+              className="h-14 w-14 lg:h-16 lg:w-16 transition-transform hover:scale-105" 
+            />
+          </Link>
 
-          <div className="hidden md:block">
-            <nav aria-label="Global">
-              <ul className="flex items-center gap-6 lg:text-xl">
-                <li>
-                  <Link href="/" className="transition text-white hover:text-red-500/75" onClick={closeMenu}>
-                    Accueil
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/team-building" className="transition text-white hover:text-red-500/75" onClick={closeMenu}>
-                    Team Building
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/nos-concepts" className="transition text-white hover:text-red-500/75" onClick={closeMenu}>
-                    Nos Concepts
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/nos-formations" className="transition text-white hover:text-red-500/75" onClick={closeMenu}>
-                    Nos Formations
-                  </Link>
-                </li>
-            
-                <li>
-                  <Link href="/galerie-scenarios" className="transition text-white hover:text-red-500/75" onClick={closeMenu}>
-                    Galerie - Scénarios
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/agenda" className="transition text-white hover:text-red-500/75" onClick={closeMenu}>
-                    Témoignages
-                  </Link>
-                </li>
-                {/* <li>
-                  <Link href="/blog" className="transition text-white hover:text-red-500/75" onClick={closeMenu}>
-                    Blog
-                  </Link>
-                </li> */}
-              </ul>
-            </nav>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <div className="sm:flex sm:gap-4">
-              <div className="hidden sm:flex">
-                <Link
-                  className="rounded-3xl px-5 py-2.5 text-sm font-medium text-teal-600 bg-red-800 text-xl text-white hover:bg-red-700/75"
-                  href="/contact"
-                  onClick={closeMenu}
-                >
-                  Parlons-en
-                </Link>
-              </div>
-            </div>
-
-            <div className="block md:hidden">
-              <button
-                onClick={toggleMenu}
-                className="rounded p-2 text-gray-600 transition bg-gray-800 text-white hover:text-white/75"
+          {/* Navigation desktop (seulement pour grand écran) */}
+          <nav className="hidden lg:flex items-center space-x-6">
+            {navLinks.map(([title, path]) => (
+              <Link
+                key={title}
+                href={path}
+                className="relative px-3 py-2 text-base font-medium text-white hover:text-red-500 transition-colors group"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
+                {title}
+                <span className="absolute bottom-0 left-0 h-0.5 bg-red-500 w-0 transition-all duration-300 group-hover:w-full" />
+              </Link>
+            ))}
+            
+            <Link
+              href="/contact"
+              className="ml-4 px-5 py-2.5 bg-red-800 rounded-full text-white font-semibold hover:bg-red-700 transition-colors flex items-center gap-2 text-sm"
+            >
+              Parlons-en
+            </Link>
+          </nav>
+
+          {/* Menu tablette/mobile */}
+          <div className="flex items-center gap-4 lg:hidden">
+            <Link
+              href="/contact"
+              className="px-4 py-2 bg-red-800 rounded-full text-white text-sm hover:bg-red-700 transition-colors"
+            >
+              Parlons-en
+            </Link>
+
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="p-2 rounded-lg hover:bg-red-800/20 transition-colors"
+            >
+              <svg className="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24">
+                {isMenuOpen ? (
+                  <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
+                ) : (
+                  <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"/>
+                )}
+              </svg>
+            </button>
+          </div>
+
+          {/* Overlay mobile/tablette */}
+          <div className={`lg:hidden fixed inset-0 bg-black/95 transition-opacity duration-300 ${isMenuOpen ? 'opacity-100 z-40' : 'opacity-0 -z-10'}`}>
+            <nav className="flex flex-col items-center justify-center h-full space-y-6 p-4">
+              {navLinks.map(([title, path]) => (
+                <Link
+                  key={title}
+                  href={path}
+                  className="text-xl text-center text-white hover:text-red-500 transition-colors py-2 px-4 w-full max-w-xs relative group"
+                  onClick={() => setIsMenuOpen(false)}
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              </button>
-            </div>
+                  {title}
+                  <span className="absolute bottom-0 left-1/2 h-0.5 bg-red-500 w-0 transition-all duration-300 group-hover:w-3/4 -translate-x-1/2" />
+                </Link>
+              ))}
+            </nav>
           </div>
         </div>
       </div>
-      {isMenuOpen && (
-        <div className="md:hidden">
-          <nav aria-label="Global">
-            <ul className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <li>
-                <Link href="/" className="block text-white hover:text-red-500/75" onClick={closeMenu}>
-                  Accueil
-                </Link>
-              </li>
-              <li>
-                <Link href="/team-building" className="block text-white hover:text-red-500/75" onClick={closeMenu}>
-                  Team Building
-                </Link>
-              </li>
-              <li>
-                <Link href="/nos-concepts" className="block text-white hover:text-red-500/75" onClick={closeMenu}>
-                  Nos Concepts
-                </Link>
-              </li>
-              <li>
-                <Link href="/nos-formations" className="block text-white hover:text-red-500/75" onClick={closeMenu}>
-                  Nos Formations
-                </Link>
-              </li>
-             
-              <li>
-                <Link href="/galerie-scenarios" className="block text-white hover:text-red-500/75" onClick={closeMenu}>
-                  Galerie - Scénarios
-                </Link>
-              </li>
-              <li>
-                <Link href="/agenda" className="block text-white hover:text-red-500/75" onClick={closeMenu}>
-                  Témoignages
-                </Link>
-              </li>
-              {/* <li>
-                <Link href="/blog" className="block text-white hover:text-red-500/75" onClick={closeMenu}>
-                  Blog
-                </Link>
-              </li> */}
-              <li>
-                <Link href="/contact" className="block text-white hover:text-red-500/75" onClick={closeMenu}>
-                  Parlons-en
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      )}
     </header>
   );
 };

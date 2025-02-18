@@ -21,7 +21,7 @@ export default function Home() {
           {/* Conteneur principal modifié pour aligner en bas */}
           <div className="absolute inset-0 flex flex-col justify-between">
             {/* Logo en haut à gauche */}
-            <div className="p-4">
+            <div className="p-4 mt-20 sm:mt-24">
               <img
                 src="/logo-blanc.png"
                 alt="Logo Blanc"
