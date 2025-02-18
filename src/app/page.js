@@ -10,29 +10,34 @@ export default function Home() {
         <section className="relative h-screen">
           <video
             className="absolute inset-0 w-full h-full object-cover object-center"
-            src="/videos/accueil.mp4"
+            src="/videos/bandeau.webm"
             autoPlay
             loop
             muted
             playsInline
           />
-          {/* bg-gray-900/75 sm:bg-transparent sm:from-gray-900/95 sm:to-gray-900/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l */}
-          <div className="absolute inset-0 "></div>
+          <div className="absolute inset-0"></div>
 
-          <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:justify-end lg:px-8">
-            <div className="absolute top-0 left-0 p-4">
+          {/* Conteneur principal modifié pour aligner en bas */}
+          <div className="absolute inset-0 flex flex-col justify-between">
+            {/* Logo en haut à gauche */}
+            <div className="p-4">
               <img
                 src="/logo-blanc.png"
                 alt="Logo Blanc"
                 className="h-12 sm:h-16 w-auto"
               />
             </div>
-            <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right lg:ml-auto">
-              <h1 className="text-3xl font-extrabold text-white lg:text-4xl bg-neutral-900/50 font-poppins uppercase">
-                Créateurs
-                <br /> d'Expériences <br />
-                Intéractives et Immersives
-              </h1>
+
+            {/* Texte en bas à droite */}
+            <div className="w-full flex justify-end p-8 mb-8">
+              <div className="max-w-xl">
+                <h1 className="text-3xl font-extrabold text-white lg:text-4xl bg-neutral-900/50 font-poppins uppercase text-right">
+                  Créateurs
+                  <br /> d'Expériences <br />
+                  Intéractives et Immersives
+                </h1>
+              </div>
             </div>
           </div>
         </section>
