@@ -118,7 +118,7 @@ const CardConceptFull = () => {
         </h2>
         
         {/* Version Desktop et Tablette */}
-        <div className="hidden md:flex flex-wrap justify-center py-8">
+        <div className="hidden md:flex flex-wrap justify-center py-8 gap-4">
           {cardsData.map((card, index) => (
             <CardConcept
               key={index}

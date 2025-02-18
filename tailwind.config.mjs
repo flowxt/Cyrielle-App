@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,6 +6,17 @@ export default {
   ],
   theme: {
     extend: {
+      // Ajoutez ici les keyframes et animations
+      keyframes: {
+        "move-x": {
+          "0%, 100%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(4px)" },
+        },
+      },
+      animation: {
+        "move-x": "move-x 1.5s ease-in-out infinite",
+      },
+      // Configuration existante
       fontFamily: {
         poppins: ["var(--font-poppins)", "sans-serif"],
         roboto: ["var(--font-roboto)", "sans-serif"],
@@ -19,7 +29,6 @@ export default {
   },
   plugins: [require("daisyui")],
 };
-
 // Ceci est l'animation à effacer si elle ne veut pas le bouton animé
 // animation: {
 //   wiggleWithPause: "wiggleWithPause 10s ease-in-out infinite", // Trépignement toutes les 10 secondes

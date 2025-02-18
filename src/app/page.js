@@ -9,35 +9,42 @@ export default function Home() {
       <header>
         <section className="relative h-screen">
           <video
-            className="absolute inset-0 w-full h-full object-cover object-center"
+            className="absolute inset-0 w-full h-full object-cover object-center opacity-90"
             src="/videos/bandeau.webm"
             autoPlay
             loop
             muted
             playsInline
           />
-          <div className="absolute inset-0"></div>
 
-          {/* Conteneur principal modifié pour aligner en bas */}
-          <div className="absolute inset-0 flex flex-col justify-between">
-            {/* Logo en haut à gauche */}
-            <div className="p-4 mt-20 sm:mt-24">
-              <img
-                src="/logo-blanc.png"
-                alt="Logo Blanc"
-                className="h-12 sm:h-16 w-auto"
-              />
-            </div>
+          {/* Overlay dégradé pour améliorer la lisibilité */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
 
-            {/* Texte en bas à droite */}
-            <div className="w-full flex justify-end p-8 mb-8">
-              <div className="max-w-xl">
-                <h1 className="text-3xl font-extrabold text-white lg:text-4xl bg-neutral-900/50 font-poppins uppercase text-right">
-                  Créateurs
-                  <br /> d'Expériences <br />
-                  Intéractives et Immersives
-                </h1>
+          {/* Contenu centré et dynamique */}
+          <div className="relative h-full flex flex-col justify-center items-center text-center px-4">
+            <h1 className="text-4xl sm:text-6xl font-bold text-white space-y-4 text-center">
+              <div className="border-l-4 border-red-500 pl-4 bg-gray-900/20">
+                En Scènes Acting
               </div>
+              <div className="text-red-700 bg-black px-6 py-2 inline-block">
+                TEAM BUILDING
+              </div>
+            </h1>
+
+            <div className="max-w-2xl border-t-2 border-red-500 pt-4">
+              <p className="text-lg sm:text-xl text-white font-light italic mb-4 bg-gray-900/10">
+                "L'intelligence collective n'attend pas"
+              </p>
+              <p className="text-white uppercase font-semibold text-sm sm:text-base tracking-widest bg-gray-900/10">
+                Escape Games • Chasses Virtuelles • Simulations sur Mesure
+              </p>
+            </div>
+          </div>
+
+          {/* Élément graphique animé */}
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            <div className="w-8 h-14 border-4 border-red-500 rounded-full">
+              <div className="w-2 h-4 bg-red-500 mx-auto mt-2 rounded-full" />
             </div>
           </div>
         </section>
