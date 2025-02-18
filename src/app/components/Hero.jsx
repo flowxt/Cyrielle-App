@@ -38,7 +38,7 @@ const Hero = ({
         {/* Contenu du Hero */}
         <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:justify-end lg:px-8">
           {/* Logo fixe */}
-          <div className="absolute top-10 sm:top-0 left-0 p-4">
+          <div className="absolute top-20  left-0 p-4">
             <Image
               src="/logo-blanc.png"
               alt="Logo en scènes acting"
@@ -49,7 +49,7 @@ const Hero = ({
           </div>
           {/* Titre */}
           <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right lg:ml-auto">
-            <h1 className="text-3xl font-extrabold text-white lg:text-4xl bg-neutral-900/50 font-poppins uppercase  mt-12">
+            <h1 className="text-3xl font-extrabold text-white lg:text-4xl bg-neutral-900/50 font-poppins uppercase  mt-14">
               {title}
             </h1>
           </div>

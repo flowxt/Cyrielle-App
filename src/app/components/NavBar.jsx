@@ -53,7 +53,7 @@ const NavBar = () => {
             
             <Link
               href="/contact"
-              className="ml-4 px-5 py-2.5 bg-red-800 rounded-full text-white font-semibold hover:bg-red-700 transition-colors flex items-center gap-2 text-sm"
+              className="ml-4 px-5 py-2.5  bg-gradient-to-r from-red-600 to-red-900 rounded-full text-white font-semibold hover:bg-red-700 transition-colors flex items-center gap-2 text-sm"
             >
               Parlons-en
             </Link>
@@ -63,7 +63,7 @@ const NavBar = () => {
           <div className="flex items-center gap-4 lg:hidden">
             <Link
               href="/contact"
-              className="px-4 py-2 bg-red-800 rounded-full text-white text-sm hover:bg-red-700 transition-colors"
+              className="px-4 py-2  bg-gradient-to-r from-red-600 to-red-900 rounded-full text-white text-sm hover:bg-red-700 transition-colors"
             >
               Parlons-en
             </Link>
