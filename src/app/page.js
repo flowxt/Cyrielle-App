@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <>
       <header>
-        <section className="relative">
+        <section className="relative h-screen">
           <video
-            className="absolute inset-0 w-full h-full object-cover"
-            src="/videos/movie-home.webm"
+            className="absolute inset-0 w-full h-full object-cover object-center"
+            src="/videos/accueil.mp4"
             autoPlay
             loop
             muted
@@ -60,7 +60,7 @@ export default function Home() {
           Vos <span className="text-red-700">défis </span>| Nos{" "}
           <span className="text-red-700">solutions</span>{" "}
         </h2>
-        <p className="text-lg md:text-xl lg:text-2xl text-center p-4 font-roboto font-roboto font-light ">
+        <p className="text-lg md:text-xl lg:text-2xl text-center p-4 font-roboto font-light ">
           "En Scènes Acting" vous apporte des solutions novatrices pour répondre
           à vos attentes.
         </p>

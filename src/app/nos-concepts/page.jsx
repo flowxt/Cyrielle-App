@@ -25,7 +25,7 @@ export default function Concepts() {
       />
     <main>
   <CardConceptFull />
-<Carousel />
+
 
    <section className="grid grid-cols-1 bg-gradient-to-t from-gray-200 to-gray-400  md:grid-cols-5 py-12">
             <div className="md:col-span-3 px-12 text-center py-2">

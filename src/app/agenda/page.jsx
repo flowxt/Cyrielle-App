@@ -9,7 +9,7 @@ export default function Agenda() {
   return (
     <>
     <Hero
-        backgroundImageSrc="/test.png" // Image de fond pour cette page
+        backgroundImageSrc="/images/test-cyrielle.png" // Image de fond pour cette page
         title="PARTAGEZ DES MOMENTS UNIQUES ET HORS DU TEMPS"
         subtitle={
           <>

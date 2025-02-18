@@ -49,7 +49,7 @@ const Hero = ({
           </div>
           {/* Titre */}
           <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right lg:ml-auto">
-            <h1 className="text-3xl font-extrabold text-white lg:text-4xl bg-neutral-900/50 font-poppins uppercase font-semibold mt-12">
+            <h1 className="text-3xl font-extrabold text-white lg:text-4xl bg-neutral-900/50 font-poppins uppercase  mt-12">
               {title}
             </h1>
           </div>
@@ -68,14 +68,14 @@ const Hero = ({
           {/* Sous-titre */}
           <motion.h3
             variants={textVariants}
-            className="text-3xl md:text-4xl lg:text-5xl font-roboto my-10"
+            className="text-3xl md:text-4xl lg:text-5xl font-roboto my-4"
           >
             {subtitle}
           </motion.h3>
           {/* Texte principal */}
           <motion.p
             variants={textVariants}
-            className="md:text-lg lg:text-xl font-roboto font-light"
+            className="md:text-lg lg:text-xl font-roboto font-light py-8"
           >
             {description}
           </motion.p>

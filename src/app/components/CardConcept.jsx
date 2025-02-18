@@ -10,7 +10,7 @@ const CardConcept = ({ image, title, paragraph, listItems }) => {
     >
       <img className="w-full h-48 object-cover" src={image} alt={title} />
       <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2 text-red-700 bg-gray-400 text-center font-poppins font-light">
+        <div className="text-xl mb-2 text-red-700 bg-gray-400 text-center font-poppins font-light">
           {title}
         </div>
         <p className="text-gray-600 text-base font-roboto font-light">
@@ -23,7 +23,7 @@ const CardConcept = ({ image, title, paragraph, listItems }) => {
             </span>
           ))}
         </p>
-        <ul className="list-disc list-inside mt-4 text-gray-600 list-none">
+        <ul className=" list-inside mt-4 text-gray-600 list-none">
           {listItems.map((item, index) => (
             <li
               key={index}

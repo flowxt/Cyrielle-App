@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Team() {
     return (
       <>
-        <section className="container-team text-center py-6 flex flex-col items-center gap-8 border-t-2 border-red-800 bg-gradient-to-b from-gray-200 to-gray-500">
+        <section className="container-team text-center py-6 flex flex-col items-center gap-8 border-t-2 border-red-800 bg-gradient-to-b from-gray-200 to-gray-400">
           <h2 className="text-4xl font-poppins font-semibold">Notre <span className='text-gray-100 bg-gradient-to-r from-red-700 to-red-800 p-2 inline-block -rotate-3'>équipe</span></h2>
           <p className="font-roboto text-lg font-light px-4">
             Un duo complémentaire et passionné à l'écoute de vos besoins, garants d'une <strong className='text-gray-100 bg-gradient-to-r from-red-700 to-red-800 p-2'>expérience unique et immersive.</strong>
@@ -72,25 +72,8 @@ export default function Team() {
               </div>
             </div>
           </div>
-          <div className="text-gray-100 flex flex-col lg:flex-row items-center justify-center gap-8 py-16 px-4">
-  <div className="max-w-3xl text-center">
-    {/* Titre avec dégradé */}
-    <h3 className="text-4xl lg:text-6xl font-poppins font-semibold mb-8 animate-fade-in">
-      Créateurs de 
-      <br />
-      <span className="text-transparent bg-gradient-to-r from-red-700 to-red-800 bg-clip-text">souvenirs uniques</span>
-    </h3>
-    {/* Paragraphe avec animation et mise en évidence */}
-    <p className="text-xl lg:text-2xl font-roboto font-light leading-relaxed animate-fade-in">
-      <span className="font-bold text-2xl lg:text-3xl block mb-4">
-        "En scènes", <br /> 
-        <span className="text-gray-400 text-lg italic">nom féminin</span> (latin scena, du grec skênê)
-      </span>
-      Concepteurs et interprètes de scénarios de{" "}
-      <strong className="text-red-800">jeux théâtralisés</strong> grandeur nature, nous proposons des
-      expériences divertissantes et interactives au travers d’une expérience émotionnelle.
-    </p>
-  </div>
+          <div className="text-gray-100 flex flex-col lg:flex-row items-center justify-center gap-8 py-4 px-4">
+
 </div>
         </section>
       </>
