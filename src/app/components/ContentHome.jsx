@@ -13,7 +13,7 @@ export default function ContentHome() {
                         <div>
                             <div className="max-w-lg md:max-w-none">
                                 <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl font-poppins pb-4">
-                                    Prêts à embarquer dans un <strong className='text-red-800'>team building en Haute-Savoie</strong> unique.
+                                    Prêts à embarquer dans un <strong className='bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text'>team building en Haute-Savoie</strong> unique.
                                 </h2>
 
                                 <p className="mt-4 text-gray-700 lg:text-2xl font-roboto font-light">
@@ -59,7 +59,7 @@ export default function ContentHome() {
              <div>
                <div className="max-w-lg md:max-w-none ">
                  <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl font-poppins">
-                 Vivez une <strong className='text-red-800'>conférence</strong> dont vous vous souviendrez.
+                 Vivez une <strong className='bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text'>conférence</strong> dont vous vous souviendrez.
                  </h2>
    
                  <p className="mt-4 text-gray-700 lg:text-2xl font-roboto font-light">
@@ -82,7 +82,7 @@ export default function ContentHome() {
             <div>
               <div className="max-w-lg md:max-w-none ">
                 <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl font-poppins">
-                Captez de nouveaux visiteurs avec un <strong className='text-red-800'>concept ludique</strong>.
+                Captez de nouveaux visiteurs avec un <strong className='bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text'>concept ludique</strong>.
                 </h2>
   
                 <p className="mt-4 text-gray-700 lg:text-2xl font-roboto font-light">

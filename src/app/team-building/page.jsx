@@ -36,7 +36,7 @@ export default function TeamBuilding() {
         subtitle={
           <>
             Découvrez nos activités stimulantes et {" "}
-            <span className="text-red-700">fédératrice</span>
+            <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">fédératrice</span>
           </>
         }
         description={
@@ -51,7 +51,7 @@ export default function TeamBuilding() {
    <section className='max-w-7xl mx-auto px-4 py-8 '>
     <CardTBComplete />
     <div className='flex justify-center'>
-    <button className='mx-auto mt-8 p-2 bg-black text-lg lg:text-xl text-white mx-auto'>Découvrez nos différents concepts</button>
+    <button className=' mt-8 p-2 bg-gradient-to-t from-gray-700 to-black text-lg lg:text-xl text-white mx-auto'>Découvrez nos différents concepts</button>
     </div>
     {/* A crrer un bouton avec un bg black ici plutot que de prendre */}
     </section>
@@ -62,7 +62,7 @@ export default function TeamBuilding() {
             <div className='flex justify-center'>
               <div className="max-w-lg md:max-w-none text-center ">
                 <h2 className="text-3xl font-semibold text-gray-900 sm:text-4xl font-poppins">
-                Réinventons <strong className="text-red-600">votre équipe</strong>.
+                Réinventons <strong className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">votre équipe</strong>.
                 </h2>
   
                 <p className="mt-4 text-gray-700 lg:text-xl font-roboto font-light">

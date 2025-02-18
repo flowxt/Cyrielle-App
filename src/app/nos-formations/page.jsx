@@ -13,7 +13,7 @@ export default function Formation() {
         title="DEVELOPPER LA COHESION ET VOUS DONNER LES CLEFS POUR L'ENTRETENIR"
         subtitle={
           <>
-            Et si nous tirions avantage de <strong className='text-red-700'>l'art de créer et jouer ensemble</strong>
+            Et si nous tirions avantage de <strong className='bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text'>l'art de créer et jouer ensemble</strong>
           </>
         }
         description={
@@ -30,7 +30,7 @@ export default function Formation() {
 <div className="bg-gradient-to-b from-gray-200 to-gray-300 border-t-2 border-gray-900 pb-6">
   <div>
           <h3 className="text-2xl md:text-3xl  lg:text-4xl p-12 text-center max-w-3xl mx-auto font-poppins">
-          Vous souhaitez aborder une <span className='text-red-700'>thématique</span> précise qui n'apparaît pas dans nos formations ?
+          Vous souhaitez aborder une <span className='bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text'>thématique</span> précise qui n'apparaît pas dans nos formations ?
           </h3>
           <p className="md:text-lg lg:text-xl font-roboto text-center max-w-3xl mx-auto px-6 pb-6">Dites nous en plus, donnez nous votre cahier des charges et nous vous proposerons un <strong>programme sur mesure</strong>.</p>
           <CustomButton text="Je vous explique ce que je veux" />

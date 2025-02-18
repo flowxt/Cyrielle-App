@@ -4,9 +4,9 @@ export default function Team() {
     return (
       <>
         <section className="container-team text-center py-6 flex flex-col items-center gap-8 border-t-2 border-red-800 bg-gradient-to-b from-gray-200 to-gray-400">
-          <h2 className="text-4xl font-poppins font-semibold">Notre <span className='text-gray-100 bg-gradient-to-r from-red-700 to-red-800 p-2 inline-block -rotate-3'>équipe</span></h2>
+          <h2 className="text-4xl font-poppins font-semibold">Notre <span className='text-gray-100 bg-gradient-to-r from-red-600 to-red-900 p-2 inline-block -rotate-3'>équipe</span></h2>
           <p className="font-roboto text-lg font-light px-4">
-            Un duo complémentaire et passionné à l'écoute de vos besoins, garants d'une <strong className='text-gray-100 bg-gradient-to-r from-red-700 to-red-800 p-2'>expérience unique et immersive.</strong>
+            Un duo complémentaire et passionné à l'écoute de vos besoins, garants d'une <strong className='text-gray-100 bg-gradient-to-r from-red-700 to-red-900 p-2'>expérience unique et immersive.</strong>
           </p>
           <div className="container flex flex-col lg:flex-row items-center justify-center gap-8 py-4">
             <div className="container-Cyrielle flex flex-col lg:flex-row-reverse items-center gap-8">
@@ -19,7 +19,7 @@ export default function Team() {
     />
               <div className="content-cyrielle flex flex-col text-start">
                 <h3 className="text-xl font-poppins font-semibold">
-                  Cyrielle <span className="text-red-700">Schepens</span>
+                  Cyrielle <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">Schepens</span>
                 </h3>
                 <ul className="font-roboto text-lg font-light list-none">
                   <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-400 before:animate-move-x">
@@ -50,7 +50,7 @@ export default function Team() {
   />
               <div className="content-matthieu flex flex-col text-start text-center">
                 <h3 className="text-xl font-poppins font-semibold">
-                  Matthieu <span className="text-red-700">Vernisse</span>
+                  Matthieu <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">Vernisse</span>
                 </h3>
                 <ul className="font-roboto text-lg font-light list-none">
                   <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-400 before:animate-move-x">

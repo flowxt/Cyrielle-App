@@ -10,7 +10,7 @@ const CardConcept = ({ image, title, paragraph, listItems }) => {
     >
       <img className="w-full h-48 object-cover" src={image} alt={title} />
       <div className="px-6 py-4">
-        <div className="text-xl mb-2 text-red-700 bg-gray-400 text-center font-poppins font-light">
+        <div className="text-xl mb-2 bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text bg-gray-400 text-center font-poppins font-light">
           {title}
         </div>
         <p className="text-gray-600 text-base font-roboto font-light">

@@ -47,11 +47,11 @@ export default function Home() {
             <div className="border-2 border-red-600 rounded-lg p-8 shadow-xl bg-white/80 transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:translate-y-2">
               <h3 className="text-xl font-light md:text-2xl lg:text-3xl text-center mx-auto font-roboto leading-relaxed">
                 "Libérer le potentiel de vos équipes grâce à des{" "}
-                <span className="text-red-600 font-semibold transform hover:scale-105 transition duration-300">
+                <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text font-semibold transform hover:scale-105 transition duration-300">
                   expériences
                 </span>{" "}
                 sur mesure, où chaque participant est un acteur clé de la{" "}
-                <span className="text-red-600 font-semibold transform hover:scale-105 transition duration-300">
+                <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text font-semibold transform hover:scale-105 transition duration-300">
                   réussite collective
                 </span>
                 "

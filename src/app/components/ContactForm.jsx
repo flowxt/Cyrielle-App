@@ -172,9 +172,9 @@ const ContactForm = () => {
 
               {/* Énigme stylisée */}
               <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-600">
-                <label className="block text-sm font-medium text-red-800 font-poppins">
+                <label className="block text-sm font-medium bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text font-poppins">
                   Énigme TeamBuilding ✨
-                  <span className="text-red-600 font-normal block mt-1 text-xs">
+                  <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text font-normal block mt-1 text-xs">
                     "Seulement si cela vous parle"
                   </span>
                 </label>

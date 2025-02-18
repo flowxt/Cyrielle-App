@@ -51,7 +51,7 @@ const Gallery = () => {
         title="VIVEZ L'AVENTURE DE L'INTÉRIEUR"
         subtitle={
           <>
-            <strong className="text-red-700">Coopérez</strong> | Analysez | <strong className="text-red-700">Résolvez</strong>
+            <strong className="text-red-700">Coopérez</strong> | Analysez | <strong className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">Résolvez</strong>
           </>
         }
         description={

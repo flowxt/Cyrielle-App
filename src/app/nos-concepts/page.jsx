@@ -14,7 +14,7 @@ export default function Concepts() {
         title="SPECTACLE INTERACTIF & ESCAPE GAME ITINERANT"
         subtitle={
           <>
-            <span className="text-red-700">Ressentir</span> | Partagez | <span className="text-red-700">Se souvenir</span>
+            <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">Ressentir</span> | Partagez | <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">Se souvenir</span>
           </>
         }
         description={
@@ -29,7 +29,7 @@ export default function Concepts() {
 
    <section className="grid grid-cols-1 bg-gradient-to-t from-gray-200 to-gray-400  md:grid-cols-5 py-12">
             <div className="md:col-span-3 px-12 text-center py-2">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:pb-6 lg:pt-6 font-semibold">Fabriquons <span className="text-red-700">des souvenirs</span></h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl mb-4 md:pb-6 lg:pt-6 font-semibold">Fabriquons <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">des souvenirs</span></h2>
               <p className="text-lg font-roboto font-thin">
               En scènes acting® casse les codes pour vous faire vivre des expériences insolites et immersives. Plongez dans nos univers vivants où les interactions sociales seront essentielles. Le temps de quelques heures, vivez une aventure unique, où le passé et le présent se mêlent pour une <strong>expérience insolite</strong>. Rejoignez nous pour vous créer des <strong>souvenirs inoubliables</strong> !
               </p>
@@ -58,9 +58,9 @@ export default function Concepts() {
           </section>
           <div className="bg-gradient-to-b from-gray-200 to-gray-300 border-t-2 border-gray-900 pb-6">
           <h3 className="text-2xl md:text-3xl  lg:text-4xl p-12 text-center max-w-3xl mx-auto font-roboto">
-          Une idée précise de <span className="text-red-700">l'événement</span> que vous aimeriez créer ?
+          Une idée précise de <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">l'événement</span> que vous aimeriez créer ?
           </h3>
-          <p className="text-lg lg:text-xl font-roboto text-center max-w-3xl mx-auto px-6 pb-6 font-roboto font-thin">Donnez nous carte blanche ou livrez nous un cahier des charges, nous mettrons tout en œuvre pour vous créer un <strong>événement sur mesure</strong> et clé en main.</p>
+          <p className="text-lg lg:text-xl text-center max-w-3xl mx-auto px-6 pb-6 font-roboto font-thin">Donnez nous carte blanche ou livrez nous un cahier des charges, nous mettrons tout en œuvre pour vous créer un <strong>événement sur mesure</strong> et clé en main.</p>
           <CustomButton text="Je vous explique ce que je veux" />
         </div>
         

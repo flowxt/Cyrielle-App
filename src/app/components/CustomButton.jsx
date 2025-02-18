@@ -3,7 +3,7 @@ import React from 'react';
 
 const CustomButton = ({ text, additionalClasses }) => {
   return (
-    <button className={`mt-6 px-4 py-2 block mx-auto rounded font-poppins ${additionalClasses}  bg-gradient-to-r from-red-600 to-red-900 text-white hover:bg-red-900 hover:text-gray-200`}>
+    <button className={`mt-6 px-4 py-2 block mx-auto rounded font-poppins ${additionalClasses}  bg-gradient-to-b from-red-600 to-red-900 text-gray-100 hover:bg-red-900 hover:text-gray-200`}>
       {text}
     </button>
   );

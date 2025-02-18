@@ -26,7 +26,7 @@ const CardFormation = () => {const cardsData = [
   return (
     <>
     <div className="bg-gradient-to-b from-gray-200 to-gray-300 pt-4 border-gray-900 pb-6">
-    <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-poppins">Notre <span className="text-red-700">catalogue</span></h2>
+    <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-poppins">Notre <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">catalogue</span></h2>
     <div className="flex flex-wrap justify-center py-8">
         
       {cardsData.map((card, index) => (

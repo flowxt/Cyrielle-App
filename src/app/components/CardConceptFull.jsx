@@ -114,7 +114,7 @@ const CardConceptFull = () => {
     <>
       <div className="bg-gradient-to-b from-gray-200 to-gray-300 pt-4 border-gray-900 pb-6">
         <h2 className="text-center text-3xl md:text-3xl lg:text-4xl font-poppins">
-          Nos <span className="text-red-700">concepts</span>
+          Nos <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">concepts</span>
         </h2>
         
         {/* Version Desktop et Tablette */}

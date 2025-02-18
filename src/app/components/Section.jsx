@@ -17,7 +17,7 @@ const Section = ({
           <div>
             <div className="max-w-lg md:max-w-none text-center md:text-left mx-auto">
               <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl font-poppins pb-4">
-                {title} <strong className="text-red-600">{textHighlight}</strong>
+                {title} <strong className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">{textHighlight}</strong>
               </h2>
 
               <p className="mt-4 text-gray-700 lg:text-2xl font-roboto font-light">

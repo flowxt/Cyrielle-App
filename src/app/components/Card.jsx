@@ -3,9 +3,9 @@ import CustomButton from './CustomButton';
 
 export default function Card({ title, subtitle, image, listItems, buttonText }) {
   return (
-    <div className="card bg-gray-100 shadow-md rounded-lg p-4 w-[380px] shadow-xl shadow-gray-800 min-h-[450px] flex flex-col justify-between lg:hover:-translate-y-1 lg:hover:scale-105 transition duration-500 ease-in-out ">
+    <div className="card bg-gray-100 rounded-lg p-4 w-[380px] shadow-xl shadow-gray-800 min-h-[450px] flex flex-col justify-between lg:hover:-translate-y-1 lg:hover:scale-105 transition duration-500 ease-in-out ">
       {/* Titre principal */}
-      <h2 className="text-xl font-bold mb-4 text-red-700 font-poppins">{title}</h2>
+      <h2 className="text-xl font-bold mb-4 bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text font-poppins">{title}</h2>
 
       {/* Image */}
       <div className="overflow-hidden rounded-t-lg mb-4 h-72 relative">
@@ -13,7 +13,7 @@ export default function Card({ title, subtitle, image, listItems, buttonText }) 
       </div>
 
       {/* Petit titre */}
-      <h3 className="text-lg font-semibold mb-2 font-poppins font-light">{subtitle}</h3>
+      <h3 className="text-lg font-semibold mb-2 font-poppins">{subtitle}</h3>
 
       {/* Liste */}
       <ul className="list-disc list-inside text-gray-600 mb-4 font-roboto">
