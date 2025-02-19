@@ -83,21 +83,25 @@ const NavBar = () => {
           </div>
 
           {/* Overlay mobile/tablette */}
-          <div className={`lg:hidden fixed inset-0 bg-black/95 transition-opacity duration-300 ${isMenuOpen ? 'opacity-100 z-40' : 'opacity-0 -z-10'}`}>
-            <nav className="flex flex-col items-center justify-center h-full space-y-6 p-4">
-              {navLinks.map(([title, path]) => (
-                <Link
-                  key={title}
-                  href={path}
-                  className="text-xl text-center text-white hover:text-red-500 transition-colors py-2 px-4 w-full max-w-xs relative group"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {title}
-                  <span className="absolute bottom-0 left-1/2 h-0.5 bg-red-500 w-0 transition-all duration-300 group-hover:w-3/4 -translate-x-1/2" />
-                </Link>
-              ))}
-            </nav>
-          </div>
+          <div 
+  className={`lg:hidden fixed inset-0 h-screen bg-black/95 transition-opacity duration-300 transform-gpu ${
+    isMenuOpen ? 'opacity-100 z-40 overflow-y-auto' : 'opacity-0 -z-10 pointer-events-none'
+  }`}
+>
+  <nav className="flex flex-col items-center justify-center min-h-screen p-4 space-y-6">
+    {navLinks.map(([title, path]) => (
+      <Link
+        key={title}
+        href={path}
+        className="text-xl text-center text-white hover:text-red-500 transition-colors py-2 px-4 w-full max-w-xs relative group"
+        onClick={() => setIsMenuOpen(false)}
+      >
+        {title}
+        <span className="absolute bottom-0 left-1/2 h-0.5 bg-red-500 w-0 transition-all duration-300 group-hover:w-3/4 -translate-x-1/2" />
+      </Link>
+    ))}
+  </nav>
+</div>
         </div>
       </div>
     </header>

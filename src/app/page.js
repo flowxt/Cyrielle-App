@@ -36,7 +36,7 @@ export default function Home() {
                 "L'intelligence collective n'attend pas"
               </p>
               <p className="text-white uppercase font-semibold text-sm sm:text-base tracking-widest bg-gray-900/10">
-                Escape Games • Chasses Virtuelles • Simulations sur Mesure
+                Escape Game • Jeu de rôle • Spectacle intéractif
               </p>
             </div>
           </div>
