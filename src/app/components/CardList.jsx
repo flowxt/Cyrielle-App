@@ -7,23 +7,35 @@ export default function CardList() {
   const cards = [
     {
       title: "Team Building",
-      subtitle: "Fédérez et engagez vos équipes",
+      subtitle: "Fédérez et engagez vos équipes pour plus de performance",
       image: carte1,
-      listItems: ["Révéler l'équipe", "Libérer la réflexion", "Fidéliser ses collaborateurs"],
+      listItems: [
+        "Révéler les talents de l'équipe",
+        "Libérer la réflexion collective",
+        "Fidéliser durablement vos collaborateurs"
+      ],
       buttonText: "Activité de cohésion",
     },
     {
       title: "Seminaires",
-      subtitle: "Réunissez vos équipes pour un moment insolite",
+      subtitle: "Réunissez vos équipes pour des moments insolites et marquants",
       image: carte2,
-      listItems: ["Capter l'attention", "Souvenir d'une expérience mémorable", "Réussir ensemble"],
+      listItems: [
+        "Capter l'attention de vos équipes",
+        "Créer une expérience mémorable",
+        "Construire et réussir ensemble"
+      ],
       buttonText: "Nos concepts",
     },
     {
       title: "Formations",
-      subtitle: "Découvrez ce que le jeu peut vous apporter",
+      subtitle: "Découvrez ce que le jeu peut apporter à votre organisation",
       image: carte3,
-      listItems: ["Construire ensemble", "Découvrir les mécanismes des jeux", "Prendre confiance en soi"],
+      listItems: [
+        "Construire une dynamique positive",
+        "Maîtriser les mécanismes des jeux",
+        "Développer la confiance en soi"
+      ],
       buttonText: "Notre catalogue",
     },
   ];
