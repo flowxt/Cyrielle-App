@@ -27,33 +27,62 @@ export default function Formation() {
       <CardFormation />
       
       
-<div className="bg-gradient-to-b from-gray-200 to-gray-300 border-t-2 border-gray-900 pb-6">
-  <div>
-          <h3 className="text-2xl md:text-3xl  lg:text-4xl p-12 text-center max-w-3xl mx-auto font-poppins">
-          Vous souhaitez aborder une <span className='bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text'>thématique</span> précise qui n'apparaît pas dans nos formations ?
-          </h3>
-          <p className="md:text-lg lg:text-xl font-roboto text-center max-w-3xl mx-auto px-6 pb-6">Dites nous en plus, donnez nous votre cahier des charges et nous vous proposerons un <strong>programme sur mesure</strong>.</p>
-          <CustomButton text="Je vous explique ce que je veux" />
+      <section className="border-t-2 border-red-700 bg-gradient-to-b from-gray-200 to-gray-400">
+  <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8 max-w-4xl">
+    <div className="flex justify-center items-center">
+      <div className="flex justify-center text-center w-full">
+        <div className="max-w-2xl w-full">
+          <h2 className="font-poppins text-4xl font-semibold">
+            Vous souhaitez aborder une{' '}
+            <span className="text-gray-100 bg-gradient-to-r from-red-600 to-red-900 p-2 inline-block -rotate-3">
+              thématique
+            </span>{' '}
+            précise ?
+          </h2>
+
+          <p className="font-roboto mt-6 text-lg font-light">
+            Dites nous en plus, donnez nous votre{' '}
+            <strong>
+              cahier des charges
+            </strong>{' '}
+            et nous vous proposerons un{' '}
+            <strong>
+              programme sur mesure
+            </strong>
+          </p>
+
+          <div className="mt-8 mb-12">
+            <CustomButton 
+              text="Je vous explique ce que je veux"
+              className="bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white font-poppins px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all"
+            />
+          </div>
+          
+          {/* Section certification */}
+          <div className="mt-12 pt-12 border-t border-red-700/30">
+            <div className="flex flex-col md:flex-row justify-around items-center gap-8">
+              <div className="w-72 lg:w-96 h-32 relative">
+                <Image
+                  src="/cce.png"
+                  alt="logo-CCE"
+                  layout="fill"
+                  objectFit="contain"
+                  className="object-contain"
+                />
+              </div>
+              <ul className="text-center font-roboto text-md md:text-lg space-y-2">
+                <li className="font-semibold text-gray-800">Votre formatrice certifiée Cyrielle Schepens</li>
+                <li className="text-gray-700">Certification obtenue le 11/07/2024</li>
+                <li className="text-gray-700">Auprès de la CCI Annecy</li>
+                <li className="text-gray-600 font-light">N°2024-0021057-8</li>
+              </ul>
+            </div>
+          </div>
         </div>
-      
-        <div className="flex flex-col md:flex-row justify-around items-center py-6"> {/* Conteneur parent avec flexbox pour centrer et espacement autour */}
-    <div className="w-72 lg:w-96 h-32 relative mb-4 md:mb-0"> {/* Conteneur pour l'image avec largeur fixe */}
-      <Image
-        src="/cce.png"
-        alt="logo-CCE"
-        layout="fill"
-        objectFit="contain"
-        className="object-contain"
-      />
+      </div>
     </div>
-    <ul className="text-center font-roboto text-md md:text-lg"> {/* Liste centrée */}
-      <li>Votre formatrice certifiée Cyrielle Schepens</li>
-      <li>Certification obtenue le 11/07/2024</li>
-      <li>Auprès de la CCI Annecy</li>
-      <li>N°2024-0021057-8</li>
-    </ul>
   </div>
-</div>
+</section>
       </>
     );
   }

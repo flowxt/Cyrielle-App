@@ -41,11 +41,11 @@ export default function ContentHome() {
                         <div className="relative group h-[500px] hidden md:block">
                             <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 to-red-500/5 rounded-xl transform -rotate-1" />
                             <Image
-                                src="/images/caroussel/img2.webp"
+                                
+                                src={Image5}
                                 alt="Team building en Haute-Savoie"
                                 className="rounded-xl shadow-lg object-cover h-full w-full transition-transform duration-300 hover:scale-103"
-                                width={3142}
-                                height={2086}
+                                
                                 priority
                             />
                         </div>
@@ -57,46 +57,20 @@ export default function ContentHome() {
             <section>
                 <div className="mx-auto px-4 py-16 sm:px-6 lg:px-8 max-w-7xl">
                     <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:items-center">
-                        <div className="relative group h-[500px] order-last md:order-first hidden md:block">
+                        <div className="relative group h-[500px] order-last md:order-first ">
                             <div className="absolute inset-0 bg-gradient-to-l from-red-500/10 to-red-500/5 rounded-xl transform rotate-1" />
                             <Image
-                                src={Image5}
+                                src="/images/caroussel/img2.webp"
                                 alt="Conférence interactive"
                                 className="rounded-xl shadow-lg object-cover h-full w-full transition-transform duration-300 hover:scale-103"
+                                width={3142}
+                                height={2086}
                                 priority
                             />
                         </div>
 
                         <div className="space-y-6">
-                            <h2 className="text-3xl font-semibold text-gray-900 sm:text-4xl font-poppins">
-                                Vivez une{' '}
-                                <strong className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">
-                                    conférence
-                                </strong>{' '}
-                                dont vous vous souviendrez.
-                            </h2>
-
-                            <div className="space-y-6 text-gray-700 font-roboto">
-                                <p className="text-lg leading-relaxed">
-                                    <b>Engagez</b> vos collaborateurs avec un <b>format novateur de conférence</b>, vous souhaitez transmettre un message lors d'un <b>moment interactif</b> conçu autour de temps d'<b>échange et de partage</b>.
-                                </p>
-                            </div>
-
-                            <CustomButton 
-                                text="Je souhaite en savoir davantage"
-                                className="mt-4"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Section 3 */}
-            <section>
-                <div className="mx-auto px-4 py-16 sm:px-6 lg:px-8 max-w-7xl">
-                    <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:items-center">
-                        <div className="space-y-6">
-                            <h2 className="text-3xl font-semibold text-gray-900 sm:text-4xl font-poppins">
+                        <h2 className="text-3xl font-semibold text-gray-900 sm:text-4xl font-poppins">
                                 Captez de nouveaux visiteurs avec un{' '}
                                 <strong className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">
                                     concept ludique
@@ -105,7 +79,7 @@ export default function ContentHome() {
                             </h2>
 
                             <div className="space-y-6 text-gray-700 font-roboto">
-                                <p className="text-lg leading-relaxed">
+                            <p className="text-lg leading-relaxed">
                                     Nous offrons à nos spect'acteurs, une <b>immersion</b> au coeur de votre lieu ou de votre activité, pour découvrir ou re-découvrir de manière <b>ludique</b> ce qui les entourent.
                                 </p>
 
@@ -123,20 +97,12 @@ export default function ContentHome() {
                                 className="mt-4"
                             />
                         </div>
-
-                        <div className="relative group h-[500px]">
-                            <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 to-red-500/5 rounded-xl transform -rotate-1" />
-                            <Image
-                                src="/images/caroussel/img2.webp"
-                                alt="Concepts ludiques"
-                                className="rounded-xl shadow-lg object-cover h-full w-full transition-transform duration-300 hover:scale-103"
-                                width={3142}
-                                height={2086}
-                            />
-                        </div>
                     </div>
                 </div>
             </section>
+
+            {/* Section 3 */}
+            
         </>
     );
 }

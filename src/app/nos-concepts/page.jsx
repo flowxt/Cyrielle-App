@@ -56,13 +56,47 @@ export default function Concepts() {
               </div>
             </div>
           </section>
-          <div className="bg-gradient-to-b from-gray-200 to-gray-300 border-t-2 border-gray-900 pb-6">
-          <h3 className="text-2xl md:text-3xl  lg:text-4xl p-12 text-center max-w-3xl mx-auto font-roboto">
-          Une idée précise de <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">l'événement</span> que vous aimeriez créer ?
-          </h3>
-          <p className="text-lg lg:text-xl text-center max-w-3xl mx-auto px-6 pb-6 font-roboto font-thin">Donnez nous carte blanche ou livrez nous un cahier des charges, nous mettrons tout en œuvre pour vous créer un <strong>événement sur mesure</strong> et clé en main.</p>
-          <CustomButton text="Je vous explique ce que je veux" />
+          <section className="border-t-2 border-red-700 bg-gradient-to-b from-gray-200 to-gray-400">
+  <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8 max-w-4xl">
+    <div className="flex justify-center items-center">
+      {/* Partie Texte */}
+      <div className="flex justify-center text-center w-full">
+        <div className="max-w-2xl w-full">
+          <h2 className="font-poppins text-4xl font-semibold mb-12">
+            Une idée précise de votre{' '}
+            <span className="text-gray-100 bg-gradient-to-r from-red-600 to-red-900 p-2 inline-block -rotate-3">
+              événement
+            </span>{' '}
+            ?
+          </h2>
+
+          <p className="font-roboto mt-6 text-lg font-light mb-12">
+            Donnez nous{' '}
+            <strong>
+              carte blanche
+            </strong>{' '}
+            ou livrez nous un{' '}
+            <strong>
+              cahier des charges
+            </strong>
+            , nous mettrons tout en œuvre pour vous créer un événement{' '}
+            <strong className="text-gray-100 bg-gradient-to-r from-red-700 to-red-900 p-1">
+              sur mesure
+            </strong>{' '}
+            et clé en main.
+          </p>
+
+          <div className="mt-8">
+            <CustomButton 
+              text="Je vous explique ce que je veux"
+              className="bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white font-poppins px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all"
+            />
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
         
       
     </main>

@@ -56,34 +56,81 @@ export default function TeamBuilding() {
     {/* A crrer un bouton avec un bg black ici plutot que de prendre */}
     </section>
 
-    <section>
-        <div className="mx-auto  px-4 py-8 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-gray-400">
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8 lg:pb-12">
-            <div className='flex justify-center'>
-              <div className="max-w-lg md:max-w-none text-center ">
-                <h2 className="text-3xl font-semibold text-gray-900 sm:text-4xl font-poppins">
-                Réinventons <strong className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">votre équipe</strong>.
-                </h2>
-  
-                <p className="mt-4 text-gray-700 lg:text-xl font-roboto font-light">
-                Chez En Scènes Acting, nous sommes dévoués à <b>transformer votre équipe</b> en une force unifiée, prête à relever tous les <strong>défis</strong>.<br /><br /> Nos concepts de team building innovants vous offrent des <strong>expériences uniques</strong> conçues pour <b>stimuler la collaboration</b>, <b>renforcer les liens</b> et favoriser la croissance collective.<br /><br /> Nos <strong>activités ludiques en Haute Savoie</strong> sont conçues pour engager pleinement votre équipe, les plongeant dans des <b>scénarios interactifs</b> où chaque membre joue un rôle crucial. <br /><br /> Improvisations théâtrales, jeux de rôle stratégiques et des défis de résolution de problèmes, nous encourageons la <strong>communication</strong>, la <b>créativité</b> et le <strong>leadership</strong>. <br /><br /> Nous croyons fermement que le succès d'une équipe repose sur la force de ses <b>liens</b>, et nous sommes là pour vous aider à les renforcer.Nous pouvons transformer votre équipe en une <b>véritable force sur la scène professionnelle</b>.
-                </p>
-                <CustomButton text="Créons ensemble votre team building" />
-              </div>
-            </div>
-            <div>
-            <Image
-                                src="/images/caroussel/img2.webp"
-                                alt="Content illustration"
-                                className="rounded"
-                                width={600}
-                                height={600}
-                                priority
-                            />
-            </div>
+    <section className="border-t-2 border-red-700 bg-gradient-to-b from-gray-200 to-gray-400">
+  <div className="mx-auto px-4 py-12 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:items-center lg:gap-12">
+      {/* Partie Texte */}
+      <div className="flex justify-center text-center">
+        <div className="max-w-lg md:max-w-none">
+          <h2 className="font-poppins text-4xl font-semibold">
+            Réinventons votre{' '}
+            <span className="text-gray-100 bg-gradient-to-r from-red-600 to-red-900 p-2 inline-block -rotate-3">
+              équipe
+            </span>
+          </h2>
+
+          <p className="font-roboto mt-6 text-lg font-light">
+            Chez En Scènes Acting, nous sommes dévoués à{' '}
+            <strong >
+              transformer votre équipe
+            </strong>{' '}
+            en une force unifiée, prête à relever tous les{' '}
+            <strong >
+              défis
+            </strong>
+            .<br /><br />
+            
+            Nos concepts de team building innovants vous offrent des{' '}
+            <strong className="text-gray-100 bg-gradient-to-r from-red-700 to-red-900 p-1">
+              expériences uniques
+            </strong>{' '}
+            conçues pour stimuler la collaboration, renforcer les liens et favoriser la croissance collective.
+            <br /><br />
+            
+            Nos activités ludiques en Haute Savoie plongent votre équipe dans des{' '}
+            <strong >
+              scénarios interactifs
+            </strong>{' '}
+            où chaque membre joue un rôle crucial. Improvisations théâtrales, jeux de rôle stratégiques et défis 
+            de résolution de problèmes encouragent la{' '}
+            <strong >
+              communication
+            </strong>
+            , la{' '}
+            <strong>
+              créativité
+            </strong>{' '}
+            et le{' '}
+            <strong>
+              leadership
+            </strong>
+            .
+          </p>
+
+          <div className="mt-8">
+            <CustomButton 
+              text="Créons ensemble votre team building"
+              className="bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white font-poppins px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all"
+            />
           </div>
         </div>
-      </section>
+      </div>
+
+      {/* Partie Image */}
+      <div className="relative flex justify-center ">
+        <Image
+          src="/images/caroussel/img2.webp"
+          alt="Content illustration"
+          width={600}
+          height={600}
+          className="border-2 border-red-700 rounded-xl shadow-2xl shadow-neutral-900 transition-transform duration-300 ease-in-out hover:scale-90 md:hover:scale-105 hover:rotate-3 hover:shadow-[10px_10px_30px_rgba(0,0,0,0.4)]"
+          priority
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
       </main>
     </>
   );
