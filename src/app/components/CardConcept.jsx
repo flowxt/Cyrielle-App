@@ -4,30 +4,30 @@ import { motion } from "framer-motion";
 const CardConcept = ({ image, title, paragraph, listItems }) => {
   return (
     <motion.article
-    whileHover={{ scale: 1.02, boxShadow: "0px 10px 30px rgba(239, 68, 68, 0.15)" }}
-    whileTap={{ scale: 0.98 }}
-    className="group relative w-[90%] sm:w-full max-w-[320px] sm:max-w-md mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-red-900/20 bg-gray-100 bg-opacity-80 backdrop-blur-sm border border-red-900/30 hover:border-red-500/50 transition-all duration-300"
-  >
-      {/* Image avec overlay dégradé */}
-      <div className="relative h-56 overflow-hidden">
+      whileHover={{ scale: 1.02, boxShadow: "0px 10px 30px rgba(239, 68, 68, 0.15)" }}
+      whileTap={{ scale: 0.98 }}
+      className="group relative w-[90%] sm:w-full max-w-[320px] sm:max-w-md mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-red-900/20 bg-gray-100 bg-opacity-80 backdrop-blur-sm border border-red-900/30 hover:border-red-500/50 transition-all duration-300 h-[600px] flex flex-col"
+    >
+      {/* Image avec overlay dégradé - hauteur fixe */}
+      <div className="relative h-56 flex-shrink-0 overflow-hidden">
         <img 
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           src={image} 
           alt={title} 
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/80" />
+        <div className="absolute inset-0 " />
       </div>
 
-      {/* Contenu */}
-      <div className="p-6 space-y-4">
+      {/* Contenu - hauteur flexible avec scroll si nécessaire */}
+      <div className="p-6 space-y-4 flex-grow flex flex-col overflow-auto">
         {/* Titre avec effet de soulignement animé */}
-        <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-800 font-poppins text-center pb-3 relative">
+        <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-800 font-poppins text-center pb-3 relative flex-shrink-0">
           {title}
           <span className="absolute bottom-0 left-1/2 w-16 h-0.5 bg-red-500 transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
         </h3>
 
         {/* Paragraphe formaté */}
-        <div className="text-gray-800 font-roboto space-y-3 text-justify leading-relaxed">
+        <div className="text-gray-800 font-roboto space-y-3 text-justify leading-relaxed flex-shrink">
           {paragraph.split("\n").map((line, index) => (
             <p key={index} className="text-current">
               {line.split("**").map((part, i) =>
@@ -44,7 +44,7 @@ const CardConcept = ({ image, title, paragraph, listItems }) => {
         </div>
 
         {/* Liste avec flèches animées */}
-        <ul className="space-y-3 mt-4">
+        <ul className="space-y-3 mt-auto">
           {listItems.map((item, index) => (
             <motion.li
               key={index}

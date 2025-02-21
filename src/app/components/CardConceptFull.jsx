@@ -43,7 +43,7 @@ const CardConceptFull = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    arrows: true, // Activer les flèches pour desktop/tablette
+    arrows: true,
     responsive: [
       {
         // Desktop
@@ -51,6 +51,8 @@ const CardConceptFull = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          arrows: true,
+          dots: true,
         }
       },
       {
@@ -59,6 +61,8 @@ const CardConceptFull = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          arrows: true,
+          dots: true,
         }
       },
       {
@@ -67,7 +71,8 @@ const CardConceptFull = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: false, // Désactiver les flèches sur mobile
+          arrows: false,
+          dots: true,
         }
       }
     ]
@@ -76,28 +81,15 @@ const CardConceptFull = () => {
   return (
     <>
       <div className="bg-gradient-to-b from-gray-200 to-gray-300 pt-4 border-gray-900 pb-6">
-        <h2 className="text-center text-3xl md:text-3xl lg:text-4xl font-poppins">
+        <h2 className="text-center text-3xl md:text-3xl lg:text-4xl font-poppins mb-8">
           Nos <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">concepts</span>
         </h2>
         
-        {/* Version Desktop et Tablette */}
-        <div className="hidden md:flex flex-wrap justify-center py-8 gap-4">
-          {cardsData.map((card, index) => (
-            <CardConcept
-              key={index}
-              image={card.image}
-              title={card.title}
-              paragraph={card.paragraph}
-              listItems={card.listItems}
-            />
-          ))}
-        </div>
-
-        {/* Version Mobile */}
-        <div className="md:hidden py-8">
+        {/* Slider pour toutes les versions */}
+        <div className="px-4 md:px-8 lg:px-12">
           <Slider {...settings}>
             {cardsData.map((card, index) => (
-              <div key={index}>
+              <div key={index} className="px-2">
                 <CardConcept
                   image={card.image}
                   title={card.title}
@@ -109,6 +101,40 @@ const CardConceptFull = () => {
           </Slider>
         </div>
       </div>
+
+      {/* Ajout de styles personnalisés pour les flèches du slider */}
+      <style jsx global>{`
+        .slick-prev,
+        .slick-next {
+          width: 40px;
+          height: 40px;
+          z-index: 10;
+        }
+        
+        .slick-prev {
+          left: -5px;
+        }
+        
+        .slick-next {
+          right: -5px;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+          font-size: 40px;
+          color: #991b1b;
+          opacity: 0.75;
+        }
+
+        .slick-dots li button:before {
+          color: #991b1b;
+        }
+
+        .slick-dots li.slick-active button:before {
+          color: #991b1b;
+          opacity: 1;
+        }
+      `}</style>
     </>
   );
 };
