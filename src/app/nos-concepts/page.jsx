@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Carousel from "../components/Carousel";
 import CardConceptFull from "../components/CardConceptFull";
 import Hero from '../components/Hero';
 import CustomButton from "../components/CustomButton";
@@ -27,35 +26,45 @@ export default function Concepts() {
   <CardConceptFull />
 
 
-   <section className="grid grid-cols-1 bg-gradient-to-t from-gray-200 to-gray-400  md:grid-cols-5 py-12">
-            <div className="md:col-span-3 px-12 text-center py-2">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl mb-4 md:pb-6 lg:pt-6 font-semibold">Fabriquons <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">des souvenirs</span></h2>
-              <p className="text-lg font-roboto font-thin">
-              En scènes acting® casse les codes pour vous faire vivre des expériences insolites et immersives. Plongez dans nos univers vivants où les interactions sociales seront essentielles. Le temps de quelques heures, vivez une aventure unique, où le passé et le présent se mêlent pour une <strong>expérience insolite</strong>. Rejoignez nous pour vous créer des <strong>souvenirs inoubliables</strong> !
-              </p>
-              <button className="mt-12 px-6 py-3 text-white bg-red-800  hover:bg-red-700 mx-auto flex justify-center items-center font-poppins">Créons ensemble ces moments</button>
-            </div>
-            <div className="md:col-span-2 grid grid-rows-2 md:gap-4 lg:pt-6 mr-6">
-              <div className="relative w-full h-full hidden md:block">
-                <Image
-                  src="/tb1.webp"
-                  alt="Team Building"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
-                />
-              </div>
-              <div className="relative w-full h-full ">
-                <Image
-                  src="/tb1.webp"
-                  alt="Team Building"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
-                />
-              </div>
-            </div>
-          </section>
+  <section className="relative overflow-hidden bg-gradient-to-t from-gray-200 to-gray-400">
+  <div className="mx-auto px-4 py-16 sm:px-6 lg:px-8 max-w-7xl">
+    <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:items-center">
+      <div className="space-y-8">
+        <h2 className="text-3xl font-semibold sm:text-4xl font-poppins">
+          Fabriquons{' '}
+          <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">
+            des souvenirs
+          </span>
+        </h2>
+
+        <p className="text-lg leading-relaxed font-roboto font-light">
+          En scènes acting® casse les codes pour vous faire vivre des expériences insolites et immersives. 
+          Plongez dans nos univers vivants où les interactions sociales seront essentielles. 
+          Le temps de quelques heures, vivez une aventure unique, où le passé et le présent se mêlent 
+          pour une <strong>expérience insolite</strong>. Rejoignez nous pour vous créer 
+          des <strong>souvenirs inoubliables</strong> !
+        </p>
+
+        <button className="px-6 py-3 text-white bg-red-800 hover:bg-red-700 transition-colors duration-300 font-poppins rounded-lg shadow-lg hover:shadow-xl">
+          Créons ensemble ces moments
+        </button>
+      </div>
+
+      <div className="relative">
+        <div className="relative h-[500px] rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition-transform duration-300">
+          <Image
+            src="/tb1.webp"
+            alt="Team Building"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 to-red-500/5" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
           <section className="border-t-2 border-red-700 bg-gradient-to-b from-gray-200 to-gray-400">
   <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8 max-w-4xl">
     <div className="flex justify-center items-center">
