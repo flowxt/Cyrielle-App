@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 const CardConcept = ({ image, title, paragraph, listItems }) => {
   return (
     <motion.article
-      whileHover={{ scale: 1.02, boxShadow: "0px 10px 30px rgba(239, 68, 68, 0.15)" }}
-      whileTap={{ scale: 0.98 }}
-      className="group relative max-w-md rounded-2xl overflow-hidden shadow-2xl shadow-red-900/20 bg-gray-100 bg-opacity-80 backdrop-blur-sm border border-red-900/30 hover:border-red-500/50 transition-all duration-300"
-    >
+    whileHover={{ scale: 1.02, boxShadow: "0px 10px 30px rgba(239, 68, 68, 0.15)" }}
+    whileTap={{ scale: 0.98 }}
+    className="group relative w-[90%] sm:w-full max-w-[320px] sm:max-w-md mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-red-900/20 bg-gray-100 bg-opacity-80 backdrop-blur-sm border border-red-900/30 hover:border-red-500/50 transition-all duration-300"
+  >
       {/* Image avec overlay dégradé */}
       <div className="relative h-56 overflow-hidden">
         <img 

@@ -1,5 +1,8 @@
 import React from 'react';
+import Slider from 'react-slick';
 import CardConcept from './CardConcept';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const CardFormation = () => {const cardsData = [
     {
@@ -23,24 +26,52 @@ const CardFormation = () => {const cardsData = [
   
   ];
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  };
+
   return (
     <>
     <div className="bg-gradient-to-b from-gray-200 to-gray-300 pt-4 border-gray-900 pb-6">
-    <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-poppins">Notre <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">catalogue</span></h2>
-    <div className="flex flex-wrap justify-center py-8 gap-4">
-        
-      {cardsData.map((card, index) => (
-        <CardConcept
-          key={index}
-          image={card.image}
-          title={card.title}
-          paragraph={card.paragraph}
-          listItems={card.listItems}
-        />
-      ))}
+      <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-poppins">
+        Notre <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">catalogue</span>
+      </h2>
+      
+      {/* Version Desktop et Tablette */}
+      <div className="hidden md:flex flex-wrap justify-center py-8 gap-4">
+        {cardsData.map((card, index) => (
+          <CardConcept
+            key={index}
+            image={card.image}
+            title={card.title}
+            paragraph={card.paragraph}
+            listItems={card.listItems}
+          />
+        ))}
+      </div>
+
+      {/* Version Mobile */}
+      <div className="md:hidden py-8">
+        <Slider {...settings}>
+          {cardsData.map((card, index) => (
+            <div key={index}>
+              <CardConcept
+                image={card.image}
+                title={card.title}
+                paragraph={card.paragraph}
+                listItems={card.listItems}
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
-    </div>
-    </>
+  </>
   );
 };
 export default CardFormation;
