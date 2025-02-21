@@ -25,11 +25,58 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-  title: "En Scène Acting",
+  metadataBase: new URL("https://www.enscenes.com"),
+  title: "Team Building en Haute-Savoie | En Scène Acting",
   description:
-    "Créateur d'expériences interactives, En scènes acting vous embarque dans ses team building, conférences et concepts insolites.",
+    "Expert en team building en Haute-Savoie : activités insolites, spectacles interactifs et concepts uniques pour renforcer la cohésion d'équipe. Interventions à Annecy, Chamonix et toute la région Auvergne-Rhône-Alpes.",
+  keywords: [
+    "team building Haute-Savoie",
+    "cohésion équipe Annecy",
+    "activité entreprise Haute-Savoie",
+    "spectacle interactif",
+    "escape game entreprise",
+    "En Scène Acting",
+  ],
+  openGraph: {
+    type: "website",
+    title: "Team Building en Haute-Savoie | En Scène Acting",
+    description:
+      "Expert en team building en Haute-Savoie : activités insolites et spectacles interactifs pour renforcer la cohésion d'équipe.",
+    url: "https://www.enscenes.com",
+    siteName: "En Scène Acting",
+    locale: "fr_FR",
+    images: [
+      {
+        url: "/logoES.jpg",
+        width: 1200,
+        height: 630,
+        alt: "En Scène Acting - Team Building Haute-Savoie",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://www.enscenes.com",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  authors: [
+    {
+      name: "En Scène Acting",
+      url: "https://www.enscenes.com",
+    },
+  ],
   icons: {
     icon: "/logoES.jpg",
+    apple: "/logoES.jpg",
   },
 };
 
