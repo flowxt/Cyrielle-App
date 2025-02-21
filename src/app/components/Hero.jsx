@@ -15,74 +15,149 @@ const staggerContainer = {
 };
 
 const Hero = ({
-  backgroundImageSrc, // Image de fond qui change selon la page
-  title, // Titre principal
-  subtitle, // Sous-titre avec mots en rouge
-  description, // Texte descriptif
+  backgroundImageSrc,
+  title,
+  subtitle,
+  description,
 }) => {
   return (
-    <header>
-      {/* Section principale avec image de fond */}
-      <section className="relative">
+    <header className="min-h-screen flex flex-col">
+      {/* Section supérieure (50% hauteur) */}
+      <section className="relative h-[50vh]">
         <Image
           src={backgroundImageSrc}
           alt="Background"
           fill
           priority
           sizes="100vw"
-  quality={75}
+          quality={75}
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0"></div>
+        {/* Overlay pour améliorer la lisibilité */}
+        <div className="absolute inset-0 bg-black/30"></div>
 
-        {/* Contenu du Hero */}
-        <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:justify-end lg:px-8">
-          {/* Logo fixe */}
-          <div className="absolute top-20  left-0 p-4">
-            <Image
-              src="/logo-blanc.png"
-              alt="Logo en scènes acting"
-              className="w-40 sm:w-40 lg:w-48 xl:w-56"
-              width={150}
-              height={64}
-            />
-          </div>
-          {/* Titre */}
-          <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right lg:ml-auto">
-            <h1 className="text-3xl font-extrabold text-white lg:text-4xl bg-neutral-900/50 font-poppins uppercase  mt-14">
-              {title}
-            </h1>
-          </div>
+        {/* Conteneur du titre centré */}
+        <div className="relative h-full flex items-center justify-center">
+          <motion.h1
+            initial="hidden"
+            animate="visible"
+            variants={textVariants}
+            className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white font-poppins uppercase text-center px-4 max-w-4xl"
+          >
+            {title}
+          </motion.h1>
         </div>
       </section>
 
-      {/* Section avec texte et animations */}
-      <div className="bg-gradient-to-b from-gray-200 to-gray-300">
+      {/* Section inférieure (50% hauteur) */}
+      <section className="h-[50vh] bg-gradient-to-b from-gray-100 to-gray-200 flex items-center">
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true }}
           variants={staggerContainer}
-          className="max-w-3xl mx-auto text-center px-6 py-6"
+          className="w-full max-w-4xl mx-auto px-6"
         >
-          {/* Sous-titre */}
           <motion.h3
             variants={textVariants}
-            className="text-3xl md:text-4xl lg:text-5xl font-roboto my-4"
+            className="text-3xl md:text-4xl lg:text-5xl font-roboto text-center mb-8"
           >
             {subtitle}
           </motion.h3>
-          {/* Texte principal */}
           <motion.p
             variants={textVariants}
-            className="md:text-lg lg:text-xl font-roboto font-light py-8"
+            className="md:text-lg lg:text-xl font-roboto font-light text-center"
           >
             {description}
           </motion.p>
         </motion.div>
-      </div>
+      </section>
     </header>
   );
 };
 
 export default Hero;
+
+// import Image from "next/image";
+// import { motion } from "framer-motion";
+
+// const textVariants = {
+//   hidden: { opacity: 0, y: 50 },
+//   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+// };
+
+// const staggerContainer = {
+//   hidden: { opacity: 1 },
+//   visible: {
+//     opacity: 1,
+//     transition: { staggerChildren: 0.2, delayChildren: 0.3 },
+//   },
+// };
+
+// const Hero = ({
+//   backgroundImageSrc, // Image de fond qui change selon la page
+//   title, // Titre principal
+//   subtitle, // Sous-titre avec mots en rouge
+//   description, // Texte descriptif
+// }) => {
+//   return (
+//     <header>
+//       {/* Section principale avec image de fond */}
+//       <section className="relative h-screen flex items-center justify-center">
+//         <Image
+//           src={backgroundImageSrc}
+//           alt="Background"
+//           fill
+//           priority
+//           sizes="100vw"
+//           quality={75}
+//           className="absolute inset-0 w-full h-full object-cover object-center"
+//         />
+//         {/* Overlay pour améliorer la lisibilité du texte */}
+//         <div className="absolute inset-0 bg-black/50"></div>
+
+//         {/* Contenu du Hero */}
+//         <div className="relative mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 text-center">
+//           {/* Titre */}
+//           <motion.h1
+//             initial="hidden"
+//             whileInView="visible"
+//             viewport={{ once: true, amount: 0.5 }}
+//             variants={textVariants}
+//             className="text-4xl font-extrabold text-white sm:text-5xl lg:text-6xl font-poppins uppercase"
+//           >
+//             {title}
+//           </motion.h1>
+//         </div>
+//       </section>
+
+//       {/* Section avec texte et animations */}
+//       <div className="bg-gradient-to-b from-gray-100 to-gray-200 py-20">
+//         <motion.div
+//           initial="hidden"
+//           whileInView="visible"
+//           viewport={{ once: true, amount: 0.5 }}
+//           variants={staggerContainer}
+//           className="max-w-3xl mx-auto text-center px-6"
+//         >
+//           {/* Sous-titre */}
+//           <motion.h3
+//             variants={textVariants}
+//             className="text-3xl md:text-4xl lg:text-5xl font-roboto my-4"
+//           >
+//             {subtitle}
+//           </motion.h3>
+//           {/* Texte principal */}
+//           <motion.p
+//             variants={textVariants}
+//             className="md:text-lg lg:text-xl font-roboto font-light py-8"
+//           >
+//             {description}
+//           </motion.p>
+//         </motion.div>
+//       </div>
+//     </header>
+//   );
+// };
+
+// export default Hero;
