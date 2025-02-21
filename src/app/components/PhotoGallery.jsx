@@ -94,14 +94,6 @@ const PhotoGallery = () => {
         </div>
       )}
 
-      <div className="text-center py-12 bg-white">
-        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">
-          Prêt pour une <strong>expérience</strong> inoubliable <br />en <strong>Haute-Savoie</strong> ?
-        </h2>
-        <Link href="/contact" className="bg-red-800 text-white px-8 py-3 rounded-lg hover:bg-red-900 transition-colors font-poppins mt-4 inline-block">
-          Contactez-nous dès maintenant !
-        </Link>
-      </div>
     </div>
   );
 };

@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import PhotoGallery from "../components/PhotoGallery";
 import StoryGameSection from "../components/StoryGame";
 import ChateauVideoSection from "../components/ChateauVideoSection";
+import Link from "next/link";
 
 const Gallery = () => {
   // Données pour les vidéos
@@ -69,9 +70,40 @@ const Gallery = () => {
       {/* Galerie de photos */}
       <PhotoGallery />
 
+
        {/* Section STORY GAME */}
        <StoryGameSection videos={storyGameVideos} />
        <ChateauVideoSection videos={chateauVideos} />
+       <section className="border-t-2 border-red-700 bg-gradient-to-b from-gray-100 to-gray-300">
+  <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8 max-w-4xl">
+    <div className="flex justify-center items-center">
+      <div className="flex justify-center text-center w-full">
+        <div className="max-w-2xl w-full">
+          <h2 className="font-poppins text-4xl font-semibold mb-12">
+            Prêt pour une{' '}
+            <span className="text-gray-100 bg-gradient-to-r from-red-600 to-red-900 p-2 inline-block -rotate-3">
+              expérience
+            </span>{' '}
+            inoubliable <br />en{' '}
+            <span className="text-gray-100 bg-gradient-to-r from-red-600 to-red-900 p-2 inline-block">
+              Haute-Savoie
+            </span>{' '}
+            ?
+          </h2>
+
+          <div className="mt-8">
+            <Link 
+              href="/contact" 
+              className="inline-block bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white font-poppins px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            >
+              Contactez-nous dès maintenant !
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     </>
   );
 };
