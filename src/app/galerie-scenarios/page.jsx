@@ -107,5 +107,6 @@ const Gallery = () => {
     </>
   );
 };
+// ma galery
 
 export default Gallery;
