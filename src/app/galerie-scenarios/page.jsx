@@ -64,6 +64,7 @@ const Gallery = () => {
             <br />
             <br />
             Vous êtes prêts ?
+      
           </>
         }
       />

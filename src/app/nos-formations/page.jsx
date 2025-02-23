@@ -1,8 +1,8 @@
 "use client";
 import Hero from '../components/Hero';
 import Image from 'next/image';
-import CustomButton from '../components/CustomButton';
 import CardFormation from '../components/CardFormation';
+import Link from 'next/link';
 
 
 export default function Formation() {
@@ -51,12 +51,14 @@ export default function Formation() {
             </strong>
           </p>
 
-          <div className="mt-8 mb-12">
-            <CustomButton 
-              text="Je vous explique ce que je veux"
-              className="bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white font-poppins px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all"
-            />
-          </div>
+          <div className="mt-8">
+  <Link 
+    href="/contact"
+    className="inline-block px-6 py-3 bg-gradient-to-b from-red-700 to-red-900 hover:bg-red-950 hover:scale-105 text-white font-poppins rounded-lg shadow-lg hover:shadow-xl transition-all text-center"
+  >
+    Je vous explique ce que je veux
+  </Link>
+</div>
           
           {/* Section certification */}
           <div className="mt-12 pt-12 border-t border-red-700/30">

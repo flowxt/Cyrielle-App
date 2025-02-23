@@ -16,21 +16,23 @@ const ContactForm = () => {
     enigmaAnswer: "",
   });
 
+  const [formError, setFormError] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    setFormError(""); // Réinitialise l'erreur lors de la saisie
 
-    // Validation du téléphone (autoriser uniquement les chiffres et les caractères spéciaux)
+    // Validation du téléphone
     if (name === "phone") {
-      const phoneRegex = /^[0-9+\-().\s]*$/; // Autorise chiffres, +, -, (), ., espace
+      const phoneRegex = /^[0-9+\-().\s]*$/;
       if (!phoneRegex.test(value)) return;
     }
 
-    // Validation du code postal (uniquement chiffres, max 5 caractères)
+    // Validation du code postal
     if (name === "postalCode") {
-      const postalRegex = /^[0-9]{0,5}$/; // Uniquement 5 chiffres max
+      const postalRegex = /^[0-9]{0,5}$/;
       if (!postalRegex.test(value)) return;
     }
 
@@ -42,22 +44,43 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setFormError("");
+
+    // Vérification des champs requis
+    if (!formData.firstName.trim() || !formData.lastName.trim() || !formData.email.trim()) {
+      setFormError("Merci de remplir tous les champs obligatoires (Prénom, Nom et Email)");
+      return;
+    }
 
     // Validation email
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!emailRegex.test(formData.email)) {
-      alert("Veuillez entrer une adresse email valide.");
+      setFormError("Merci de saisir une adresse email valide");
       return;
     }
 
+    // Si tout est ok, soumettre le formulaire
     console.log("Formulaire soumis :", formData);
     setModalMessage(`Merci ${formData.firstName} pour votre message !\nNous vous contacterons bientôt.`);
     setIsModalOpen(true);
+    
+    // Réinitialiser le formulaire
+    setFormData({
+      firstName: "",
+      lastName: "",
+      postalCode: "",
+      city: "",
+      phone: "",
+      email: "",
+      message: "",
+      enigmaAnswer: "",
+    });
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
 
   return (
     <section className="bg-gradient-to-b from-gray-200 to-gray-400 py-12">
@@ -188,6 +211,25 @@ const ContactForm = () => {
                 />
               </div>
 
+ {/* Message d'erreur */}
+ {formError && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="bg-red-50 border-l-4 border-red-500 p-4 rounded-md"
+                >
+                  <div className="flex items-center">
+                    <div className="flex-shrink-0">
+                      <span className="text-red-500">⚠️</span>
+                    </div>
+                    <div className="ml-3">
+                      <p className="text-sm text-red-700 font-roboto">
+                        {formError}
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+              )}
               {/* Bouton révisé */}
               <motion.button
                 whileHover={{ scale: 1.02 }}

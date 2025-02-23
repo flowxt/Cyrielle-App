@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import CardTBComplete from '../components/CardTBComplete';
-import CustomButton from '../components/CustomButton';
 import Hero from '../components/Hero';
 
 
@@ -115,7 +114,7 @@ export default function TeamBuilding() {
           <div className="mt-8">
   <Link 
     href="/contact"
-    className="inline-block px-6 py-3 bg-gradient-to-r from-red-700 to-red-900 hover:red-950 hover:scale-105 text-white font-poppins rounded-lg shadow-lg hover:shadow-xl transition-all text-center"
+    className="inline-block px-6 py-3 bg-gradient-to-r from-red-700 to-red-900 hover:bg-red-950 hover:scale-105 text-white font-poppins rounded-lg shadow-lg hover:shadow-xl transition-all text-center"
   >
     Créons ensemble votre team building
   </Link>

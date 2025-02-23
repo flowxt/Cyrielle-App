@@ -3,7 +3,7 @@ import Image from "next/image";
 import CardConceptFull from "../components/CardConceptFull";
 import Hero from '../components/Hero';
 import CustomButton from "../components/CustomButton";
-
+import Link from 'next/link';
 
 export default function Concepts() {
     return (
@@ -45,9 +45,12 @@ export default function Concepts() {
           des <strong>souvenirs inoubliables</strong> !
         </p>
 
-        <button className="px-6 py-3 text-white bg-red-800 hover:bg-red-700 transition-colors duration-300 font-poppins rounded-lg shadow-lg hover:shadow-xl">
-          Créons ensemble ces moments
-        </button>
+        <Link 
+    href="/contact"
+    className="inline-block px-6 py-3 bg-gradient-to-b from-red-700 to-red-900 hover:bg-red-950 hover:scale-105 text-white font-poppins rounded-lg shadow-lg hover:shadow-xl transition-all text-center"
+  >
+    Créons ensemble ces moments
+  </Link>
       </div>
 
       <div className="relative">
@@ -96,11 +99,13 @@ export default function Concepts() {
           </p>
 
           <div className="mt-8">
-            <CustomButton 
-              text="Je vous explique ce que je veux"
-              className="bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white font-poppins px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all"
-            />
-          </div>
+  <Link 
+    href="/contact"
+    className="inline-block px-6 py-3 bg-gradient-to-b from-red-700 to-red-900 hover:bg-red-950 hover:scale-105 text-white font-poppins rounded-lg shadow-lg hover:shadow-xl transition-all text-center"
+  >
+    Je vous explique ce que je veux
+  </Link>
+</div>
         </div>
       </div>
     </div>
