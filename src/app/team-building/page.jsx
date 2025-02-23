@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-
+import Link from 'next/link';
 import CardTBComplete from '../components/CardTBComplete';
 import CustomButton from '../components/CustomButton';
 import Hero from '../components/Hero';
@@ -50,9 +50,14 @@ export default function TeamBuilding() {
       <main className="flex flex-col">
    <section className='max-w-7xl mx-auto px-4 py-8 '>
     <CardTBComplete />
-    <div className='flex justify-center'>
-    <button className=' mt-8 p-2 bg-gradient-to-t from-gray-700 to-black text-lg lg:text-xl text-white mx-auto'>Découvrez nos différents concepts</button>
-    </div>
+    <div className="flex justify-center w-full mt-8">
+    <Link 
+      href="/nos-concepts"
+      className="inline-block px-6 py-3 bg-gradient-to-b from-gray-900 to-black text-white font-poppins rounded-lg shadow-lg hover:bg-red-950 hover:scale-105 hover:shadow-xl transition-all text-center"
+    >
+      Découvrez nos différents concepts
+    </Link>
+  </div>
     {/* A crrer un bouton avec un bg black ici plutot que de prendre */}
     </section>
 
@@ -108,11 +113,13 @@ export default function TeamBuilding() {
           </p>
 
           <div className="mt-8">
-            <CustomButton 
-              text="Créons ensemble votre team building"
-              className="bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white font-poppins px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all"
-            />
-          </div>
+  <Link 
+    href="/contact"
+    className="inline-block px-6 py-3 bg-gradient-to-r from-red-700 to-red-900 hover:red-950 hover:scale-105 text-white font-poppins rounded-lg shadow-lg hover:shadow-xl transition-all text-center"
+  >
+    Créons ensemble votre team building
+  </Link>
+</div>
         </div>
       </div>
 

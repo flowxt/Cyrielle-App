@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Image5 from '../../assets/images/image5.png';
 import CustomButton from './CustomButton';
+import Link from 'next/link';
 
 export default function ContentHome() {
     return (
@@ -32,10 +33,12 @@ export default function ContentHome() {
                                 </p>
                             </div>
 
-                            <CustomButton 
-                                text="Je veux en apprendre plus" 
-                                className="mt-4"
-                            />
+                            <Link 
+  href="/team-building"
+  className="inline-block mt-4 px-6 py-3 bg-gradient-to-b from-red-700 to-red-900 text-white font-poppins rounded-lg shadow-lg  hover:bg-red-950 hover:scale-105 hover:shadow-xl transition-all text-center"
+>
+  Je veux en apprendre plus
+</Link>
                         </div>
 
                         <div className="relative group h-[500px] hidden md:block">
@@ -92,10 +95,13 @@ export default function ContentHome() {
                                 </p>
                             </div>
 
-                            <CustomButton 
-                                text="Découvrez nos concepts"
-                                className="mt-4"
-                            />
+                            <Link 
+  href="/nos-concepts"
+  className="inline-block mt-4 px-6 py-3 bg-gradient-to-b from-red-700 to-red-900 text-white font-poppins rounded-lg shadow-lg  hover:bg-red-950 hover:scale-105 hover:shadow-xl transition-all text-center"
+>
+
+  Découvrez nos concepts
+</Link>
                         </div>
                     </div>
                 </div>

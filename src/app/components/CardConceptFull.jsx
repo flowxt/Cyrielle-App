@@ -86,7 +86,7 @@ const CardConceptFull = () => {
         </h2>
         
         {/* Slider pour toutes les versions */}
-        <div className="px-4 md:px-8 lg:px-12">
+        <div className="py-12 px-4 md:px-8 lg:px-12">
           <Slider {...settings}>
             {cardsData.map((card, index) => (
               <div key={index} className="px-2">
