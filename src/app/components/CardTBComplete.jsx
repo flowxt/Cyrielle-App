@@ -17,9 +17,10 @@ const cardData = [
   {
     imageSrc: '/images/caroussel/img3.webp',
     title: 'Développer',
-    content: "Vous êtes convaincu que le format «Réunion» n'est pas le plus efficace pour faire émerger de nouvelles idées.<br /><br /> Nous concevrons un scénario personnalisé pour permettre à vos collaborateurs de réfléchir autrement et d'aboutir à des actions concrètes.",
+    content: 'Vous êtes convaincu que le format «Réunion» n’est pas le plus efficace pour developper un projet.<br /><br /> A votre écoute pour comprendre vos attentes, nous concevrons un scénario personnalisé pour permettre à vos collaborateurs de réfléchir autrement et d’aboutir à des actions concrètes.',
     buttonText: 'Libérer la reflexion'
-  }
+  },
+  // Ajoutez plus de cartes ici
 ];
 
 const CardTBComplete = () => {

@@ -41,7 +41,7 @@ export default function CardTB({ imageSrc, title, content, buttonText }) {
           <div className="pt-4">
             <CustomButton 
               text={buttonText}
-              additionalClasses="w-full bg-red-600 hover:bg-red-700 text-white font-poppins py-3 rounded-lg transition-all duration-300 hover:scale-[1.02]" 
+              additionalClasses="w-full transition-all duration-300 hover:scale-[1.02]" 
             />
           </div>
         )}
