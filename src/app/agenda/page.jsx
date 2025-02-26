@@ -3,6 +3,7 @@
 import CustomButton from '../components/CustomButton';
 import GoogleReviews from '../components/GoogleReviews';
 import Hero from '../components/Hero';
+import TrustedPartners from '../components/TrustedPartners';
 
 
 export default function Agenda() {
@@ -29,6 +30,7 @@ export default function Agenda() {
       />
     <div>
       <GoogleReviews />
+      <TrustedPartners />
     </div>
     </>
   );
