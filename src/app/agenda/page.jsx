@@ -18,7 +18,9 @@ export default function Agenda() {
         }
         description={
           <>
-          En scènes acting® casse les codes pour vous faire vivre des <strong>expériences insolites</strong> et immersives en <strong>Haute-Savoie</strong>.Plongez dans nos univers vivants où les <b>interactions sociales</b> seront essentielles. Le temps de quelques heures, vivez une <b>aventure unique</b>, où le passé et le présent se mêlent pour une expérience hors du temps. Nos scénarios de jeu vous permette de suivre une histoire de l'intérieur en <b>fouillant, analysant</b> et <b>résolvant</b> des <b>énigmes</b> alors préparez vous à vous remuer les méninges ! Rejoignez nous vite pour vous créer des <b>souvenirs inoubliables</b> !
+          En scènes acting® vous propose des <strong>expériences immersives</strong> en <strong>Haute-Savoie</strong>. 
+          Plongez dans nos univers où <b>interactions</b>, <b>énigmes</b> et <b>aventures</b> se mêlent pour créer des 
+          <strong> moments inoubliables</strong> !
           <CustomButton text="Saurez-vous résoudre cette énigme ?" additionalClasses="mb-8 mt-4 text-lg" />
           </>
           
