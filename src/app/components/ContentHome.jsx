@@ -74,24 +74,23 @@ export default function ContentHome() {
 
                         <div className="space-y-6">
                         <h2 className="text-3xl font-semibold text-gray-900 sm:text-4xl font-poppins">
-                                Captez de nouveaux visiteurs avec un{' '}
+                                Vous captivez grâce à nos{' '}
                                 <strong className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">
                                     concept ludique
-                                </strong>
-                                .
+                                </strong> où vous devenez  « spect’acteurs »
                             </h2>
 
                             <div className="space-y-6 text-gray-700 font-roboto">
                             <p className="text-lg leading-relaxed">
-                                    Nous offrons à nos spect'acteurs, une <b>immersion</b> au coeur de votre lieu ou de votre activité, pour découvrir ou re-découvrir de manière <b>ludique</b> ce qui les entourent.
+                                    Nous vous offrons une <b>immersion</b> au coeur de lieu splendide pour découvrir ou redécouvrir ce et ceux qui nous entourent. 
                                 </p>
 
                                 <p className="text-lg leading-relaxed">
-                                    Nos <b>concepts de jeux</b> s'adaptent à votre environnement et les scénarios qui les accompagnent sont créés pour le mettre en valeur.
+                                    Que vous nous donniez carte blanche ou un cahier des charges, nous nous adaptions pour vous offrir un <strong>événement sur mesure et clé en main</strong>.
                                 </p>
 
                                 <p className="text-lg leading-relaxed">
-                                    Que vous nous donniez carte blanche ou un cahier des charges, nous nous adaptons pour vous offrir un <b>événement sur mesure et clef en main</b>.
+                                    Nous concevons des scénarios de jeux théâtralisés grandeur nature mis en scène par nos équipes de comédiens qui vous embarquerons dans une <strong>expérience intéractive </strong>créatrice de souvenirs.
                                 </p>
                             </div>
 
