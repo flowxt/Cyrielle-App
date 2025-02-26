@@ -28,7 +28,7 @@ export default function Agenda() {
         }
         
       />
-    <div>
+    <div className='bg-gradient-to-b from-gray-200 to-gray-400'>
       <GoogleReviews />
       <TrustedPartners />
     </div>

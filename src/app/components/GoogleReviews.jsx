@@ -147,12 +147,27 @@ const reviews = [
 
 const GoogleReviews = () => {
   return (
-    <div className="bg-gray-50 py-12 overflow-hidden">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-24 mt-12 font-poppins">Témoignages de nos <span className='px-4 bg-red-800 text-white '>clients</span></h2>
+    <div className=" py-12 overflow-hidden">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-24 mt-12 font-poppins">
+        Témoignages de nos <span className='px-4 bg-red-800 text-white'>clients</span>
+      </h2>
+      
       <div className="relative w-full overflow-hidden mb-24">
-        <div className="animate-scroll whitespace-nowrap ">
-          {reviews.concat(reviews).map((review, index) => ( // Duplique les avis pour un défilement continu
-            <div key={index} className="inline-block w-80 mx-4 bg-gray-200 p-6 rounded-lg shadow-xl h-80 ">
+        {/* Dégradé gauche */}
+        <div 
+          className="absolute left-0 top-0 h-full w-32 z-10 pointer-events-none"
+          style={{
+            background: 'linear-gradient(to right, rgb(249 250 251) 0%, rgba(249, 250, 251, 0) 100%)'
+          }}
+        />
+
+        {/* Carrousel de cartes */}
+        <div className="animate-scroll whitespace-nowrap">
+          {reviews.concat(reviews).map((review, index) => (
+            <div 
+              key={index} 
+              className="inline-block w-80 mx-4 bg-gray-200 p-6 rounded-lg shadow-xl h-80 hover:shadow-2xl transition-shadow duration-300"
+            >
               <div className="flex items-center mb-4">
                 <div>
                   <h3 className="text-xl font-semibold font-poppins">{review.author_name}</h3>
@@ -171,6 +186,14 @@ const GoogleReviews = () => {
             </div>
           ))}
         </div>
+
+        {/* Dégradé droite */}
+        <div 
+          className="absolute right-0 top-0 h-full w-32 z-10 pointer-events-none"
+          style={{
+            background: 'linear-gradient(to left, rgb(249 250 251) 0%, rgba(249, 250, 251, 0) 100%)'
+          }}
+        />
       </div>
     </div>
   );
