@@ -27,7 +27,7 @@ const images = [
   "/images/caroussel/img14.webp",
   "/images/petite4bloc3.png",
   //bloc 4 et dernier bloc
- "/images/caroussel/img17.webp",
+//  "/images/caroussel/img17.webp",
   "/images/IMG_2493.jpg",
   "/images/imagenum2.png",
   "/images/imagenum3.png",
