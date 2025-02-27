@@ -63,24 +63,29 @@ const PhotoGallery = () => {
 
   return (
     <div className=" py-12">
-      <div ref={galleryRef} className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 max-w-7xl mx-auto">
+          <div 
+        ref={galleryRef} 
+        className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 max-w-7xl mx-auto"
+        style={{ gridAutoRows: 'minmax(200px, auto)' }}
+      >
         {images.map((src, index) => (
           <motion.div
             key={index}
-            
-            whileTap={{ scale: 0.95 }}
-            className={`overflow-hidden rounded-lg shadow-lg cursor-pointer 
-              ${index % 5 === 0 ? "col-span-2 row-span-2" : ""}`}
-            onClick={() => setSelectedImage(src)}
+            className={`
+              overflow-hidden rounded-lg shadow-lg cursor-pointer
+              ${index % 5 === 0 ? "md:col-span-2 md:row-span-2" : ""}
+              ${index % 5 === 0 ? "min-h-[400px]" : "min-h-[200px]"} // Hauteurs minimales
+            `}
           >
             <img
               src={src}
               alt={`Team Building ${index + 1}`}
-              className="w-full h-full object-cover transition-transform duration-300"
+              className="w-full h-full object-cover"
             />
           </motion.div>
         ))}
       </div>
+
 
       {selectedImage && (
         <div
