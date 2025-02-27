@@ -6,19 +6,19 @@ import "slick-carousel/slick/slick-theme.css";
 
 const CardFormation = () => {const cardsData = [
     {
-      image: '/carte2.png',
+      image: '/formation2.png',
       title: 'Osez vous exprimer',
       paragraph: "Découvrez vos talents d'orateurs et apprenez à vous faire confiance.\n \n Oser vous exprimer et prenez du plaisir à le faire grâce à des outils pratiques et ludiques à utiliser au quotidien.",
       listItems: ['De 4 à 8 personnes','Durée : 3h00'],
     },
     {
-      image: '/carte2.png',
+      image: '/testformation.png',
       title: 'Unissons vos équipes',
       paragraph: "Appréhendez la ludopédagogie et permettez à vos équipes de construire des liens durables.\n \n De nouvelles méthodes pour une cohésion d'équipe sans faille.",
       listItems: ['De 6 à 10 personnes', 'Durée: 7h00', "Sur une journée ou 2 demi journée"],
     },
     {
-      image: '/carte2.png',
+      image: '/formation3.png',
       title: "Brainstormons autrement",
       paragraph: " Comprendre les différentes phases d'un brainstorming réussi grâce aux mécanismes du jeu de rôle.\n \n Plongez dans cet univers pour en décrypter toutes les facettes.",
       listItems: ['De 6 à 10 personnes', "Durée: 7h", 'Sur une journée ou 2 demi journée'],

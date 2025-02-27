@@ -125,7 +125,7 @@ export default function TeamBuilding() {
       {/* Partie Image */}
       <div className="relative flex justify-center ">
         <Image
-          src="/images/caroussel/img2.webp"
+          src="/cohesion.png"
           alt="Content illustration"
           width={600}
           height={600}

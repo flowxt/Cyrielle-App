@@ -48,7 +48,7 @@ const Gallery = () => {
   return (
     <>
       <Hero
-        backgroundImageSrc="/images/caroussel/img2.webp"
+        backgroundImageSrc="/telescope.png"
         title="VIVEZ L'AVENTURE DE L'INTÉRIEUR"
         subtitle={
           <>
@@ -68,7 +68,7 @@ const Gallery = () => {
           </>
         }
       />
-      <div className="bg-gradient-to-b from-gray-200 to-gray-400">
+      <div className="bg-gradient-to-t from-gray-200 to-gray-400">
       {/* Galerie de photos */}
       <PhotoGallery />
 

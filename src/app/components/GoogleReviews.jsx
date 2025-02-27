@@ -142,6 +142,27 @@ const reviews = [
     text: "Encore une expérience dont je me souviendrai ! C'est la deuxième fois que je participe à l'un des évènements immersifs proposés par En Scènes et le concept est à chaque fois une découverte géniale ! L'histoire est parfaitement écrite...",
     rating: 5,
   },
+  {
+    author_name: "Marie-Laure Fuchs",
+
+    relative_time_description: "il y a 2 semaines",
+    text: "Ma fille a beaucoup aimé l'escape game auquel elle a participé avec ses copines. Super organisation. Merci",
+    rating: 5,
+  },
+  {
+    author_name: "Carole Yahiaoui",
+
+    relative_time_description: "il y a 2 semaines",
+    text: "C’était génial ! Des parcours et mises en scène de qualité, un accueil chaleureux. Gentillesse et sourire au rendez-vous. À refaire !",
+    rating: 5,
+  },
+  {
+    author_name: "Dorian Lachaise",
+
+    relative_time_description: "il y a 2 semaines",
+    text: "Excellent moment, l’adaptation pour les enfants est parfaite, mon fils n’a pas vu le temps passé",
+    rating: 5,
+  },
   // Ajoutez d'autres avis ici
 ];
 

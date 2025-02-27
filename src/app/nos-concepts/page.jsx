@@ -56,7 +56,7 @@ export default function Concepts() {
       <div className="relative">
         <div className="relative h-[500px] rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition-transform duration-300">
           <Image
-            src="/tb1.webp"
+            src="/toxique-canape.png"
             alt="Team Building"
             fill
             className="object-cover"

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const CardConcept = ({ image, title, paragraph, listItems }) => {
   return (
@@ -10,11 +11,14 @@ const CardConcept = ({ image, title, paragraph, listItems }) => {
     >
       {/* Image avec overlay dégradé - hauteur fixe */}
       <div className="relative h-56 flex-shrink-0 overflow-hidden">
-        <img 
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          src={image} 
-          alt={title} 
-        />
+      <Image 
+    className="object-cover group-hover:scale-105 transition-transform duration-500"
+    src={image} 
+    alt={title}
+    fill
+    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+    priority
+  />
         <div className="absolute inset-0 " />
       </div>
 
