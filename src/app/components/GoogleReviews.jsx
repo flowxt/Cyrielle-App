@@ -163,6 +163,48 @@ const reviews = [
     text: "Excellent moment, l’adaptation pour les enfants est parfaite, mon fils n’a pas vu le temps passé",
     rating: 5,
   },
+  {
+    author_name: "Marvak",
+
+    relative_time_description: "il y a 2 semaines",
+    text: "Une belle expérience immersive qui a bien plu aux petits mais aussi aux grands. Tout le monde a passé un super moment.",
+    rating: 5,
+  },
+  {
+    author_name: "Aurelie Lepage",
+
+    relative_time_description: "il y a 2 semaines",
+    text: "J’ai testé la murder party au château de La Roche sur Foron et c’était génial. Une expérience fun, originale, immersive et prenante avec des comédiens génialissimes. Je recommande vivement, à faire entre amis ou en famille !",
+    rating: 5,
+  },
+  {
+    author_name: "Géraldine Boisson",
+
+    relative_time_description: "il y a 2 semaines",
+    text: "Super expérience immersive! Un jeu d’acteurs très juste et une histoire qui nous tient en haleine jusqu’au bout !! Bravo et merci pour ce bon moment partagé entre amis au château de l’échelle !",
+    rating: 5,
+  },
+  {
+    author_name: "Mickael Delove",
+
+    relative_time_description: "il y a 2 semaines",
+    text: "Les acteurs au top et immersion direct ! Meme les plus timides se lâchent",
+    rating: 5,
+  },
+  {
+    author_name: "Alexandre Jouss",
+
+    relative_time_description: "il y a 2 semaines",
+    text: "Un excellent moment. Absolument à faire. Je recommande à 100%",
+    rating: 5,
+  },
+  {
+    author_name: "Angélique Dussolier",
+
+    relative_time_description: "il y a 2 semaines",
+    text: "Super animation nous avons passé un très bon moment, convivial, divertissant et animé par des acteurs très talentueux. Le format d’enquête vivante où nous sommes également acteur est inédite. Nous recommandons entre amis ou en famille🔎🕵️‍♀️",
+    rating: 5,
+  },
   // Ajoutez d'autres avis ici
 ];
 
