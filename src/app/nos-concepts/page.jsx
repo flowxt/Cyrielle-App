@@ -2,7 +2,7 @@
 import Image from "next/image";
 import CardConceptFull from "../components/CardConceptFull";
 import Hero from '../components/Hero';
-import CustomButton from "../components/CustomButton";
+
 import Link from 'next/link';
 
 export default function Concepts() {
@@ -22,11 +22,11 @@ export default function Concepts() {
           </>
         }
       />
-    <main>
+    <main className="bg-gradient-to-b from-gray-200 to-gray-400">
   <CardConceptFull />
 
 
-  <section className="relative overflow-hidden bg-gradient-to-t from-gray-200 to-gray-400">
+  <section className="relative overflow-hidden ">
   <div className="mx-auto px-4 py-16 sm:px-6 lg:px-8 max-w-7xl">
     <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:items-center">
       <div className="space-y-8">
