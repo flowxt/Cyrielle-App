@@ -14,11 +14,13 @@ const Gallery = () => {
       src: "/videos/aventure2.mp4",
       title: "Toxique",
       buttonText: "Que se passe-t-il ?",
+      link: "/toxique"
     },
     {
       src: "/videos/aventure1.mp4",
       title: "Nuptial",
       buttonText: "Découvrir l'histoire",
+      link: "/nuptial"  // À compléter avec le bon lien quand nécessaire
     },
   ];
 
