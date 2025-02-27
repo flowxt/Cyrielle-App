@@ -4,6 +4,7 @@ import CustomButton from '../components/CustomButton';
 import GoogleReviews from '../components/GoogleReviews';
 import Hero from '../components/Hero';
 import TrustedPartners from '../components/TrustedPartners';
+import Link from 'next/link';
 
 
 export default function Agenda() {
@@ -22,7 +23,14 @@ export default function Agenda() {
           En scènes acting® vous propose des <strong>expériences immersives</strong> en <strong>Haute-Savoie</strong>. 
           Plongez dans nos univers où <b>interactions</b>, <b>énigmes</b> et <b>aventures</b> se mêlent pour créer des 
           <strong> moments inoubliables</strong> !
-          <CustomButton text="Saurez-vous résoudre cette énigme ?" additionalClasses="mb-8 mt-4 text-lg" />
+          <div className="flex justify-center w-full">
+      <Link 
+        href="/enigme"
+        className="inline-block mb-8 mt-4 text-lg bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white font-poppins px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all"
+      >
+        Saurez-vous résoudre cette énigme ?
+      </Link>
+    </div>
           </>
           
         }

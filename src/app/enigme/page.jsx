@@ -28,7 +28,7 @@ export default function Enigme() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="relative h-[400px] w-full shadow-2xl rounded-lg overflow-hidden"
+          className="relative h-[200px] w-full shadow-2xl rounded-lg overflow-hidden"
         >
           <Image
             src="/enigme2.png"
