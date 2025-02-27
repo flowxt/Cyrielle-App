@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import Link from 'next/link';
 
 const ChateauVideoSection = ({ videos }) => {
   return (
@@ -10,26 +12,33 @@ const ChateauVideoSection = ({ videos }) => {
 
         {/* Grille des vidéos */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {videos.map((video, index) => (
-            <div key={index} className="flex flex-col items-center">
-              <div className="w-full h-64 overflow-hidden rounded-xl shadow-2xl">
-                <video
-                  src={video.src}
-                  className="w-full h-full object-cover"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                />
-              </div>
-              <h3 className={`text-2xl text-center font-poppins font-bold mt-6 ${index < 2 ? 'text-red-800' : 'text-black'}`}>{video.title}</h3>
-              <div className="flex-grow flex items-end">
-                <button className={`mt-4 px-6 py-2 rounded-full font-roboto transition-colors ${index < 2 ? 'bg-white text-red-700 hover:bg-gray-100' : 'bg-red-800 text-white hover:bg-red-800'}`}>
-                  {video.buttonText}
-                </button>
-              </div>
-            </div>
-          ))}
+        {videos.map((video, index) => (
+  <div key={index} className="flex flex-col items-center">
+    <div className="w-full h-64 overflow-hidden rounded-xl shadow-2xl">
+      <video
+        src={video.src}
+        className="w-full h-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
+    </div>
+    <h3 className={`text-2xl text-center font-poppins font-bold mt-6 ${index < 2 ? 'text-red-800' : 'text-black'}`}>
+      {video.title}
+    </h3>
+    <div className="flex-grow flex items-end">
+      <Link 
+        href={video.link || '#'} 
+        className={`mt-4 px-6 py-2 rounded-full font-roboto transition-colors ${
+          index < 2 ? 'bg-white text-red-700 hover:bg-gray-100' : 'bg-red-800 text-white hover:bg-red-800'
+        }`}
+      >
+        {video.buttonText}
+      </Link>
+    </div>
+  </div>
+))}
         </div>
       </div>
     </section>

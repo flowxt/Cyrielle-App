@@ -27,22 +27,26 @@ const Gallery = () => {
       src: "/videos/aventure4.mp4",
       title: "Le dragon d'Elbevor et la princesse De Benevix",
       buttonText: "Que va t il se passer ?",
+      link: "/dragon"
     },
     {
       src: "/videos/aventure1.mp4",
       title: "Polyxène et le mystérieux message",
       buttonText: "Que cache ce message ?",
+      link: "/decryptage"
     },
     {
       src: "/videos/aventure5.mp4",
       title: "Le jugement de la comtesse",
       buttonText: "De quoi est-elle accusée ?",
+      link: "/jeu-argumentation"
     },
     {
       src: "/videos/chateau.mp4",
       title: "Disparition inquiétante",
       buttonText: "Qui a bien pu disparaître ?",
-    },
+      link: "/enquete"
+    }
   ];
 
   return (
