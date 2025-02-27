@@ -46,7 +46,7 @@ export default function TeamBuilding() {
         }
       />
     
-      <main className="flex flex-col">
+      <main className="flex flex-col bg-gradient-to-b from-gray-200 to-gray-400">
    <section className='max-w-7xl mx-auto px-4 py-8 '>
     <CardTBComplete />
     <div className="flex justify-center w-full mt-8">
