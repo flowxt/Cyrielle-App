@@ -1,6 +1,6 @@
 "use client";
 import { useState } from 'react';
-
+import Link from 'next/link';
 const AdventureLayout = ({ title, description, videoSrc }) => {
   const [isFullscreen, setIsFullscreen] = useState(false);
 
@@ -32,9 +32,12 @@ const AdventureLayout = ({ title, description, videoSrc }) => {
             
             {/* Bouton de réservation */}
             <div className="mt-12 flex justify-center">
-              <button className="px-8 py-3 bg-gradient-to-r from-gray-300 to-gray-200 hover:from-red-500 hover:to-red-600 text-gray-800 hover:text-white rounded-lg font-bold transition-all duration-300 shadow-md hover:shadow-red-500/30">
-                Réserver cette aventure
-              </button>
+            <Link 
+    href="/contact"
+    className="px-8 py-3 bg-gradient-to-r from-gray-300 to-gray-200 hover:from-red-500 hover:to-red-600 text-gray-800 hover:text-white rounded-lg font-bold transition-all duration-300 shadow-md hover:shadow-red-500/30"
+  >
+    Réserver cette aventure
+  </Link>
             </div>
           </div>
         </div>
