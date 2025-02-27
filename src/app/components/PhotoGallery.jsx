@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Link from 'next/link';
+import Image from 'next/image';
 
 // Initialiser GSAP ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
@@ -27,7 +28,7 @@ const images = [
   "/images/caroussel/img14.webp",
   "/images/petite4bloc3.png",
   //bloc 4 et dernier bloc
-//  "/images/caroussel/img17.webp",
+ "/images/caroussel/img17.webp",
   "/images/IMG_2493.jpg",
   "/images/imagenum2.png",
   "/images/imagenum3.png",
@@ -86,11 +87,15 @@ const PhotoGallery = () => {
           className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50"
           onClick={() => setSelectedImage(null)}
         >
-          <img
+            <div className="relative w-full max-w-4xl h-[80vh]">
+          <Image
             src={selectedImage}
             alt="Selected"
-            className="max-w-full max-h-full rounded-lg shadow-2xl"
+            fill
+            className="object-contain"
+            sizes="100vw"
           />
+        </div>
         </div>
       )}
 
