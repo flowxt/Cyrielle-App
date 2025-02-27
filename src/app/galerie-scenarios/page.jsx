@@ -39,7 +39,7 @@ const Gallery = () => {
       buttonText: "De quoi est-elle accusée ?",
     },
     {
-      src: "/videos/aventure4.mp4",
+      src: "/videos/chateau.mp4",
       title: "Disparition inquiétante",
       buttonText: "Qui a bien pu disparaître ?",
     },
