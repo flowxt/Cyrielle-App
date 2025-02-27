@@ -61,7 +61,7 @@ const PhotoGallery = () => {
   }, []);
 
   return (
-    <div className="bg-gray-50 py-12">
+    <div className=" py-12">
       <div ref={galleryRef} className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 max-w-7xl mx-auto">
         {images.map((src, index) => (
           <motion.div

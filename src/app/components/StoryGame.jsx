@@ -2,7 +2,7 @@ import React from "react";
 
 const StoryGameSection = ({ videos }) => {
   return (
-    <section className="relative py-16 bg-gradient-to-t from-gray-100 to-gray-300">
+    <section className="relative py-16 ">
       {/* Contenu */}
       <div className="relative z-10 container mx-auto px-4">
         {/* Titre */}

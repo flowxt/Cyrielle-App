@@ -2,7 +2,7 @@ import React from "react";
 
 const ChateauVideoSection = ({ videos }) => {
   return (
-    <section className="relative py-16 bg-gray-100">
+    <section className="relative py-16 ">
       {/* Contenu */}
       <div className="relative z-10 container mx-auto px-4">
         {/* Titre */}
