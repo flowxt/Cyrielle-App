@@ -35,7 +35,7 @@ export const metadata = {
     "activité entreprise Haute-Savoie",
     "spectacle interactif",
     "escape game entreprise",
-    "En Scène Acting",
+    "En Scènes Acting",
   ],
   openGraph: {
     type: "website",

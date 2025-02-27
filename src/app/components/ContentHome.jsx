@@ -14,9 +14,9 @@ export default function ContentHome() {
                             <h2 className="text-3xl font-semibold text-gray-900 sm:text-4xl font-poppins">
                                 Prêts à embarquer dans un{' '}
                                 <strong className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">
-                                    team building en Haute-Savoie
+                                    team building unique en Haute-Savoie.
                                 </strong>{' '}
-                                unique.
+                               
                             </h2>
 
                             <div className="space-y-6 text-gray-700 font-roboto">
