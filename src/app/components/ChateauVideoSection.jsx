@@ -8,7 +8,7 @@ const ChateauVideoSection = ({ videos }) => {
       {/* Contenu */}
       <div className="relative z-10 container mx-auto px-4">
         {/* Titre */}
-        <h2 className="text-4xl font-bold text-center mb-16 text-black font-poppins">NOS AVENTURES <span className="text-white bg-gradient-to-l from-red-700 to-red-900">AU CHÂTEAU</span></h2>
+        <h2 className="text-xl md:text-2xl lg:text-4xl font-bold text-center mb-16 text-black font-poppins">NOS AVENTURES <span className="text-white bg-gradient-to-l from-red-700 to-red-900">AU CHÂTEAU</span></h2>
 
         {/* Grille des vidéos */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

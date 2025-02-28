@@ -88,7 +88,7 @@ const Gallery = () => {
     <div className="flex justify-center items-center">
       <div className="flex justify-center text-center w-full">
         <div className="max-w-2xl w-full">
-          <h2 className="font-poppins text-4xl font-semibold mb-12">
+          <h2 className="font-poppins text-xl md:text-2xl lg:text-4xl font-semibold mb-12">
             Prêt pour une{' '}
             <span className="text-gray-100 bg-gradient-to-r from-red-600 to-red-900 p-2 inline-block -rotate-3">
               expérience
@@ -103,7 +103,7 @@ const Gallery = () => {
           <div className="mt-8">
             <Link 
               href="/contact" 
-              className="inline-block bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white font-poppins px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 "
+              className="inline-block bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white font-poppins px-4 py-2 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 "
             >
               Contactez-nous dès maintenant
             </Link>
