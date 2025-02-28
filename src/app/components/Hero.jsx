@@ -60,13 +60,13 @@ const Hero = ({
         >
           <motion.h3
             variants={textVariants}
-            className="text-3xl md:text-4xl lg:text-5xl font-roboto text-center mb-8 mt-11 md:mt-6 lg:mt-2"
+            className="text-xl md:text-4xl lg:text-5xl font-roboto text-center mb-8 mt-11 md:mt-6 lg:mt-2"
           >
             {subtitle}
           </motion.h3>
           <motion.p
             variants={textVariants}
-            className="md:text-lg lg:text-xl font-roboto font-light text-center"
+            className="text-base md:text-lg lg:text-xl font-roboto font-light text-center"
           >
             {description}
           </motion.p>

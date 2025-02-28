@@ -18,8 +18,11 @@ export default function Concepts() {
         }
         description={
           <>
-            <b>Plongez les spect'acteurs</b> au cœur d'<strong>aventures ludiques et immersives en Haute-Savoie</strong>, c'est notre métier. Que ce soit pour <b>découvrir ou redécouvrir ce et/ou ceux qui nous entourent</b>, nos jeux s'adaptent à chaque environnement pour offrir une <strong>expérience authentique et enrichissante</strong>.
-          </>
+          <b>Plongez les spect’acteurs</b> au cœur d’<strong>aventures immersives en Haute-Savoie</strong>.  
+          <br /><br />
+          Découvrez ou redécouvrez votre entourage autrement grâce à des jeux adaptés à chaque environnement.  
+          Une approche ludique et sur mesure pour une <strong>expérience authentique et enrichissante</strong>.
+      </>
         }
       />
     <main className="bg-gradient-to-b from-gray-200 to-gray-400">
