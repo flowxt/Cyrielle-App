@@ -4,7 +4,7 @@ export default function NuptialPage() {
   return (
     <AdventureLayout
       title="Nuptial - Le mariage de Gustave et Soléa"
-      videoSrc="/videos/aventure1.mp4"
+      videoSrc="/videos/aventure3.mp4"
       description={
         <>
           <div className="space-y-6">

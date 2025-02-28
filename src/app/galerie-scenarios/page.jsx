@@ -17,7 +17,7 @@ const Gallery = () => {
       link: "/toxique"
     },
     {
-      src: "/videos/aventure1.mp4",
+      src: "/videos/aventure3.mp4",
       title: "Nuptial",
       buttonText: "Découvrir l'histoire",
       link: "/nuptial"  // À compléter avec le bon lien quand nécessaire
