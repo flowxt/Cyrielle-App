@@ -4,7 +4,7 @@ import CustomButton from './CustomButton';
 
 export default function Card({ title, subtitle, image, listItems, buttonText }) {
   return (
-    <div className="group relative bg-gray-100 rounded-2xl overflow-hidden w-full max-w-[400px] min-h-[500px] shadow-2xl shadow-red-900/30 hover:shadow-red-900/50 transition-all duration-300 hover:-translate-y-2">
+    <div className="group relative bg-gray-100 rounded-2xl overflow-hidden w-[320px] sm:w-[350px] md:w-[380px] max-w-full min-h-[500px] shadow-2xl shadow-red-900/30 hover:shadow-red-900/50 transition-all duration-300 hover:-translate-y-2 mx-auto">
       {/* Conteneur image avec effet de hover */}
       <div className="relative h-60 overflow-hidden">
         <Image
