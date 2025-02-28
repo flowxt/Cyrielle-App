@@ -64,13 +64,13 @@ export default function Formation() {
           <div className="mt-12 pt-12 border-t border-red-700/30">
             <div className="flex flex-col md:flex-row justify-around items-center gap-8">
               <div className="w-72 lg:w-96 h-32 relative">
-                <Image
-                  src="/cce.png"
-                  alt="logo-CCE"
-                  layout="fill"
-                  objectFit="contain"
-                  className="object-contain"
-                />
+              <Image
+  src="/cce.png"
+  width={500} // Ajustez selon vos besoins
+  height={300} // Ajustez selon vos besoins
+  alt="CCE Logo"
+  className="w-full h-auto object-cover" // Pour un comportement responsive
+/>
               </div>
               <ul className="text-center font-roboto text-md md:text-lg space-y-2">
                 <li className="font-semibold text-gray-800">Votre formatrice certifiée Cyrielle Schepens</li>
