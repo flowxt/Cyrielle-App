@@ -26,6 +26,7 @@ const roboto = Roboto({
 
 export const metadata = {
   metadataBase: new URL("https://www.enscenes.com"),
+  generator: null,
   title: "Team Building en Haute-Savoie | En Scène Acting",
   description:
     "Expert en team building en Haute-Savoie : activités insolites, spectacles interactifs et concepts uniques pour renforcer la cohésion d'équipe. Interventions à Annecy, Chamonix et toute la région Auvergne-Rhône-Alpes.",
