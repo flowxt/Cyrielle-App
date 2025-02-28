@@ -45,9 +45,9 @@ export default function Carousel() {
   return (
     <div className="relative w-full  py-16">
       <div className="w-full">
-        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-12">
+        <h2 className="text-lg md:text-4xl lg:text-5xl font-bold text-center mb-12">
           <span className="text-gray-800">
-            Découvrez nos <span className='bg-red-800 p-2 text-white'>expériences immersives</span>
+            Découvrez nos <span className='bg-red-800 p-1 text-white'>expériences immersives</span>
           </span>
         </h2>
         
