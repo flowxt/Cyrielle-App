@@ -80,7 +80,9 @@ const Gallery = () => {
 
 
        {/* Section STORY GAME */}
+       <div id="story-game">
        <StoryGameSection videos={storyGameVideos} />
+       </div>
        <ChateauVideoSection videos={chateauVideos} />
        </div>
        <section className="border-t-2 border-red-700 bg-gradient-to-b from-gray-200 to-gray-400 dark:text-gray-700">

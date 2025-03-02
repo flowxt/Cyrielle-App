@@ -1,9 +1,18 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
-const CardConcept = ({ image, title, paragraph, listItems }) => {
+const CardConcept = ({ image, title, paragraph, listItems, link = "/" }) => {
+  const Wrapper = ({ children }) => {
+    if (link) {
+      return <Link href={link}>{children}</Link>;
+    }
+    return <>{children}</>;
+  };
+
   return (
+    <Wrapper>
     <motion.article
       whileHover={{ scale: 1.02, boxShadow: "0px 10px 30px rgba(239, 68, 68, 0.15)" }}
       whileTap={{ scale: 0.98 }}
@@ -65,6 +74,7 @@ const CardConcept = ({ image, title, paragraph, listItems }) => {
         </ul>
       </div>
     </motion.article>
+  </Wrapper>
   );
 };
 
