@@ -83,7 +83,7 @@ const ContactForm = () => {
 
 
   return (
-    <section className="bg-gradient-to-b from-gray-200 to-gray-400 py-12">
+    <section className="bg-gradient-to-b from-gray-200 to-gray-400 py-24">
       <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <motion.div
           initial={{ opacity: 0 }}
