@@ -30,7 +30,7 @@ export default function Concepts() {
 
 
   <section className="relative overflow-hidden dark:text-gray-800">
-  <div className="mx-auto px-4 py-16 sm:px-6 lg:px-8 max-w-7xl">
+  <div className="mx-auto px-4 sm:py-11 md:py-16 sm:px-6 lg:px-8 max-w-7xl">
     <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:items-center">
       <div className="space-y-8">
         <h2 className="text-3xl font-semibold sm:text-4xl font-poppins">
@@ -59,7 +59,7 @@ export default function Concepts() {
       <div className="relative">
         <div className="relative h-[500px] rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition-transform duration-300">
           <Image
-            src="/toxique-canape.png"
+            src="/images/fabriquons.webp"
             alt="Team Building"
             fill
             className="object-cover"

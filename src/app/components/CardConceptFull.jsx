@@ -80,7 +80,7 @@ const CardConceptFull = () => {
 
   return (
     <>
-      <div className="pt-4 border-gray-900 pb-6 dark:text-gray-700">
+      <div className=" border-gray-900  dark:text-gray-700">
         <h2 className="text-center text-3xl md:text-3xl lg:text-4xl font-poppins mb-8">
           Nos <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">concepts</span>
         </h2>
