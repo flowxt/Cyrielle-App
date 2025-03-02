@@ -34,7 +34,7 @@ const partners = [
 const TrustedPartners = () => {
   return (
     <section className="py-16 bg-gradient-to-b from-gray-200 to-gray-400 border-t-2 border-red-700">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 dark:text-gray-700">
         {/* Section Témoignages */}
         <h2 className="text-xl md:text-4xl font-bold text-center mb-16 font-poppins">
           Ils nous ont fait <span className="bg-red-800 text-white px-4 py-1 rounded-lg">confiance</span>

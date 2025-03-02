@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const StoryGameSection = ({ videos }) => {
   return (
-    <section className="relative py-16">
+    <section className="relative py-16 dark:text-gray-800">
       <div className="relative z-10 container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-16 font-poppins">
           STORY <span className="text-white bg-gradient-to-r from-red-700 to-red-800 p-2">GAME</span>

@@ -120,9 +120,9 @@ const ContactForm = () => {
                     value={formData.firstName}
                     onChange={handleChange}
                     placeholder="Prénom"
-                    className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto transition-all"
+                    className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto transition-all dark:bg-white"
                   />
-                  <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">👤</span>
+                  <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 ">👤</span>
                 </div>
                 <div className="relative">
                   <input
@@ -131,7 +131,7 @@ const ContactForm = () => {
                     value={formData.lastName}
                     onChange={handleChange}
                     placeholder="Nom"
-                    className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto transition-all"
+                    className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto transition-all dark:bg-white"
                   />
                   <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">👤</span>
                 </div>
@@ -142,7 +142,7 @@ const ContactForm = () => {
                     value={formData.postalCode}
                     onChange={handleChange}
                     placeholder="Code Postal"
-                    className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto transition-all"
+                    className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto transition-all dark:bg-white"
                   />
                   <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">📮</span>
                 </div>
@@ -153,7 +153,7 @@ const ContactForm = () => {
                     value={formData.city}
                     onChange={handleChange}
                     placeholder="Ville"
-                    className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto transition-all"
+                    className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto transition-all dark:bg-white"
                   />
                   <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">🏙️</span>
                 </div>
@@ -164,7 +164,7 @@ const ContactForm = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="Téléphone"
-                    className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto pl-12 transition-all"
+                    className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto pl-12 transition-all dark:bg-white"
                   />
                   <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">📱</span>
                 </div>
@@ -175,9 +175,9 @@ const ContactForm = () => {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Email"
-                    className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto transition-all"
+                    className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto transition-all dark:bg-white"
                   />
-                  <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">📧</span>
+                  <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 ">📧</span>
                 </div>
               </div>
 
@@ -188,7 +188,7 @@ const ContactForm = () => {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Votre message"
-                  className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto pl-12 resize-none transition-all"
+                  className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto pl-12 resize-none transition-all dark:bg-white"
                 />
                 <span className="absolute left-4 top-5 text-gray-400">💬</span>
               </div>

@@ -83,7 +83,7 @@ const Gallery = () => {
        <StoryGameSection videos={storyGameVideos} />
        <ChateauVideoSection videos={chateauVideos} />
        </div>
-       <section className="border-t-2 border-red-700 bg-gradient-to-b from-gray-200 to-gray-400">
+       <section className="border-t-2 border-red-700 bg-gradient-to-b from-gray-200 to-gray-400 dark:text-gray-700">
   <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8 max-w-4xl ">
     <div className="flex justify-center items-center">
       <div className="flex justify-center text-center w-full">
