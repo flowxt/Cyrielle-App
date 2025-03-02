@@ -7,10 +7,11 @@ export default function CardList() {
   const cards = [
     {
       title: "Team Building",
-      subtitle: "Créez des liens durables entre vos collaborateurs", // Nouveau subtitle plus descriptif
+      subtitle: "Créez des liens durables entre vos collaborateurs",
       image: carte1,
       listItems: ["Révéler l'équipe", "Libérer la réflexion", "Fidéliser ses collaborateurs"],
       buttonText: "Activité de cohésion",
+      link: "/team-building"
     },
     {
       title: "Seminaires",
@@ -18,6 +19,7 @@ export default function CardList() {
       image: carte2,
       listItems: ["Capter l'attention", "Souvenir d'une expérience mémorable", "Réussir ensemble"],
       buttonText: "Nos concepts",
+      link: "/nos-concepts"
     },
     {
       title: "Formations",
@@ -25,11 +27,12 @@ export default function CardList() {
       image: carte3,
       listItems: ["Construire ensemble", "Découvrir les mécanismes des jeux", "Prendre confiance en soi"],
       buttonText: "Notre catalogue",
+      link: "/nos-formations"
     },
   ];
 
   return (
-    <div className="flex flex-wrap justify-center gap-6 py-12 ">
+    <div className="flex flex-wrap justify-center gap-6 py-12">
       {cards.map((card, index) => (
         <Card
           key={index}
@@ -38,6 +41,7 @@ export default function CardList() {
           image={card.image}
           listItems={card.listItems}
           buttonText={card.buttonText}
+          link={card.link}
         />
       ))}
     </div>

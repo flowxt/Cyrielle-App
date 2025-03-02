@@ -1,9 +1,11 @@
 // Composant Card.jsx
 import Image from 'next/image';
 import CustomButton from './CustomButton';
+import Link from 'next/link';
 
-export default function Card({ title, subtitle, image, listItems, buttonText }) {
+export default function Card({ title, subtitle, image, listItems, buttonText, link }) {
   return (
+    <Link href={link} className="block">
     <div className="group relative bg-gray-100 rounded-2xl overflow-hidden w-[320px] sm:w-[350px] md:w-[380px] max-w-full min-h-[500px] shadow-2xl shadow-red-900/30 hover:shadow-red-900/50 transition-all duration-300 hover:-translate-y-2 mx-auto">
       {/* Conteneur image avec effet de hover */}
       <div className="relative h-60 overflow-hidden">
@@ -67,5 +69,6 @@ export default function Card({ title, subtitle, image, listItems, buttonText }) 
       {/* Effet de bordure animée */}
       <div className="absolute inset-0 border-2 border-transparent group-hover:border-red-500/30 transition-all duration-500 rounded-2xl" />
     </div>
+    </Link>
   );
 }
