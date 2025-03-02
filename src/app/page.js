@@ -51,7 +51,7 @@ export default function Home() {
 
         <div className="bg-gray-200 backdrop-blur-sm py-12">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="border-2 border-red-600 rounded-lg p-8 shadow-xl bg-white/80 transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:translate-y-2">
+            <div className="border-2 border-red-600 rounded-lg p-8 shadow-xl bg-white/80 transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:translate-y-2 dark:text-gray-900">
               <h3 className="text-xl font-light md:text-2xl lg:text-3xl text-center mx-auto font-roboto leading-relaxed">
                 "Libérer le potentiel de vos équipes grâce à des{" "}
                 <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text font-semibold transform hover:scale-105 transition duration-300">
@@ -68,11 +68,11 @@ export default function Home() {
         </div>
       </header>
       <main className="pt-2  bg-gradient-to-b from-gray-200 to-gray-400">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl text-center p-6 font-poppins font-semibold">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl text-center p-6 font-poppins font-semibold dark:text-gray-700">
           Vos <span className="text-red-700">défis </span>| Nos{" "}
           <span className="text-red-700">solutions</span>{" "}
         </h2>
-        <p className="text-lg md:text-xl lg:text-2xl text-center p-4 font-roboto font-light ">
+        <p className="text-lg md:text-xl lg:text-2xl text-center p-4 font-roboto font-light dark:text-gray-700">
           "En Scènes Acting" vous apporte des solutions novatrices pour répondre
           à vos attentes.
         </p>

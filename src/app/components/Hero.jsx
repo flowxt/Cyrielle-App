@@ -42,7 +42,7 @@ const Hero = ({
             initial="hidden"
             animate="visible"
             variants={textVariants}
-            className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white font-poppins uppercase text-center px-4 max-w-4xl"
+            className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white font-poppins uppercase text-center px-4 max-w-4xl "
           >
             {title}
           </motion.h1>
@@ -50,7 +50,7 @@ const Hero = ({
       </section>
 
       {/* Section inférieure (50% hauteur) */}
-      <section className="h-[50vh] bg-gradient-to-b from-gray-100 to-gray-200 flex items-center">
+      <section className="h-[50vh] bg-gradient-to-b from-gray-100 to-gray-200 flex items-center dark:text-gray-700 ">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -66,7 +66,7 @@ const Hero = ({
           </motion.h3>
           <motion.p
             variants={textVariants}
-            className="text-base md:text-lg lg:text-xl font-roboto font-light text-center"
+            className="text-base md:text-lg lg:text-xl font-roboto font-light text-center  "
           >
             {description}
           </motion.p>
