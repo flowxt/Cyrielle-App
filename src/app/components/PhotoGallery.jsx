@@ -61,8 +61,8 @@ const PhotoGallery = () => {
   }, []);
 
   return (
-    <div className=" py-12">
-          <div 
+    <div className="py-12">
+      <div 
         ref={galleryRef} 
         className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 max-w-7xl mx-auto"
         style={{ gridAutoRows: 'minmax(200px, auto)' }}
@@ -73,36 +73,41 @@ const PhotoGallery = () => {
             className={`
               overflow-hidden rounded-lg shadow-lg cursor-pointer
               ${index % 5 === 0 ? "md:col-span-2 md:row-span-2" : ""}
-              ${index % 5 === 0 ? "min-h-[400px]" : "min-h-[200px]"} // Hauteurs minimales
+              ${index % 5 === 0 ? "min-h-[400px]" : "min-h-[200px]"}
             `}
+            onClick={() => setSelectedImage(src)}
           >
-            <img
-              src={src}
-              alt={`Team Building ${index + 1}`}
-              className="w-full h-full object-cover"
-            />
+            <div className="relative w-full h-full">
+              <Image
+                src={src}
+                alt={`Team Building ${index + 1}`}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="object-cover"
+                priority={index < 4} // Charge en priorité les premières images
+              />
+            </div>
           </motion.div>
         ))}
       </div>
 
-
+      {/* Modal reste inchangée */}
       {selectedImage && (
         <div
           className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50"
           onClick={() => setSelectedImage(null)}
         >
-            <div className="relative w-full max-w-4xl h-[80vh]">
-          <Image
-            src={selectedImage}
-            alt="Selected"
-            fill
-            className="object-contain"
-            sizes="100vw"
-          />
-        </div>
+          <div className="relative w-full max-w-4xl h-[80vh]">
+            <Image
+              src={selectedImage}
+              alt="Selected"
+              fill
+              className="object-contain"
+              sizes="100vw"
+            />
+          </div>
         </div>
       )}
-
     </div>
   );
 };
