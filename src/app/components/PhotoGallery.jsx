@@ -26,11 +26,11 @@ const images = [
   "/images/caroussel/img14.webp",
   "/images/petite4bloc3.png",
   // Bloc 4
-  "/images/caroussel/img11.webp",
-  "/images/IMG_2493.jpg",
-  "/images/imagenum2.png",
-  "/images/imagenum3.png",
-  "/images/imagenum4.png",
+  // "/images/caroussel/img17.webp",
+  // "/images/IMG_2493.jpg",
+  // "/images/imagenum2.png",
+  // "/images/imagenum3.png",
+  // "/images/imagenum4.png",
 ];
 
 const PhotoGallery = () => {
