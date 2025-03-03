@@ -50,7 +50,7 @@ const Hero = ({
       </section>
 
       {/* Section inférieure (50% hauteur) */}
-      <section className="h-[50vh] bg-gradient-to-b from-gray-100 to-gray-200 flex items-center dark:text-gray-700 ">
+      <section className="h-[50vh] bg-gray-200 flex items-center dark:text-gray-700 ">
         <motion.div
           initial="hidden"
           whileInView="visible"
