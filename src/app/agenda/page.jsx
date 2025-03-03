@@ -23,7 +23,7 @@ export default function Agenda() {
             
             <Link 
               href="/enigme"
-              className="block mx-auto mb-8 mt-4 text-lg bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white font-poppins px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all w-fit"
+              className="block mx-auto mb-8 mt-4 text-sm md:text-lg bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white font-poppins px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all w-fit "
             >
               Saurez-vous résoudre cette énigme ?
             </Link>
