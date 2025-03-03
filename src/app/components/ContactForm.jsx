@@ -22,7 +22,7 @@ const ContactForm = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormError(""); // Réinitialise l'erreur lors de la saisie
+    setFormError("");
 
     // Validation du téléphone
     if (name === "phone") {
@@ -42,7 +42,7 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setFormError("");
 
@@ -59,28 +59,43 @@ const ContactForm = () => {
       return;
     }
 
-    // Si tout est ok, soumettre le formulaire
-    console.log("Formulaire soumis :", formData);
-    setModalMessage(`Merci ${formData.firstName} pour votre message !\nNous vous contacterons bientôt.`);
-    setIsModalOpen(true);
-    
-    // Réinitialiser le formulaire
-    setFormData({
-      firstName: "",
-      lastName: "",
-      postalCode: "",
-      city: "",
-      phone: "",
-      email: "",
-      message: "",
-      enigmaAnswer: "",
-    });
+    try {
+      const response = await fetch(`https://formspree.io/f/${process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log("Formulaire soumis avec succès");
+        setModalMessage(`Merci ${formData.firstName} pour votre message !\nNous vous contacterons bientôt.`);
+        setIsModalOpen(true);
+        
+        // Réinitialiser le formulaire
+        setFormData({
+          firstName: "",
+          lastName: "",
+          postalCode: "",
+          city: "",
+          phone: "",
+          email: "",
+          message: "",
+          enigmaAnswer: "",
+        });
+      } else {
+        throw new Error('Erreur lors de l\'envoi du formulaire');
+      }
+    } catch (error) {
+      console.error("Erreur:", error);
+      setFormError("Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.");
+    }
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
   };
-
 
   return (
     <section className="bg-gradient-to-b from-gray-200 to-gray-400 py-24">
@@ -91,7 +106,6 @@ const ContactForm = () => {
           transition={{ duration: 0.8 }}
           className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 bg-white rounded-2xl shadow-2xl overflow-hidden"
         >
-          {/* Colonne image */}
           <div className="hidden lg:block relative h-full">
             <Image
               src="/carte2.png"
@@ -103,7 +117,6 @@ const ContactForm = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-red-700/20 to-transparent" />
           </div>
 
-          {/* Colonne formulaire */}
           <div className="px-6 py-8 sm:p-10 lg:p-12">
             <h2 className="text-3xl font-bold text-red-700 text-center mb-8 font-poppins relative">
               Contactez-nous
@@ -111,7 +124,6 @@ const ContactForm = () => {
             </h2>
 
             <form onSubmit={handleSubmit} className="space-y-6">
-              {/* Champs de formulaire révisés */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="relative">
                   <input
@@ -122,7 +134,7 @@ const ContactForm = () => {
                     placeholder="Prénom"
                     className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto transition-all dark:bg-white"
                   />
-                  <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 ">👤</span>
+                  <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">👤</span>
                 </div>
                 <div className="relative">
                   <input
@@ -177,11 +189,10 @@ const ContactForm = () => {
                     placeholder="Email"
                     className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto transition-all dark:bg-white"
                   />
-                  <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 ">📧</span>
+                  <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">📧</span>
                 </div>
               </div>
 
-              {/* Message avec emoji */}
               <div className="relative">
                 <textarea
                   name="message"
@@ -193,7 +204,6 @@ const ContactForm = () => {
                 <span className="absolute left-4 top-5 text-gray-400">💬</span>
               </div>
 
-              {/* Énigme stylisée */}
               <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-600">
                 <label className="block text-sm font-medium bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text font-poppins">
                   Énigme TeamBuilding ✨
@@ -211,8 +221,7 @@ const ContactForm = () => {
                 />
               </div>
 
- {/* Message d'erreur */}
- {formError && (
+              {formError && (
                 <motion.div
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -230,7 +239,7 @@ const ContactForm = () => {
                   </div>
                 </motion.div>
               )}
-              {/* Bouton révisé */}
+
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -250,4 +259,3 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-// Trouver solution ...
