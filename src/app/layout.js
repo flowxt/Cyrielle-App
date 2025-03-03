@@ -75,8 +75,9 @@ export const metadata = {
     },
   ],
   icons: {
-    icon: "/logoES.jpg",
-    apple: "/logoES.jpg",
+    icon: "/favicon.ico", // Favicon pour les onglets
+    apple: "/apple-touch-icon.png", // Icône pour iPhone/iPad
+    shortcut: "/favicon.ico", // Icône pour les raccourcis
   },
 };
 
