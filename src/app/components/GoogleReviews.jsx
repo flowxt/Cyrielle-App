@@ -115,13 +115,7 @@ const reviews = [
     text: "Très chouette moment, les enfants étaient très contents et super motivés! Je recommande, à refaire!",
     rating: 5,
   },
-  {
-    author_name: "Hotel La marmotte des Gets",
-
-    relative_time_description: "il y a 2 semaines",
-    text: "Encore une belle soirée de passée au côté de l' équipe En Scène Acting. Un cadre incroyable, et surtout une deuxième partie de jeux ludique, bien scénarisée, avec des comédiens au top et des participants qui ont bien joué le jeu ! Merci à vous !",
-    rating: 5,
-  },
+  
   {
     author_name: "Audrey Montjod",
 
