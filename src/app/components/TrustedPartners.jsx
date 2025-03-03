@@ -44,7 +44,7 @@ const partners = [
     src: "/logo4.png", 
     alt: "Partenaire 4 cité médievale de la roche", 
     name: "Cité Médievale de La Roche sur Foron",
-    link: "#"
+    link: "https://www.google.com/search?kgmid=%2Fg%2F1tqtwsrn&hl=fr-FR&q=Office%20de%20Tourisme&shndl=30&shem=lcuae&source=sh%2Fx%2Floc%2Fosrp%2Fm5%2F3&kgs=90202d378964f01b"
   },
   { 
     src: "/sauterelle.png", 
