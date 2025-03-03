@@ -44,7 +44,7 @@ const partners = [
     src: "/logo4.png", 
     alt: "Partenaire 4 cité médievale de la roche", 
     name: "Cité Médievale de La Roche sur Foron",
-    link: "https://www.larochesurforon.com"
+    link: "https://www.enscenes.com"
   },
   { 
     src: "/sauterelle.png", 
