@@ -21,8 +21,8 @@ export default function Formation() {
           Découvrir l'autre sous un autre angle, <strong>se découvrir</strong> de nouveaux talents, <strong>prendre confiance</strong> en soi, trouver sa place au sein d'un groupe, comprendre la <strong>complémentarité</strong> des personnalités. 
           <br /><br />
           Nos formations son conçues pour prendre le temps de découvrir ou redécouvrir ce et/ou ceux qui nous entourent <b>autrement</b>.
-          <br /><br />
-          A travers des exercices ludiques et des mises en situation inspirées du théâtre, nous vous accompagnons dans le développement de vos <strong>soft skills</strong> et la création d'une dynamique d'équipe positive.
+          <br />
+          
         </>
         }
       />
