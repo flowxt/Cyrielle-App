@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Team() {
     return (
       <>
-        <section className="container-team text-center py-6 flex flex-col items-center gap-8 border-t-2 border-red-800 bg-gradient-to-b from-gray-200 to-gray-400">
+        <section className="container-team text-center pt-6 flex flex-col items-center gap-8 border-t-2 border-red-800 bg-gradient-to-b from-gray-200 to-gray-400">
           <h2 className="text-4xl font-poppins font-semibold dark:text-gray-700">Notre <span className='text-gray-100 bg-gradient-to-r from-red-600 to-red-900 p-2 inline-block -rotate-3'>équipe</span></h2>
           <p className="font-roboto text-lg font-light px-4 dark:text-gray-700">
             Un duo complémentaire et passionné à l'écoute de vos besoins, garants d'une <strong className='text-gray-100 bg-gradient-to-r from-red-700 to-red-900 p-2'>expérience unique et immersive.</strong>
@@ -65,14 +65,14 @@ export default function Team() {
                   <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-400 before:animate-move-x dark:text-gray-700 ">
                     Maître de l'esthétique et du storytelling
                   </li>
-                  <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-400 before:animate-move-x dark:text-gray-700 ">
+                  <li className="relative pl-8 before:content-['➤'] before:absolute before:left-0 before:text-red-400 before:animate-move-x dark:text-gray-700">
                     Comédien
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div className="text-gray-100 flex flex-col lg:flex-row items-center justify-center gap-8 py-4 px-4">
+          <div className="text-gray-100 flex flex-col lg:flex-row items-center justify-center px-4">
 
 </div>
         </section>
