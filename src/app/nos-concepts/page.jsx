@@ -21,7 +21,8 @@ export default function Concepts() {
           <b>Plongez les spect’acteurs</b> au cœur d’<strong>aventures immersives en Haute-Savoie</strong>.  
           <br /><br />
           Découvrez ou redécouvrez votre entourage autrement grâce à des jeux adaptés à chaque environnement.  
-          Une approche ludique et sur mesure pour une <strong>expérience authentique et enrichissante</strong>.
+          Une approche ludique et sur mesure pour une <strong>expérience authentique et enrichissante</strong>.<br /><br />
+          <span className="italic text-red-800">Créez des liens uniques et des moments mémorables avec vos équipes.</span>
       </>
         }
       />
