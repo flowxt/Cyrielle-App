@@ -1,5 +1,9 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const testimonials = [
   {
@@ -19,16 +23,18 @@ const testimonials = [
     logo: "/logo2.png"
   }
 ];
+const trustedCompanies = [
+  { src: "/logo5.jpg", alt: "Société 5", name: "Réseau initiative Faucigny Mont-Blanc" },
+  { src: "/logo6.png", alt: "Société 6", name: "SPSTI Arve Mont-Blanc" },
+  { src: "/logo7.jpg", alt: "Société 7", name: "Haute-Savoie Le département" },
+  { src: "/logo8.png", alt: "Société 8", name: "Médiathèque de la Roche sur Foron" },
+  { src: "/logo9.png", alt: "Société 9", name: "Comité des fêtes" },
+];
 
 const partners = [
-  { src: "/logo3.png", alt: "Quoi faire Léman" },
-  { src: "/logo4.png", alt: "Partenaire 4" },
-  { src: "/logo5.jpg", alt: "Partenaire 5" },
-  { src: "/logo6.png", alt: "Partenaire 6" },
-  { src: "/logo7.jpg", alt: "Partenaire 7" },
-  { src: "/logo8.png", alt: "Partenaire 8" },
-  { src: "/logo9.png", alt: "Partenaire 9" },
-  { src: "/sauterelle.png", alt: "Partenaire 10" },
+  { src: "/logo3.png", alt: "Quoi faire Léman", name: "Quoi faire Léman" },
+  { src: "/logo4.png", alt: "Partenaire 4 cité médievale de la roche", name: "Cité Médievale de La Roche sur Foron" },
+  { src: "/sauterelle.png", alt: "Partenaire Sauterelle", name: "Sauterelle" },
 ];
 
 const TrustedPartners = () => {
@@ -40,7 +46,8 @@ const TrustedPartners = () => {
           Ils nous ont fait <span className="bg-red-800 text-white px-4 py-1 rounded-lg">confiance</span>
         </h2>
         
-        <div className="grid md:grid-cols-2 gap-12 mb-24">
+        {/* Témoignages détaillés */}
+        <div className="grid md:grid-cols-2 gap-12 mb-16">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
@@ -78,6 +85,48 @@ const TrustedPartners = () => {
           ))}
         </div>
 
+       {/* Carrousel des sociétés de confiance */}
+       <div className="mb-24">
+          <h3 className="text-xl font-semibold text-center mb-8 font-poppins">
+            Et aussi...
+          </h3>
+          <Swiper
+            modules={[Autoplay, Pagination]}
+            spaceBetween={30}
+            slidesPerView={1}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={{ clickable: true }}
+            breakpoints={{
+              640: { slidesPerView: 2 },
+              768: { slidesPerView: 3 },
+              1024: { slidesPerView: 4 },
+            }}
+            className="trusted-companies-swiper"
+          >
+            {trustedCompanies.map((company, index) => (
+              <SwiperSlide key={index}>
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  className="bg-white rounded-xl p-6 shadow-lg h-48 flex flex-col items-center justify-center"
+                >
+                  <div className="relative h-32 w-full mb-4">
+                    <Image
+                      src={company.src}
+                      alt={company.alt}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-center text-gray-700 font-medium">{company.name}</p>
+                </motion.div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
         {/* Section Partenaires */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -89,37 +138,24 @@ const TrustedPartners = () => {
             Nos <span className="bg-red-800 text-white px-4 py-1 rounded-lg">Partenaires</span>
           </h3>
           
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-items-center">
-              {partners.map((partner, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ 
-                    duration: 0.5,
-                    delay: index * 0.1,
-                    ease: "easeOut"
-                  }}
-                  whileHover={{ 
-                    scale: 1.05,
-                    filter: "brightness(1.1)"
-                  }}
-                  className="relative w-40 h-40 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white opacity-50 rounded-xl" />
-                  <div className="relative h-full w-full p-4">
-                    <Image
-                      src={partner.src}
-                      alt={partner.alt}
-                      fill
-                         sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
-                      className="object-contain p-2 transition-transform duration-300"
-                    />
-                  </div>
-                </motion.div>
-              ))}
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            {partners.map((partner, index) => (
+              <motion.div
+                key={index}
+                whileHover={{ scale: 1.05 }}
+                className="bg-white rounded-xl p-6 shadow-lg"
+              >
+                <div className="relative h-40 w-full mb-4">
+                  <Image
+                    src={partner.src}
+                    alt={partner.alt}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <p className="text-center text-gray-700 font-medium">{partner.name}</p>
+              </motion.div>
+            ))}
           </div>
         </motion.div>
       </div>
