@@ -30,7 +30,7 @@ const trustedCompanies = [
   { src: "/logo6.png", alt: "Société 6", name: "SPSTI Arve Mont-Blanc" },
   { src: "/logo7.jpg", alt: "Société 7", name: "Haute-Savoie Le département" },
   { src: "/logo8.png", alt: "Société 8", name: "Médiathèque de la Roche sur Foron" },
-  { src: "/logo9.png", alt: "Société 9", name: "Comité des fêtes" },
+  { src: "/logo9.png", alt: "Société 9", name: "Comité des fêtes de Marignier" },
 ];
 
 const partners = [
