@@ -21,7 +21,7 @@ export default function Formation() {
           Découvrir l'autre sous un autre angle, <strong>se découvrir</strong> de nouveaux talents, <strong>prendre confiance</strong> en soi, trouver sa place au sein d'un groupe, comprendre la <strong>complémentarité</strong> des personnalités. 
           <br /><br />
           Nos formations son conçues pour prendre le temps de découvrir ou redécouvrir ce et/ou ceux qui nous entourent <b>autrement</b>.
-          <br />
+          
           
         </>
         }
