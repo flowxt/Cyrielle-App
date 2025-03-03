@@ -100,13 +100,7 @@ const reviews = [
     text: "Une équipe incroyable, super sympa, une expérience de folie et parfait pour sortir du stress des examens. Je conseille à 100%",
     rating: 5,
   },
-  {
-    author_name: "Michel Durand",
 
-    relative_time_description: "il y a 2 semaines",
-    text: "C'était très bien mais il y avait trop de monde dans la même pièce.",
-    rating: 3,
-  },
   {
     author_name: "Cléclé",
 
