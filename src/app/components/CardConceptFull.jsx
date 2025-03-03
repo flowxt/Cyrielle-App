@@ -86,12 +86,12 @@ const CardConceptFull = () => {
   return (
     <>
       <div className=" border-gray-900  dark:text-gray-700">
-        <h2 className="text-center text-3xl md:text-3xl lg:text-4xl font-poppins mb-8">
+        <h2 className="text-center text-3xl md:text-3xl lg:text-4xl font-poppins mb-8 pt-8 ">
           Nos <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">concepts</span>
         </h2>
         
         {/* Slider pour toutes les versions */}
-        <div className="py-12 px-4 md:px-8 lg:px-12">
+        <div className="pb-12 pt-4 px-4 md:px-8 lg:px-12">
         <Slider {...settings}>
   {cardsData.map((card, index) => (
     <div key={index} className="px-2">
