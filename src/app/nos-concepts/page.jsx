@@ -29,7 +29,7 @@ export default function Concepts() {
   <CardConceptFull />
 
 
-  <section className="relative overflow-hidden dark:text-gray-800">
+  <section className="relative overflow-hidden dark:text-gray-800 pb-11">
   <div className="mx-auto px-4 sm:py-11 md:py-16 sm:px-6 lg:px-8 max-w-7xl">
     <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:items-center">
       <div className="space-y-8">
