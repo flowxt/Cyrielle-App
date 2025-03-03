@@ -12,15 +12,15 @@ const testimonials = [
     author: "Alexia LEFEBVRE",
     role: "Chargée de groupes et évènements",
     company: "Chalet-Hôtel la Marmotte - Les Gets",
-    year: "2023",
+ 
     logo: "/logo1.png"
   },
   {
-    quote: "Encore une belle soirée de passée au côté de l'équipe En scènes acting. Un cadre incroyable, et surtout un deuxième épisode ludique bien scénarisé, avec des comédiens au top et des participants qui ont bien joué le jeu !",
+    quote: "Encore une belle soirée de passée au côté de l'équipe En scènes acting. Un cadre incroyable, et surtout un deuxième épisode ludique bien scénarisé, avec des comédiens au top et des participants qui ont bien joué le jeu!",
     author: "Lori-Kim MAYERAT",
     role: "Chargée de communication et commercialisation",
     company: "Restaurant la Terre de Bellevarde – Duingt",
-    year: "2023",
+   
     logo: "/logo2.png"
   }
 ];
