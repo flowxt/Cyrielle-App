@@ -1,3 +1,4 @@
+"use client";
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -23,6 +24,7 @@ const testimonials = [
     logo: "/logo2.png"
   }
 ];
+
 const trustedCompanies = [
   { src: "/logo5.jpg", alt: "Société 5", name: "Réseau initiative Faucigny Mont-Blanc" },
   { src: "/logo6.png", alt: "Société 6", name: "SPSTI Arve Mont-Blanc" },
@@ -32,9 +34,24 @@ const trustedCompanies = [
 ];
 
 const partners = [
-  { src: "/logo3.png", alt: "Quoi faire Léman", name: "Quoi faire Léman" },
-  { src: "/logo4.png", alt: "Partenaire 4 cité médievale de la roche", name: "Cité Médievale de La Roche sur Foron" },
-  { src: "/sauterelle.png", alt: "Partenaire Sauterelle", name: "Sauterelle" },
+  { 
+    src: "/logo3.png", 
+    alt: "Quoi faire Léman", 
+    name: "Quoi faire Léman",
+    link: "https://www.quoifaireleman.com"
+  },
+  { 
+    src: "/logo4.png", 
+    alt: "Partenaire 4 cité médievale de la roche", 
+    name: "Cité Médievale de La Roche sur Foron",
+    link: "https://www.larochesurforon.com"
+  },
+  { 
+    src: "/sauterelle.png", 
+    alt: "Partenaire Sauterelle", 
+    name: "Sauterelle",
+    link: "https://linktr.ee/sauterelle.jeux"
+  },
 ];
 
 const TrustedPartners = () => {
@@ -85,8 +102,8 @@ const TrustedPartners = () => {
           ))}
         </div>
 
-       {/* Carrousel des sociétés de confiance */}
-       <div className="mb-24">
+        {/* Carrousel des sociétés de confiance */}
+        <div className="mb-24">
           <h3 className="text-xl font-semibold text-center mb-8 font-poppins">
             Et aussi...
           </h3>
@@ -109,7 +126,7 @@ const TrustedPartners = () => {
             {trustedCompanies.map((company, index) => (
               <SwiperSlide key={index}>
                 <motion.div
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 1.00 }}
                   className="bg-white rounded-xl p-6 shadow-lg h-48 flex flex-col items-center justify-center"
                 >
                   <div className="relative h-32 w-full mb-4">
@@ -143,17 +160,26 @@ const TrustedPartners = () => {
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.05 }}
-                className="bg-white rounded-xl p-6 shadow-lg"
+                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all"
               >
-                <div className="relative h-40 w-full mb-4">
-                  <Image
-                    src={partner.src}
-                    alt={partner.alt}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <p className="text-center text-gray-700 font-medium">{partner.name}</p>
+                <a 
+                  href={partner.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <div className="relative h-40 w-full mb-4">
+                    <Image
+                      src={partner.src}
+                      alt={partner.alt}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-center text-gray-700 font-medium hover:text-red-700 transition-colors">
+                    {partner.name}
+                  </p>
+                </a>
               </motion.div>
             ))}
           </div>
