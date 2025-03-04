@@ -68,7 +68,7 @@ export default function TeamBuilding() {
         <div className="max-w-lg md:max-w-none">
           <h2 className="font-poppins text-4xl font-semibold">
             Réinventons votre{' '}
-            <span className="text-gray-100 bg-gradient-to-r from-red-600 to-red-900 p-2 inline-block -rotate-3">
+            <span className="text-gray-100 bg-gradient-to-r from-red-600 to-red-900 p-2 inline-block">
               équipe
             </span>
           </h2>
