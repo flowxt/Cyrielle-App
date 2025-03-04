@@ -78,7 +78,7 @@ const Footer = () => {
         </div>
        
           <Link href="/contact">
-            <CustomButton text="Rencontrons-nous" additionalClasses="rounded-full" />
+            <CustomButton text="Rencontrons-nous" />
           </Link>
    
   </div>
