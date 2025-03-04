@@ -76,8 +76,8 @@ export default function ContentHome() {
                         <h2 className="text-3xl font-semibold text-gray-900 sm:text-4xl font-poppins">
                                 Vous captivez grâce à nos{' '}
                                 <strong className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">
-                                    concept ludique
-                                </strong> où vous devenez  « spect’acteurs »
+                                    concepts ludiques
+                                </strong> où vous devenez «spect’acteurs»
                             </h2>
 
                             <div className="space-y-6 text-gray-700 font-roboto">
