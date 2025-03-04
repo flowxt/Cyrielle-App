@@ -27,7 +27,7 @@ const roboto = Roboto({
 
 export const metadata = {
   metadataBase: new URL("https://www.enscenes.com"),
-  title: "Team Building en Haute-Savoie | En Scène Acting",
+  title: "Team Building en Haute-Savoie | En Scènes Acting",
   description:
     "Expert en team building en Haute-Savoie : activités insolites, spectacles interactifs et concepts uniques pour renforcer la cohésion d'équipe. Interventions à Annecy, Chamonix et toute la région Auvergne-Rhône-Alpes.",
   keywords: [
@@ -40,11 +40,11 @@ export const metadata = {
   ],
   openGraph: {
     type: "website",
-    title: "Team Building en Haute-Savoie | En Scène Acting",
+    title: "Team Building en Haute-Savoie | En Scènes Acting",
     description:
       "Expert en team building en Haute-Savoie : activités insolites et spectacles interactifs pour renforcer la cohésion d'équipe.",
     url: "https://www.enscenes.com",
-    siteName: "En Scène Acting",
+    siteName: "En Scènes Acting",
     locale: "fr_FR",
     images: [
       {
@@ -71,7 +71,7 @@ export const metadata = {
   },
   authors: [
     {
-      name: "En Scène Acting",
+      name: "En Scènes Acting",
       url: "https://www.enscenes.com",
     },
   ],
