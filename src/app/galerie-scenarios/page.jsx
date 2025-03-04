@@ -92,11 +92,11 @@ const Gallery = () => {
         <div className="max-w-2xl w-full">
           <h2 className="font-poppins text-xl md:text-2xl lg:text-4xl font-semibold mb-12">
             Prêt pour une{' '}
-            <span className="text-gray-100 bg-gradient-to-r from-red-600 to-red-900 p-2 inline-block -rotate-3">
+            <span className="text-gray-100 bg-gradient-to-r from-red-600 to-red-900 p-1 inline-block ">
               expérience
             </span>{' '}
             inoubliable <br />en{' '}
-            <span className="text-gray-100 bg-gradient-to-r from-red-600 to-red-900 p-2 inline-block">
+            <span className="text-gray-100 bg-gradient-to-r from-red-600 to-red-900 p-1 inline-block">
               Haute-Savoie
             </span>{' '}
             ?

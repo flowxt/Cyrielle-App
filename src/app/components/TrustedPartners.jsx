@@ -60,7 +60,7 @@ const TrustedPartners = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 dark:text-gray-700">
         {/* Section Témoignages */}
         <h2 className="text-xl md:text-4xl font-bold text-center mb-16 font-poppins">
-          Ils nous ont fait <span className="bg-red-800 text-white px-4 py-1 rounded-lg">confiance</span>
+          Ils nous ont fait <span className="bg-red-800 text-white px-4 py-1 ">confiance</span>
         </h2>
         
         {/* Témoignages détaillés */}
@@ -152,7 +152,7 @@ const TrustedPartners = () => {
           className="mt-16"
         >
           <h3 className="text-2xl font-semibold text-center mb-16 font-poppins">
-            Nos <span className="bg-red-800 text-white px-4 py-1 rounded-lg">Partenaires</span>
+            Nos <span className="bg-red-800 text-white px-4 py-1">Partenaires</span>
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">

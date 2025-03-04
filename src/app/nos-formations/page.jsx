@@ -36,7 +36,7 @@ export default function Formation() {
         <div className="max-w-2xl w-full">
           <h2 className="font-poppins text-4xl font-semibold">
             Vous souhaitez aborder une{' '}
-            <span className="text-gray-100 bg-gradient-to-r from-red-600 to-red-900 p-2 inline-block -rotate-3">
+            <span className="text-gray-100 bg-gradient-to-r from-red-600 to-red-900 p-2 inline-block ">
               thématique
             </span>{' '}
             précise ?
