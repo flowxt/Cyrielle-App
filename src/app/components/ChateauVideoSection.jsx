@@ -30,7 +30,7 @@ const ChateauVideoSection = ({ videos }) => {
     <div className="flex-grow flex items-end">
       <Link 
         href={video.link || '#'} 
-        className={`mt-4 px-6 py-2 rounded-full font-roboto transition-colors ${
+        className={`mt-4 px-6 py-2 font-roboto transition-colors ${
           index < 2 ? 'bg-white text-red-700 hover:bg-gray-100' : 'bg-red-800 text-white hover:bg-red-800'
         }`}
       >

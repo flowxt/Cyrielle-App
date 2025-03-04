@@ -35,7 +35,7 @@ export default function ContentHome() {
 
                             <Link 
   href="/team-building"
-  className="inline-block mt-4 px-6 py-3 bg-gradient-to-b from-red-700 to-red-900 text-white font-poppins rounded-lg shadow-lg  hover:bg-red-950 hover:scale-105 hover:shadow-xl transition-all text-center"
+  className="inline-block mt-4 px-6 py-3 bg-gradient-to-b from-red-700 to-red-900 text-white font-poppins  shadow-lg  hover:bg-red-950 hover:scale-105 hover:shadow-xl transition-all text-center"
 >
   Je veux en apprendre plus
 </Link>
@@ -74,7 +74,7 @@ export default function ContentHome() {
 
                         <div className="space-y-6">
                         <h2 className="text-3xl font-semibold text-gray-900 sm:text-4xl font-poppins">
-                                Vous captivez grâce à nos{' '}
+                                Vous captiver grâce à nos{' '}
                                 <strong className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">
                                     concepts ludiques
                                 </strong> où vous devenez «spect’acteurs»
@@ -96,7 +96,7 @@ export default function ContentHome() {
 
                             <Link 
   href="/nos-concepts"
-  className="inline-block mt-4 px-6 py-3 bg-gradient-to-b from-red-700 to-red-900 text-white font-poppins rounded-lg shadow-lg  hover:bg-red-950 hover:scale-105 hover:shadow-xl transition-all text-center"
+  className="inline-block mt-4 px-6 py-3 bg-gradient-to-b from-red-700 to-red-900 text-white font-poppins  shadow-lg  hover:bg-red-950 hover:scale-105 hover:shadow-xl transition-all text-center"
 >
 
   Découvrez nos concepts
