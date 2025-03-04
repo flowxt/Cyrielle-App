@@ -18,7 +18,7 @@ const NavBar = () => {
     ['Concepts', '/nos-concepts'],
     ['Formations', '/nos-formations'],
     ['Galerie', '/galerie-scenarios'],
-    ['Témoignages', '/agenda'],
+    ['Témoignages', '/temoignages'],
   ];
 
   return (

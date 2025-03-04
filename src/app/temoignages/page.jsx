@@ -4,7 +4,7 @@ import Hero from '../components/Hero';
 import TrustedPartners from '../components/TrustedPartners';
 import Link from 'next/link';
 
-export default function Agenda() {
+export default function Temoignages() {
   return (
     <>
       <Hero
