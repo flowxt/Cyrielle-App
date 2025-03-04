@@ -80,7 +80,7 @@ export default function Concepts() {
         <div className="max-w-2xl w-full">
           <h2 className="font-poppins text-4xl font-semibold mb-12">
             Une idée précise de votre{' '}
-            <span className="text-gray-100 bg-gradient-to-r from-red-600 to-red-900 p-2 inline-block -rotate-3">
+            <span className="text-gray-100 bg-gradient-to-r from-red-600 to-red-900 p-2 inline-block ">
               événement
             </span>{' '}
             ?
