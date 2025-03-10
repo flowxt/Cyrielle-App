@@ -14,62 +14,59 @@ const staggerContainer = {
   },
 };
 
-const Hero = ({
-  backgroundImageSrc,
-  title,
-  subtitle,
-  description,
-}) => {
+const Hero = ({ backgroundImageSrc, title, subtitle, description }) => {
   return (
-    <header className="min-h-screen flex flex-col">
-      {/* Section supérieure (50% hauteur) */}
-      <section className="relative h-[50vh]">
-        <Image
-          src={backgroundImageSrc}
-          alt="Background"
-          fill
-          priority
-          sizes="100vw"
-          quality={75}
-          className="absolute inset-0 w-full h-full object-cover object-center"
-        />
-        {/* Overlay pour améliorer la lisibilité */}
-        <div className="absolute inset-0 bg-black/30"></div>
+    <header className="flex flex-col">
+      {/* Section supérieure avec image de fond */}
+      <section className="relative min-h-[40vh] md:min-h-[50vh] w-full flex items-center py-16">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={backgroundImageSrc}
+            alt="Background"
+            fill
+            priority
+            sizes="100vw"
+            quality={75}
+            className="object-cover object-center"
+          />
+          {/* Overlay pour améliorer la lisibilité */}
+          <div className="absolute inset-0 bg-black/40"></div>
+        </div>
 
-        {/* Conteneur du titre centré */}
-        <div className="relative h-full flex items-center justify-center">
+        {/* Conteneur du titre centré avec z-index pour assurer qu'il reste au-dessus */}
+        <div className="relative z-10 w-full flex items-center justify-center px-4 py-8">
           <motion.h1
             initial="hidden"
             animate="visible"
             variants={textVariants}
-            className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white font-poppins uppercase text-center px-4 max-w-4xl "
+            className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white font-poppins uppercase text-center max-w-4xl"
           >
             {title}
           </motion.h1>
         </div>
       </section>
 
-      {/* Section inférieure (50% hauteur) */}
-      <section className="h-[50vh] bg-gray-200 flex items-center dark:text-gray-700 ">
+      {/* Section inférieure avec texte et description */}
+      <section className="bg-gray-200 py-12 md:py-16 px-4 dark:text-gray-700">
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={staggerContainer}
-          className="w-full max-w-4xl mx-auto px-6"
+          className="w-full max-w-4xl mx-auto"
         >
           <motion.h3
             variants={textVariants}
-            className="text-xl md:text-4xl lg:text-5xl font-roboto text-center mb-8 mt-11 md:mt-6 lg:mt-2"
+            className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-roboto text-center mb-6 md:mb-8"
           >
             {subtitle}
           </motion.h3>
-          <motion.p
+          <motion.div
             variants={textVariants}
-            className="text-base md:text-lg lg:text-xl font-roboto font-light text-center  "
+            className="text-base md:text-lg font-roboto font-light text-center space-y-4"
           >
             {description}
-          </motion.p>
+          </motion.div>
         </motion.div>
       </section>
     </header>
