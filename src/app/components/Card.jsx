@@ -60,7 +60,7 @@ export default function Card({ title, subtitle, image, listItems, buttonText, li
           <div className="pt-4">
             <CustomButton 
               text={buttonText}
-              additionalClasses="w-full bg-red-600 hover:bg-red-700 text-white font-poppins py-3 rounded-lg transition-colors duration-300" 
+              additionalClasses="w-full bg-red-600 hover:bg-red-700 text-white font-poppins py-3  transition-colors duration-300" 
             />
           </div>
         )}
