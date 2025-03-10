@@ -52,7 +52,7 @@ export default function TeamBuilding() {
     <div className="flex justify-center w-full mt-8">
     <Link 
       href="/nos-concepts"
-      className="inline-block px-6 py-3 bg-gradient-to-b from-gray-900 to-black text-white font-poppins rounded-lg shadow-lg hover:bg-red-950 hover:scale-105 hover:shadow-xl transition-all text-center"
+      className="inline-block px-6 py-3 bg-gradient-to-b from-gray-900 to-black text-white font-poppins shadow-lg hover:bg-red-950 hover:scale-105 hover:shadow-xl transition-all text-center"
     >
       Découvrez nos différents concepts
     </Link>
@@ -114,7 +114,7 @@ export default function TeamBuilding() {
           <div className="mt-8">
   <Link 
     href="/contact"
-    className="inline-block px-6 py-3 bg-gradient-to-r from-red-700 to-red-900 hover:bg-red-950 hover:scale-105 text-white font-poppins rounded-lg shadow-lg hover:shadow-xl transition-all text-center"
+    className="inline-block px-6 py-3 bg-gradient-to-r from-red-700 to-red-900 hover:bg-red-950 hover:scale-105 text-white font-poppins shadow-lg hover:shadow-xl transition-all text-center"
   >
     Créons ensemble votre team building
   </Link>
