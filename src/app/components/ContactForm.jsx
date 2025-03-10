@@ -244,7 +244,7 @@ const ContactForm = () => {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
-                className="w-full bg-gradient-to-r from-red-600 to-red-800 text-white px-8 py-4 rounded-xl hover:shadow-xl transition-all font-poppins font-semibold text-lg flex items-center justify-center gap-2"
+                className="w-full bg-gradient-to-r from-red-600 to-red-800 text-white px-8 py-4 hover:shadow-xl transition-all font-poppins font-semibold text-lg flex items-center justify-center gap-2"
               >
                 <span>✉️</span>
                 Envoyer votre message
