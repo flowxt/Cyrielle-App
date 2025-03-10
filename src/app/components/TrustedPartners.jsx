@@ -151,7 +151,7 @@ const TrustedPartners = () => {
           transition={{ duration: 0.8 }}
           className="mt-16"
         >
-          <h3 className="text-2xl font-semibold text-center mb-16 font-poppins">
+          <h3 className="text-xl md:text-4xl font-semibold text-center mb-16 font-poppins">
             Nos <span className="bg-red-800 text-white px-4 py-1">Partenaires</span>
           </h3>
           
