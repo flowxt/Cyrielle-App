@@ -51,7 +51,7 @@ export default function Concepts() {
 
         <Link 
     href="/contact"
-    className="inline-block px-6 py-3 bg-gradient-to-b from-red-700 to-red-900 hover:bg-red-950 hover:scale-105 text-white font-poppins rounded-lg shadow-lg hover:shadow-xl transition-all text-center"
+    className="inline-block px-6 py-3 bg-gradient-to-b from-red-700 to-red-900 hover:bg-red-950 hover:scale-105 text-white font-poppins  shadow-lg hover:shadow-xl transition-all text-center"
   >
     Créons ensemble ces moments
   </Link>
@@ -105,7 +105,7 @@ export default function Concepts() {
           <div className="mt-8">
   <Link 
     href="/contact"
-    className="inline-block px-6 py-3 bg-gradient-to-b from-red-700 to-red-900 hover:bg-red-950 hover:scale-105 text-white font-poppins rounded-lg shadow-lg hover:shadow-xl transition-all text-center"
+    className="inline-block px-6 py-3 bg-gradient-to-b from-red-700 to-red-900 hover:bg-red-950 hover:scale-105 text-white font-poppins  shadow-lg hover:shadow-xl transition-all text-center"
   >
     Je vous explique ce que je veux
   </Link>
