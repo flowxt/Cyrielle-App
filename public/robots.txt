@@ -1,9 +1,23 @@
 # *
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /wix-content/
+Disallow: /preview/
+Disallow: /temp/
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
 
 # Host
 Host: https://www.enscenes.com
 
 # Sitemaps
-Sitemap: https://www.enscenes.com/sitemap.xml
+Sitemap: https://www.enscenes.com/sitemap-0.xml
