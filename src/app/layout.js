@@ -37,6 +37,10 @@ export const metadata = {
     "spectacle interactif",
     "escape game entreprise",
     "En Scènes Acting",
+    "animation entreprise Annecy",
+    "événement entreprise Chamonix",
+    "activité team building Auvergne-Rhône-Alpes",
+    "cohésion d'équipe Haute-Savoie",
   ],
   openGraph: {
     type: "website",
