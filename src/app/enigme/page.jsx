@@ -4,14 +4,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 // Métadonnées exportées pour le SEO (sera utilisé par Next.js)
-export const metadata = {
-  title: "Énigmes Mystérieuses | En Scènes Acting",
-  description: "Vous souhaitez vous challenger ? Déchiffrez cette enigme et découvrez le code secret.",
-  openGraph: {
-    title: "Énigmes Mystérieuses | En Scènes Acting",
-    description: "Vous souhaitez vous challenger ? Déchiffrez cette enigme et découvrez le code secret.",
-  }
-};
+
 
 // Composant page principale (côté serveur)
 export default function EnigmePage() {
