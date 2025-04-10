@@ -9,7 +9,7 @@ export default function ConceptsClient() {
       <>
      <Hero
         backgroundImageSrc="/carte2.webp"
-        title="SPECTACLE INTERACTIF & ESCAPE GAME ITINÉRANT"
+        title="CONCEPTS"
         subtitle={
           <>
             <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">Ressentir</span> | Partagez | <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">Se souvenir</span>

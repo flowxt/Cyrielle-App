@@ -55,7 +55,7 @@ export default function GalleryClient() {
     <>
       <Hero
         backgroundImageSrc="/telescope.png"
-        title="VIVEZ L'AVENTURE DE L'INTÉRIEUR"
+        title="GALERIE"
         subtitle={
           <>
             <strong className="text-red-700">Coopérez</strong> | Analysez | <strong className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">Résolvez</strong>

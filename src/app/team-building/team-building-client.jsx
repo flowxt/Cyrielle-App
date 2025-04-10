@@ -22,8 +22,8 @@ export default function TeamBuildingClient() {
   return (
     <>
       <Hero
-        backgroundImageSrc="/tb1.webp" // Image de fond pour cette page
-        title="ACTIVITÉS DE COHÉSION UNE ÉQUIPE PRÊTE À RELEVER DES DÉFIS"
+        backgroundImageSrc="/equipe-en-reflexion.webp" // Image de fond pour cette page
+        title="TEAM BUILDING"
         subtitle={
           <>
             Découvrez nos activités stimulantes et {" "}

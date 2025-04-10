@@ -13,12 +13,14 @@ const NavBar = () => {
   }, []);
 
   const navLinks = [
-    ['Accueil', '/'],
+    
     ['Team Building', '/team-building'],
     ['Concepts', '/nos-concepts'],
     ['Formations', '/nos-formations'],
     ['Galerie', '/galerie-scenarios'],
+    ['Enigme', '/enigme'],
     ['Témoignages', '/temoignages'],
+    
   ];
 
   return (
@@ -55,7 +57,7 @@ const NavBar = () => {
               href="/contact"
               className="ml-4 px-5 py-2.5  bg-gradient-to-b from-red-600 to-red-900 text-white font-semibold hover:bg-red-700 transition-colors flex items-center gap-2 text-sm"
             >
-              Parlons-en
+              Contact
             </Link>
           </nav>
 
@@ -65,7 +67,7 @@ const NavBar = () => {
               href="/contact"
               className="px-4 py-2  bg-gradient-to-b from-red-600 to-red-900 text-white text-sm hover:bg-red-700 transition-colors"
             >
-              Parlons-en
+              Contact
             </Link>
 
             <button

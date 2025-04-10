@@ -2,20 +2,24 @@ import CardList from "./components/CardList";
 import ContentHome from "./components/ContentHome";
 import Team from "./components/Team";
 import Carousel from "./components/Carousel";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <>
       <header>
         <section className="relative h-screen">
-          <video
-            className="absolute inset-0 w-full h-full object-cover object-center opacity-90"
-            src="/videos/bandeau.webm"
-            autoPlay
-            loop
-            muted
-            playsInline
-          />
+          <div className="absolute inset-0 w-full h-full">
+            <Image
+              src="/recherche-en-groupe.png"
+              alt="Equipe en train de résoudre une énigme"
+              fill
+              priority
+              className="object-cover object-center"
+              sizes="100vw"
+              quality={90}
+            />
+          </div>
 
           {/* Overlay dégradé pour améliorer la lisibilité */}
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
@@ -33,7 +37,7 @@ export default function Home() {
 
             <div className="max-w-2xl border-t-2 border-red-500 pt-4">
               <p className="text-lg sm:text-xl text-white font-light italic mb-4 bg-gray-900/10">
-                "L'intelligence collective n'attend pas"
+                &ldquo;L&apos;intelligence collective n&apos;attend pas&rdquo;
               </p>
               <p className="text-white uppercase font-semibold text-sm sm:text-base tracking-widest bg-gray-900/10">
                 Escape Game • Jeu de rôle • Spectacle intéractif
@@ -53,7 +57,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="border-2 border-red-600 rounded-lg p-8 shadow-xl bg-white/80 transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:translate-y-2 dark:text-gray-900">
               <h3 className="text-xl font-light md:text-2xl lg:text-3xl text-center mx-auto font-roboto leading-relaxed">
-                "Libérer le potentiel de vos équipes grâce à des{" "}
+                &ldquo;Libérer le potentiel de vos équipes grâce à des{" "}
                 <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text font-semibold transform hover:scale-105 transition duration-300">
                   expériences
                 </span>{" "}
@@ -61,7 +65,7 @@ export default function Home() {
                 <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text font-semibold transform hover:scale-105 transition duration-300">
                   réussite collective
                 </span>
-                "
+                &rdquo;
               </h3>
             </div>
           </div>
@@ -73,8 +77,8 @@ export default function Home() {
           <span className="text-red-700">solutions</span>{" "}
         </h2>
         <p className="text-lg md:text-xl lg:text-2xl text-center p-4 font-roboto font-light dark:text-gray-700">
-          "En Scènes Acting" vous apporte des solutions novatrices pour répondre
-          à vos attentes.
+          &ldquo;En Scènes Acting&rdquo; vous apporte des solutions novatrices
+          pour répondre à vos attentes.
         </p>
         <CardList />
         <div className="caroussel text-center flex items-center justify-center pb-8">

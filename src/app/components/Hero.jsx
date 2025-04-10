@@ -18,7 +18,7 @@ const Hero = ({ backgroundImageSrc, title, subtitle, description }) => {
   return (
     <header className="flex flex-col">
       {/* Section supérieure avec image de fond */}
-      <section className="relative min-h-[40vh] md:min-h-[50vh] w-full flex items-center py-16">
+      <section className="relative min-h-[45vh] md:min-h-[55vh] w-full flex items-end pb-12 md:pb-16 py-16">
         <div className="absolute inset-0 z-0">
           <Image
             src={backgroundImageSrc}

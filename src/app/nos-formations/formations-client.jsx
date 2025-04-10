@@ -9,7 +9,7 @@ export default function FormationsClient() {
       <>
       <Hero
         backgroundImageSrc="/test.png" // Image de fond pour cette page
-        title="DÉVELOPPER LA COHÉSION ET VOUS DONNER LES CLÉS POUR L'ENTRETENIR"
+        title="FORMATIONS"
         subtitle={
           <>
             Et si nous tirions avantage de <strong className='bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text'>l'art de créer et jouer ensemble</strong>
