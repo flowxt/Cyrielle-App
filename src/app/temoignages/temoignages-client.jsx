@@ -9,7 +9,7 @@ export default function TemoignagesClient() {
     <>
       <Hero
         backgroundImageSrc="/images/test-cyrielle.png"
-        title="TEMOIGNAGES"
+        title="TÉMOIGNAGES"
         subtitle={
           <>
             Embarquez dans nos <strong className='text-red-800'>univers captivants</strong> et <strong className='text-red-800'>immersifs</strong>
