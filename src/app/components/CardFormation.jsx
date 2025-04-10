@@ -25,7 +25,7 @@ const CardFormation = () => {
       image: '/formation3.png',
       title: "Brainstormons autrement",
       paragraph: " Comprendre les différentes phases d'un brainstorming réussi grâce aux mécanismes du jeu de rôle.\n \n Plongez dans cet univers pour en décrypter toutes les facettes.",
-      listItems: ['De 6 à 10 personnes', "Durée: 7h", 'Sur une journée ou 2 demi journée'],
+      listItems: ['De 6 à 10 personnes', "Durée: 7h", 'Sur une journée ou 2 demi-journées'],
       tag: 'Créativité'
     },
   ];
