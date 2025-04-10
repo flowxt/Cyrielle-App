@@ -18,7 +18,7 @@ const CardFormation = () => {
       image: '/testformation.png',
       title: 'Unissons vos équipes',
       paragraph: "Appréhendez la ludopédagogie et permettez à vos équipes de construire des liens durables.\n \n De nouvelles méthodes pour une cohésion d'équipe sans faille.",
-      listItems: ['De 6 à 10 personnes', 'Durée: 7h', "Sur une journée ou 2 demi journée"],
+      listItems: ['De 6 à 10 personnes', 'Durée: 7h', "Sur une journée ou 2 demi-journées"],
       tag: 'Cohésion'
     },
     {
