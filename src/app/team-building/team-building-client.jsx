@@ -43,7 +43,7 @@ export default function TeamBuildingClient() {
           <div className="flex justify-center w-full mt-8">
             <Link 
               href="/nos-concepts"
-              className="inline-block px-6 py-3 bg-gradient-to-b from-gray-900 to-black text-white font-poppins shadow-lg hover:bg-red-950 hover:scale-105 hover:shadow-xl transition-all text-center"
+              className="inline-block px-6 py-3 bg-gradient-to-b from-gray-900 to-black text-white font-poppins shadow-lg hover:bg-red-950 hover:scale-105 hover:shadow-xl transition-all text-center rounded-lg"
             >
               Découvrez nos différents concepts
             </Link>

@@ -1,113 +1,97 @@
 import Image from 'next/image';
 import Image5 from '../../assets/images/image5.png';
-import CustomButton from './CustomButton';
 import Link from 'next/link';
 
 export default function ContentHome() {
     return (
-        <>
-            {/* Section 1 */}
-            <section className="relative overflow-hidden">
-                <div className="mx-auto px-4 py-16 sm:px-6 lg:px-8 max-w-7xl">
-                    <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:items-center">
-                        <div className="space-y-6">
-                            <h2 className="text-3xl font-semibold text-gray-900 sm:text-4xl font-poppins">
-                                Prêts à embarquer dans un{' '}
-                                <strong className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">
-                                    team building unique en Haute-Savoie.
-                                </strong>{' '}
-                               
-                            </h2>
+        <div className="space-y-20">
+            {/* Section 1 - Team Building en Haute-Savoie */}
+            <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:items-center">
+                <div className="space-y-6">
+                    <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+                        Des activités uniques en{' '}
+                        <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">
+                            Haute-Savoie
+                        </span>
+                    </h2>
 
-                            <div className="space-y-6 text-gray-700 font-roboto">
-                                <p className="text-lg leading-relaxed">
-                                    Permettez à vos collaborateurs de créer du lien de manière durable, de reconnaître leurs <strong>compétences</strong> respectives pour une <b>meilleure efficacité</b> tout en passant un moment ludique en <strong>Haute-Savoie</strong>.
-                                </p>
-                                
-                                <p className="text-lg leading-relaxed">
-                                    On revient à l’essentiel du <strong>team building</strong> en <b>remobilisant vos équipes</b> autour d’une <b>activité fédératrice</b> où chacun trouvera sa place au sein du groupe pour révéler son potentiel.
-                                </p>
+                    <div className="space-y-4 text-gray-700">
+                        <p className="text-lg">
+                            Permettez à vos collaborateurs de créer des liens durables en reconnaissant leurs <span className="font-semibold">compétences</span> respectives pour une <span className="font-semibold">meilleure efficacité</span> collective.
+                        </p>
+                        
+                        <p className="text-lg">
+                            Nous revenons à l&apos;essentiel du <span className="font-semibold">team building</span> en remobilisant vos équipes autour d&apos;une activité fédératrice où chacun trouve sa place.
+                        </p>
 
-                                <p className="text-lg leading-relaxed">
-                                    Nous créons des <strong>scénarios sur mesure</strong>, pour embarquer les participants dans un autre univers leur permettant d’oser et de trouver leur mode de fonctionnement pour atteindre une <b>victoire collective</b>.
-                                </p>
-                            </div>
-
-                            <Link 
-  href="/team-building"
-  className="inline-block mt-4 px-6 py-3 bg-gradient-to-b from-red-700 to-red-900 text-white font-poppins  shadow-lg  hover:bg-red-950 hover:scale-105 hover:shadow-xl transition-all text-center"
->
-  Je veux en apprendre plus
-</Link>
-                        </div>
-
-                        <div className="relative group h-[500px] hidden md:block">
-                            <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 to-red-500/5 rounded-xl transform -rotate-1" />
-                            <Image
-                                
-                                src={Image5}
-                                alt="Team building en Haute-Savoie"
-                                className="rounded-xl shadow-lg object-cover h-full w-full transition-transform duration-300 hover:scale-103"
-                                
-                                priority
-                            />
-                        </div>
+                        <p className="text-lg">
+                            Nos <span className="font-semibold">scénarios sur mesure</span> embarquent les participants dans un univers qui leur permet d&apos;oser et d&apos;atteindre ensemble une <span className="font-semibold">victoire collective</span>.
+                        </p>
                     </div>
+
+                    <Link 
+                        href="/team-building"
+                        className="inline-block mt-4 px-6 py-3 bg-red-700 hover:bg-red-800 text-white font-medium rounded-lg transition duration-300 transform hover:scale-105 hover:shadow-lg"
+                    >
+                        En savoir plus
+                    </Link>
                 </div>
-            </section>
 
-            {/* Section 2 */}
-            <section>
-                <div className="mx-auto px-4 py-16 sm:px-6 lg:px-8 max-w-7xl">
-                    <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:items-center">
-                        <div className="relative group h-[500px] order-last md:order-first ">
-                            <div className="absolute inset-0 bg-gradient-to-l from-red-500/10 to-red-500/5 rounded-xl transform rotate-1" />
-                            <Image
-                                src="/images/caroussel/img2.webp"
-                                alt="Conférence interactive"
-                                className="rounded-xl shadow-lg object-cover h-full w-full transition-transform duration-300 hover:scale-103"
-                                width={3142}
-                                height={2086}
-                                priority
-                            />
-                        </div>
+                <div className="relative h-[450px] hidden md:block overflow-hidden rounded-xl group">
+                    <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 to-red-500/5 rounded-xl transform -rotate-1 transition-transform group-hover:rotate-0 duration-300" />
+                    <Image
+                        src={Image5}
+                        alt="Team building en Haute-Savoie"
+                        className="rounded-xl shadow-lg object-cover h-full w-full transition-all duration-500 group-hover:scale-105"
+                        priority
+                        fill
+                    />
+                </div>
+            </div>
 
-                        <div className="space-y-6">
-                        <h2 className="text-3xl font-semibold text-gray-900 sm:text-4xl font-poppins">
-                                Vous captiver grâce à nos{' '}
-                                <strong className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">
-                                    concepts ludiques
-                                </strong> où vous devenez «spect’acteurs»
-                            </h2>
+            {/* Section 2 - Concepts ludiques */}
+            <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:items-center">
+                <div className="relative h-[450px] order-last md:order-first overflow-hidden rounded-xl group">
+                    <div className="absolute inset-0 bg-gradient-to-l from-red-500/10 to-red-500/5 rounded-xl transform rotate-1 transition-transform group-hover:rotate-0 duration-300" />
+                    <Image
+                        src="/images/caroussel/img2.webp"
+                        alt="Conférence interactive"
+                        className="rounded-xl shadow-lg object-cover h-full w-full transition-all duration-500 group-hover:scale-105"
+                        fill
+                        priority
+                    />
+                </div>
 
-                            <div className="space-y-6 text-gray-700 font-roboto">
-                            <p className="text-lg leading-relaxed">
-                                    Nous vous offrons une <b>immersion</b> au coeur de lieu splendide pour découvrir ou redécouvrir ce et ceux qui nous entourent. 
-                                </p>
+                <div className="space-y-6">
+                    <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+                        Des concepts ludiques où vous devenez{' '}
+                        <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">
+                            spect&apos;acteurs
+                        </span>
+                    </h2>
 
-                                <p className="text-lg leading-relaxed">
-                                    Que vous nous donniez carte blanche ou un cahier des charges, nous nous adaptions pour vous offrir un <strong>événement sur mesure et clé en main</strong>.
-                                </p>
+                    <div className="space-y-4 text-gray-700">
+                        <p className="text-lg">
+                            Nous vous offrons une <span className="font-semibold">immersion</span> au cœur d&apos;environnements splendides pour redécouvrir ce qui vous entoure.
+                        </p>
 
-                                <p className="text-lg leading-relaxed">
-                                    Nous concevons des scénarios de jeux théâtralisés grandeur nature mis en scène par nos équipes de comédiens qui vous embarquerons dans une <strong>expérience intéractive </strong>créatrice de souvenirs.
-                                </p>
-                            </div>
+                        <p className="text-lg">
+                            Que vous nous donniez carte blanche ou un cahier des charges précis, nous vous créons un <span className="font-semibold">événement sur mesure et clé en main</span>.
+                        </p>
 
-                            <Link 
-  href="/nos-concepts"
-  className="inline-block mt-4 px-6 py-3 bg-gradient-to-b from-red-700 to-red-900 text-white font-poppins  shadow-lg  hover:bg-red-950 hover:scale-105 hover:shadow-xl transition-all text-center"
->
-
-  Découvrez nos concepts
-</Link>
-                        </div>
+                        <p className="text-lg">
+                            Nos scénarios de jeux théâtralisés mis en scène par nos comédiens vous font vivre une <span className="font-semibold">expérience interactive</span> créatrice de souvenirs.
+                        </p>
                     </div>
-                </div>
-            </section>
 
-            {/* Section 3 */}
-            
-        </>
+                    <Link 
+                        href="/nos-concepts"
+                        className="inline-block mt-4 px-6 py-3 bg-red-700 hover:bg-red-800 text-white font-medium rounded-lg transition duration-300 transform hover:scale-105 hover:shadow-lg"
+                    >
+                        Découvrir nos concepts
+                    </Link>
+                </div>
+            </div>
+        </div>
     );
 }

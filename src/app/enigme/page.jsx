@@ -1,7 +1,8 @@
 "use client";
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useState } from 'react';
 
 // Métadonnées exportées pour le SEO (sera utilisé par Next.js)
 
@@ -13,104 +14,194 @@ export default function EnigmePage() {
 
 // Composant client (avec les animations côté client)
 function EnigmeClient() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openLightbox = (imageSrc) => {
+    setSelectedImage(imageSrc);
+  };
+
+  const closeLightbox = () => {
+    setSelectedImage(null);
+  };
+
   return (
-    <div className="min-h-screen bg-black py-12 relative overflow-hidden">
-      {/* Fond étoilé subtil */}
-      <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center opacity-20" />
-      
-      <div className="max-w-4xl mx-auto px-4 space-y-8 mt-11 relative z-10">
-        <motion.h1
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="text-center text-3xl md:text-4xl font-bold bg-gradient-to-r from-red-500 to-amber-500 bg-clip-text text-transparent mb-8 font-archivo"
-        >
-          Déchiffrez le Mystère
-        </motion.h1>
-
-        {/* Première image avec effet holographique */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ 
-            duration: 0.8,
-            scale: { type: 'spring', stiffness: 100 }
-          }}
-          whileHover={{ scale: 1.02 }}
-          className="relative h-[400px] lg:h-[70vh] w-full rounded-xl overflow-hidden border-2 border-red-900/50 bg-gradient-to-br from-black via-red-900/10 to-black"
-        >
-          <div className="absolute inset-0 bg-[url('/noise.svg')] opacity-10 mix-blend-overlay" />
-          <Image
-            src="/enigme1.png"
-            alt="Première énigme"
-            fill
-            className="object-contain p-4"
-            priority
-          />
-        </motion.div>
-
-        {/* Deuxième image avec effet de profondeur */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ 
-            duration: 0.8, 
-            delay: 0.4,
-            type: 'spring', 
-            bounce: 0.4 
-          }}
-          whileHover={{ y: -5 }}
-          className="relative h-[200px] w-full rounded-xl overflow-hidden border border-red-800/30 bg-gradient-to-b from-red-900/20 to-transparent"
-        >
-          <Image
-            src="/enigme2.png"
-            alt="Deuxième énigme"
-            fill
-            className="object-contain p-4"
-          />
-        </motion.div>
-
-        {/* Bouton de contact amélioré */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.8 }}
-          className="flex justify-center pt-8"
-        >
-          <Link
-            href="/contact"
-            className="group relative inline-block px-12 py-5 bg-gradient-to-r from-red-700 via-red-600 to-amber-800 text-white font-poppins rounded-2xl shadow-2xl hover:shadow-red-500/30 hover:scale-[1.02] transition-all duration-300 overflow-hidden"
-          >
-            {/* Effet de brillance au survol */}
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300">
-              <div className="absolute -inset-[5px] animate-rotate bg-[conic-gradient(white,transparent,transparent)]" />
-            </div>
-            
-            <span className="relative flex items-center gap-3 text-lg">
-              <span className="bg-white/10 p-2 rounded-lg">
-                🔐 
-              </span>
-              <span className="text-shadow">
-                Vous avez trouvé le code ?
-              </span>
-              <span className="ml-2 opacity-0 group-hover:opacity-100 group-hover:ml-3 transition-all duration-300">
-                →
-              </span>
-            </span>
-          </Link>
-        </motion.div>
-
-        {/* Indice animé */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-          className="text-center text-red-400/60 text-sm mt-6 flex justify-center items-center gap-2"
-        >
-          <span className="animate-pulse">💡</span>
-          Les réponses se cachent dans les détails...
-        </motion.div>
+    <div className="min-h-screen bg-gradient-to-b from-gray-200 to-gray-400 relative">
+      {/* En-tête de style Hero */}
+      <div className="relative h-[50vh] bg-gray-900 overflow-hidden">
+        <Image
+          src="/images/caroussel/img2.webp" 
+          alt="Fond énigme mystérieuse"
+          fill
+          className="object-cover opacity-40"
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="max-w-4xl mx-auto px-4 text-center">
+            <motion.h1
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-3xl md:text-5xl font-bold text-white mb-6"
+            >
+              DÉCHIFFREZ LE <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">MYSTÈRE</span>
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto"
+            >
+              Plongez dans l'univers de l'investigation et mettez vos talents de déduction à l'épreuve pour résoudre ces énigmes codées.
+            </motion.p>
+          </div>
+        </div>
       </div>
+
+      {/* Contenu principal */}
+      <main className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* Première énigme */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="bg-white/90 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg border border-white/20 p-6"
+            >
+              <h2 className="text-2xl font-bold text-gray-800 relative pb-4 mb-6">
+                Première partie du mystère
+                <div className="absolute bottom-0 left-0 w-16 h-1 bg-red-600 rounded-full" />
+              </h2>
+              
+              <div 
+                className="relative h-[350px] rounded-xl overflow-hidden bg-black cursor-pointer"
+                onClick={() => openLightbox("/enigme1.png")}
+              >
+                <Image
+                  src="/enigme1.png"
+                  alt="Première partie de l'énigme"
+                  fill
+                  className="object-contain p-4 hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <div className="bg-black/30 rounded-full p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              
+              <p className="mt-6 text-gray-700">
+                Cette première partie cache un message codé. Observez attentivement chaque détail pour découvrir le premier indice.
+              </p>
+            </motion.div>
+
+            {/* Deuxième énigme */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="bg-white/90 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg border border-white/20 p-6"
+            >
+              <h2 className="text-2xl font-bold text-gray-800 relative pb-4 mb-6">
+                Seconde partie du mystère
+                <div className="absolute bottom-0 left-0 w-16 h-1 bg-red-600 rounded-full" />
+              </h2>
+              
+              <div 
+                className="relative h-[350px] rounded-xl overflow-hidden bg-black cursor-pointer"
+                onClick={() => openLightbox("/enigme2.png")}
+              >
+                <Image
+                  src="/enigme2.png"
+                  alt="Seconde partie de l'énigme"
+                  fill
+                  className="object-contain p-4 hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <div className="bg-black/30 rounded-full p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              
+              <p className="mt-6 text-gray-700">
+                La seconde partie du mystère exige une réflexion approfondie. Combinez les indices pour avancer vers la solution finale.
+              </p>
+            </motion.div>
+          </div>
+
+          {/* Appel à l'action */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="mt-16 text-center"
+          >
+            <div className="bg-white/90 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg border border-white/20 p-8 max-w-3xl mx-auto">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Vous avez déchiffré le code ?</h3>
+              
+              <p className="text-gray-700 mb-8">
+                Les réponses se cachent dans les détails. Une fois que vous aurez percé le mystère, contactez-nous pour vérifier votre solution.
+              </p>
+
+              <Link
+                href="/contact"
+                className="inline-block px-8 py-4 bg-gradient-to-b from-red-700 to-red-900 text-white font-medium rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-all text-center"
+              >
+                Soumettre ma solution
+              </Link>
+              
+              <div className="mt-6 text-sm text-gray-500 flex justify-center items-center gap-2">
+                <span className="animate-pulse">💡</span>
+                Indice : Combinez les indices des deux énigmes pour révéler le code secret
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </main>
+
+      {/* Lightbox Modal */}
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80"
+            onClick={closeLightbox}
+          >
+            <motion.div
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.8 }}
+              className="relative max-w-5xl max-h-[90vh] w-full h-full"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="relative w-full h-full flex items-center justify-center">
+                <Image
+                  src={selectedImage}
+                  alt="Énigme agrandie"
+                  fill
+                  className="object-contain"
+                />
+                <button
+                  className="absolute top-4 right-4 bg-red-700 text-white rounded-full p-2 hover:bg-red-800 transition-colors"
+                  onClick={closeLightbox}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

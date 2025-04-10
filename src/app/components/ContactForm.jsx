@@ -3,17 +3,16 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import Image from 'next/image';
 import Modal from './Modal';
+import Link from 'next/link';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    postalCode: "",
-    city: "",
+    name: "",
     phone: "",
     email: "",
     message: "",
     enigmaAnswer: "",
+    gdprConsent: false
   });
 
   const [formError, setFormError] = useState("");
@@ -21,7 +20,7 @@ const ContactForm = () => {
   const [modalMessage, setModalMessage] = useState("");
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value, type, checked } = e.target;
     setFormError("");
 
     // Validation du téléphone
@@ -30,15 +29,9 @@ const ContactForm = () => {
       if (!phoneRegex.test(value)) return;
     }
 
-    // Validation du code postal
-    if (name === "postalCode") {
-      const postalRegex = /^[0-9]{0,5}$/;
-      if (!postalRegex.test(value)) return;
-    }
-
     setFormData((prev) => ({
       ...prev,
-      [name]: value,
+      [name]: type === 'checkbox' ? checked : value,
     }));
   };
 
@@ -47,8 +40,8 @@ const ContactForm = () => {
     setFormError("");
 
     // Vérification des champs requis
-    if (!formData.firstName.trim() || !formData.lastName.trim() || !formData.email.trim()) {
-      setFormError("Merci de remplir tous les champs obligatoires (Prénom, Nom et Email)");
+    if (!formData.name.trim() || !formData.email.trim()) {
+      setFormError("Merci de remplir tous les champs obligatoires (Nom et Email)");
       return;
     }
 
@@ -56,6 +49,12 @@ const ContactForm = () => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!emailRegex.test(formData.email)) {
       setFormError("Merci de saisir une adresse email valide");
+      return;
+    }
+
+    // Vérification du consentement RGPD
+    if (!formData.gdprConsent) {
+      setFormError("Veuillez accepter la politique de confidentialité pour continuer");
       return;
     }
 
@@ -70,19 +69,17 @@ const ContactForm = () => {
 
       if (response.ok) {
         console.log("Formulaire soumis avec succès");
-        setModalMessage(`Merci ${formData.firstName} pour votre message !\nNous vous contacterons bientôt.`);
+        setModalMessage(`Merci ${formData.name} pour votre message !\nNous vous contacterons bientôt.`);
         setIsModalOpen(true);
         
         // Réinitialiser le formulaire
         setFormData({
-          firstName: "",
-          lastName: "",
-          postalCode: "",
-          city: "",
+          name: "",
           phone: "",
           email: "",
           message: "",
           enigmaAnswer: "",
+          gdprConsent: false
         });
       } else {
         throw new Error('Erreur lors de l\'envoi du formulaire');
@@ -124,51 +121,19 @@ const ContactForm = () => {
             </h2>
 
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="space-y-4">
                 <div className="relative">
                   <input
                     type="text"
-                    name="firstName"
-                    value={formData.firstName}
-                    onChange={handleChange}
-                    placeholder="Prénom"
-                    className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto transition-all dark:bg-white"
-                  />
-                  <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">👤</span>
-                </div>
-                <div className="relative">
-                  <input
-                    type="text"
-                    name="lastName"
-                    value={formData.lastName}
+                    name="name"
+                    value={formData.name}
                     onChange={handleChange}
                     placeholder="Nom"
                     className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto transition-all dark:bg-white"
                   />
                   <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">👤</span>
                 </div>
-                <div className="relative">
-                  <input
-                    type="text"
-                    name="postalCode"
-                    value={formData.postalCode}
-                    onChange={handleChange}
-                    placeholder="Code Postal"
-                    className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto transition-all dark:bg-white"
-                  />
-                  <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">📮</span>
-                </div>
-                <div className="relative">
-                  <input
-                    type="text"
-                    name="city"
-                    value={formData.city}
-                    onChange={handleChange}
-                    placeholder="Ville"
-                    className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto transition-all dark:bg-white"
-                  />
-                  <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">🏙️</span>
-                </div>
+                
                 <div className="relative">
                   <input
                     type="tel"
@@ -176,10 +141,11 @@ const ContactForm = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="Téléphone"
-                    className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto pl-12 transition-all dark:bg-white"
+                    className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto transition-all dark:bg-white"
                   />
                   <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">📱</span>
                 </div>
+                
                 <div className="relative">
                   <input
                     type="email"
@@ -199,16 +165,17 @@ const ContactForm = () => {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Votre message"
-                  className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto pl-12 resize-none transition-all dark:bg-white"
+                  rows="4"
+                  className="mt-1 block w-full px-12 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:ring-0 font-roboto resize-none transition-all dark:bg-white"
                 />
                 <span className="absolute left-4 top-5 text-gray-400">💬</span>
               </div>
 
-              <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-600">
-                <label className="block text-sm font-medium bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text font-poppins">
+              <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <label className="block text-sm font-medium text-gray-800 mb-2">
                   Énigme TeamBuilding ✨
-                  <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text font-normal block mt-1 text-xs">
-                    "Seulement si cela vous parle"
+                  <span className="text-gray-500 font-normal block mt-1 text-xs">
+                    Si vous avez une réponse à l'énigme, indiquez-la ici
                   </span>
                 </label>
                 <input
@@ -216,9 +183,30 @@ const ContactForm = () => {
                   name="enigmaAnswer"
                   value={formData.enigmaAnswer}
                   onChange={handleChange}
-                  placeholder="Votre réponse"
-                  className="mt-2 block w-full px-4 py-2 bg-white border-2 border-red-100 rounded-lg focus:border-red-600 focus:ring-0 font-roboto"
+                  placeholder="Votre réponse (facultatif)"
+                  className="block w-full px-4 py-2 bg-white border border-gray-200 rounded-lg focus:border-red-600 focus:ring-0 font-roboto"
                 />
+              </div>
+
+              <div className="flex items-start">
+                <div className="flex items-center h-5">
+                  <input
+                    id="gdprConsent"
+                    name="gdprConsent"
+                    type="checkbox"
+                    checked={formData.gdprConsent}
+                    onChange={handleChange}
+                    className="h-4 w-4 text-red-600 border-gray-300 rounded focus:ring-red-500"
+                  />
+                </div>
+                <div className="ml-3 text-sm">
+                  <label htmlFor="gdprConsent" className="text-gray-700">
+                    J'accepte que mes données soient utilisées pour répondre à ma demande, conformément à la{' '}
+                    <Link href="/politique-confidentialite" className="text-red-600 hover:underline">
+                      politique de confidentialité
+                    </Link>
+                  </label>
+                </div>
               </div>
 
               {formError && (
@@ -247,7 +235,7 @@ const ContactForm = () => {
                 className="w-full bg-gradient-to-r from-red-600 to-red-800 text-white px-8 py-4 hover:shadow-xl transition-all font-poppins font-semibold text-lg flex items-center justify-center gap-2"
               >
                 <span>✉️</span>
-                Envoyer votre message
+                Envoyez mon message
               </motion.button>
             </form>
           </div>

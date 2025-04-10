@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Slider from 'react-slick';
 import CardConcept from './CardConcept';
@@ -12,35 +11,35 @@ const CardConceptFull = () => {
       title: 'Story Game',
       paragraph: "Préparez vous à **devenir acteur** de l'histoire qui se déroule sous vos yeux.\n \n **Observer, fouillez** et tentez de résoudre des énigmes qui vous mèneront à découvrir de mystérieux secrets.",
       listItems: ['Par équipe de 4 à 6 personnes', "Jusqu'à 60 personnes", 'Durée : 1h30'],
-      link: '/galerie-scenarios#story-game'
+      tag: 'Immersif'
     },
     {
       image: '/justice2.png',
       title: 'Le procès',
       paragraph: "**Devenez jurés** d'un procès.\n L'accusé est-il coupable ou non coupable du crime dont on l'accuse ? \n \n **Analyser les pièces à conviction, débattez** et définissez d'un **verdict unanime**",
       listItems: ['Par équipe de 8 à 12 personnes', "Jusqu'à 35 personnes", 'Durée : 1h30'],
-      link: '/jeu-argumentation'
+      tag: 'Argumentation'
     },
     {
       image: '/juge.png',
       title: "L'enquête",
       paragraph: "Vous voilà appelés pour dénouer le vrai du faux.\n \n En tant qu'**enquêteurs**, vous devrez interroger les différents suspects, définir vos **hypothèses** et **lever tous les mystères** de cette affaire.\n ",
       listItems: ['Par équipe de 6 à 8 personnes', "Jusqu'à 50 personnes", 'Durée 2h30'],
-      link: '/enquete'
+      tag: 'Investigation'
     },
     {
       image: '/megaphone.png',
       title: 'Linguistik',
       paragraph: "Mettez vous dans la peau d'**experts en linguistique**.\n Tentez de **déchiffrer un mystérieux message** composé de symboles étranges.\n \n Êtes vous prêts à révéler un terrible secret.",
       listItems: ['Par équipe de 6 à 9 personnes', "Jusqu'à 9 personnes", 'Durée: 1h30'],
-      link: '/galerie-scenarios#story-game'
+      tag: 'Déchiffrage'
     },
     {
       image: '/jeu.png',
       title: "L'odysée des légendes",
       paragraph: "Vivez une **aventure épique** où vous serez seul maître de votre destin. Partez avec votre équipe à la **rencontre** de ceux qui peuplent cet univers.\n \n Réussirez vous à aller au bout des **quêtes** qui vous seront confiées ?",
       listItems: ['Par équipe de 4 à 6 personnes', "Jusqu'à 6 personnes", 'Durée : 2h30'],
-      link: '/galerie-scenarios#story-game'
+      tag: 'Aventure'
     },
   ];
 
@@ -84,31 +83,31 @@ const CardConceptFull = () => {
   };
 
   return (
-    <>
-      <div className=" border-gray-900  dark:text-gray-700">
-        <h2 className="text-center text-3xl md:text-3xl lg:text-4xl font-poppins mb-8 pt-8 ">
+    <section className="py-12 px-4">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-center text-3xl font-bold text-gray-800 mb-10">
           Nos <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">concepts</span>
         </h2>
         
         {/* Slider pour toutes les versions */}
-        <div className="pb-12 pt-4 px-4 md:px-8 lg:px-12">
-        <Slider {...settings}>
-  {cardsData.map((card, index) => (
-    <div key={index} className="px-2">
-      <CardConcept
-        image={card.image}
-        title={card.title}
-        paragraph={card.paragraph}
-        listItems={card.listItems}
-        link={card.link} 
-      />
-    </div>
-  ))}
-</Slider>
+        <div className="pb-12 pt-4">
+          <Slider {...settings}>
+            {cardsData.map((card, index) => (
+              <div key={index} className="px-3">
+                <CardConcept
+                  image={card.image}
+                  title={card.title}
+                  paragraph={card.paragraph}
+                  listItems={card.listItems}
+                  tag={card.tag}
+                />
+              </div>
+            ))}
+          </Slider>
         </div>
       </div>
 
-      {/* Ajout de styles personnalisés pour les flèches du slider */}
+      {/* Styles du slider */}
       <style jsx global>{`
         .slick-prev,
         .slick-next {
@@ -141,7 +140,7 @@ const CardConceptFull = () => {
           opacity: 1;
         }
       `}</style>
-    </>
+    </section>
   );
 };
 

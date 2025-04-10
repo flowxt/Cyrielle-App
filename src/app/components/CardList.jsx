@@ -21,29 +21,39 @@ export default function CardList() {
     
     return () => window.removeEventListener('resize', checkIsMobile);
   }, []);
+  
   const cards = [
     {
       title: "Team Building",
-      subtitle: "Créez des liens durables entre vos collaborateurs",
+      subtitle: "Renforcez l'efficacité de vos équipes",
       image: carte1,
-      listItems: ["Révéler l'équipe", "Libérer la réflexion", "Fidéliser ses collaborateurs"],
-      buttonText: "Activité de cohésion",
+      listItems: [
+        "Améliorez la communication interne", 
+        "Développez la confiance entre collaborateurs", 
+        "Boostez la productivité collective"
+      ],
       link: "/team-building"
     },
     {
-      title: "Seminaires",
-      subtitle: "Réunissez vos équipes pour un moment insolite",
+      title: "Concepts",
+      subtitle: "Démarquez votre entreprise par l'expérience",
       image: carte2,
-      listItems: ["Capter l'attention", "Souvenir d'une expérience mémorable", "Réussir ensemble"],
-      buttonText: "Nos concepts",
+      listItems: [
+        "Créez un événement mémorable", 
+        "Suscitez l'engagement de vos participants", 
+        "Valorisez votre image de marque"
+      ],
       link: "/nos-concepts"
     },
     {
       title: "Formations",
-      subtitle: "Découvrez ce que le jeu peut vous apporter",
+      subtitle: "Investissez dans le potentiel humain",
       image: carte3,
-      listItems: ["Construire ensemble", "Découvrir les mécanismes des jeux", "Prendre confiance en soi"],
-      buttonText: "Notre catalogue",
+      listItems: [
+        "Développez les soft skills de vos équipes", 
+        "Stimulez la créativité et l'innovation", 
+        "Renforcez le leadership par le jeu"
+      ],
       link: "/nos-formations"
     },
   ];
@@ -77,41 +87,53 @@ export default function CardList() {
 
   if (!isMobile) {
     return (
-      <div className="py-12 px-4 md:px-8 lg:px-12">
-        <div className="flex justify-center gap-8 flex-wrap">
-          {cards.map((card, index) => (
-            <div key={index}>
-              <Card
-                title={card.title}
-                subtitle={card.subtitle}
-                image={card.image}
-                listItems={card.listItems}
-                buttonText={card.buttonText}
-                link={card.link}
-              />
-            </div>
-          ))}
+      <div className="py-16 px-4 md:px-8 lg:px-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-gray-800">
+              Nos solutions pour votre <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">réussite collective</span>
+            </h2>
+          </div>
+          <div className="flex justify-center gap-8 flex-wrap">
+            {cards.map((card, index) => (
+              <div key={index}>
+                <Card
+                  title={card.title}
+                  subtitle={card.subtitle}
+                  image={card.image}
+                  listItems={card.listItems}
+                  link={card.link}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="py-12 px-4 md:px-8 lg:px-12">
-      <Slider {...settings}>
-        {cards.map((card, index) => (
-          <div key={index} className="px-2">
-            <Card
-              title={card.title}
-              subtitle={card.subtitle}
-              image={card.image}
-              listItems={card.listItems}
-              buttonText={card.buttonText}
-              link={card.link}
-            />
-          </div>
-        ))}
-      </Slider>
+    <div className="py-16 px-4 md:px-8 lg:px-12 bg-gray-50">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-bold text-gray-800">
+            Nos solutions pour votre <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">réussite collective</span>
+          </h2>
+        </div>
+        <Slider {...settings}>
+          {cards.map((card, index) => (
+            <div key={index} className="px-2">
+              <Card
+                title={card.title}
+                subtitle={card.subtitle}
+                image={card.image}
+                listItems={card.listItems}
+                link={card.link}
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
 
       <style jsx global>{`
         .slick-prev,

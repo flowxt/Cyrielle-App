@@ -12,7 +12,7 @@ export default function TemoignagesClient() {
         title="TEMOIGNAGES"
         subtitle={
           <>
-            Embarquez dans nos <strong className='text-red-800'>univers captivants</strong> et <strong className='text-red-800'>immersif</strong>
+            Embarquez dans nos <strong className='text-red-800'>univers captivants</strong> et <strong className='text-red-800'>immersifs</strong>
           </>
         }
         description={
@@ -21,12 +21,7 @@ export default function TemoignagesClient() {
             Plongez dans nos univers où <b>interactions</b>, <b>énigmes</b> et <b>aventures</b> se mêlent pour créer des 
             <strong> moments inoubliables</strong> !
             
-            <Link 
-              href="/enigme"
-              className="block mx-auto mb-8 mt-4 text-sm md:text-lg bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white font-poppins px-6 py-3  shadow-lg hover:shadow-xl transition-all w-fit "
-            >
-              Saurez-vous résoudre cette énigme ?
-            </Link>
+            
           </>
         }
       />
