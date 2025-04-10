@@ -85,9 +85,7 @@ const CardConceptFull = () => {
   return (
     <section className="py-12 px-4">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-center text-3xl font-bold text-gray-800 mb-10">
-          Nos <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">concepts</span>
-        </h2>
+       
         
         {/* Slider pour toutes les versions */}
         <div className="pb-12 pt-4">

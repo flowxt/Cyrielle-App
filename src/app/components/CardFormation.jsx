@@ -40,11 +40,9 @@ const CardFormation = () => {
   };
 
   return (
-    <section className="py-12 px-4">
+    <section className="py-12 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-center text-3xl font-bold text-gray-800 mb-10">
-          Notre <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">catalogue</span>
-        </h2>
+       
         
         {/* Version Desktop et Tablette */}
         <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 py-8">
