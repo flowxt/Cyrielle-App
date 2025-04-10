@@ -1,5 +1,14 @@
 import AdventureLayout from '../components/AdventureLayout';
 
+export const metadata = {
+  title: "Toxique | Activité d'Investigation & Mystère | En Scènes Acting",
+  description: "Plongez dans l'univers mystérieux de l'organisation Hélios avec notre aventure immersive 'Toxique'. Une expérience de team building originale combinant enquête et résolution d'énigmes en Haute-Savoie.",
+  openGraph: {
+    title: "Toxique | Activité d'Investigation & Mystère | En Scènes Acting",
+    description: "Plongez dans l'univers mystérieux de l'organisation Hélios avec notre aventure immersive 'Toxique'. Une expérience de team building originale combinant enquête et résolution d'énigmes en Haute-Savoie.",
+  }
+};
+
 export default function ToxiquePage() {
   return (
     <AdventureLayout

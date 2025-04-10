@@ -1,5 +1,14 @@
 import AdventureLayout from '../components/AdventureLayout';
 
+export const metadata = {
+  title: "Nuptial | Enquête Immersive | En Scènes Acting",
+  description: "Plongez dans notre aventure immersive 'Nuptial' et remontez en 1958 lors du mariage de Gustave et Soléa. Une expérience interactive idéale pour vos événements d'entreprise en Haute-Savoie.",
+  openGraph: {
+    title: "Nuptial | Enquête Immersive | En Scènes Acting",
+    description: "Plongez dans notre aventure immersive 'Nuptial' et remontez en 1958 lors du mariage de Gustave et Soléa. Une expérience interactive idéale pour vos événements d'entreprise en Haute-Savoie.",
+  }
+};
+
 export default function NuptialPage() {
   return (
     <AdventureLayout

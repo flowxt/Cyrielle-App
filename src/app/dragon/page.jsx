@@ -1,5 +1,14 @@
 import AdventureLayout from '../components/AdventureLayout';
 
+export const metadata = {
+  title: "Le Dragon d'Elbevor | Jeu d'équipe immersif | En Scènes Acting",
+  description: "Défiez le dragon d'Elbevor et sauvez la princesse dans cette aventure immersive. Une activité de team building originale mêlant escape game et créativité en Haute-Savoie.",
+  openGraph: {
+    title: "Le Dragon d'Elbevor | Jeu d'équipe immersif | En Scènes Acting",
+    description: "Défiez le dragon d'Elbevor et sauvez la princesse dans cette aventure immersive. Une activité de team building originale mêlant escape game et créativité en Haute-Savoie.",
+  }
+};
+
 export default function DragonPage() {
   return (
     <AdventureLayout

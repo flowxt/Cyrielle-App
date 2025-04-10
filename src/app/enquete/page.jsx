@@ -1,5 +1,14 @@
 import AdventureLayout from '../components/AdventureLayout';
 
+export const metadata = {
+  title: "Enquête au Château | Team Building Immersif | En Scènes Acting",
+  description: "Résolvez une enquête immersive au château: disparition mystérieuse, interrogatoire de suspects et recherche d'indices. Activité de team building originale en Haute-Savoie.",
+  openGraph: {
+    title: "Enquête au Château | Team Building Immersif | En Scènes Acting",
+    description: "Résolvez une enquête immersive au château: disparition mystérieuse, interrogatoire de suspects et recherche d'indices. Activité de team building originale en Haute-Savoie.",
+  }
+};
+
 export default function EnquetePage() {
   return (
     <AdventureLayout

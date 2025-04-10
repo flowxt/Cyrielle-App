@@ -1,5 +1,14 @@
 import AdventureLayout from '../components/AdventureLayout';
 
+export const metadata = {
+  title: "Jeu d'Argumentation et Débat | En Scènes Acting",
+  description: "Plongez dans notre jeu d'argumentation immersif 'Le jugement de la comtesse'. Une activité de team building originale qui développe l'esprit critique et les compétences de persuasion en Haute-Savoie.",
+  openGraph: {
+    title: "Jeu d'Argumentation et Débat | En Scènes Acting",
+    description: "Plongez dans notre jeu d'argumentation immersif 'Le jugement de la comtesse'. Une activité de team building originale qui développe l'esprit critique et les compétences de persuasion en Haute-Savoie.",
+  }
+};
+
 export default function ArgumentationPage() {
   return (
     <AdventureLayout

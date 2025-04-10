@@ -1,5 +1,14 @@
 import AdventureLayout from '../components/AdventureLayout';
 
+export const metadata = {
+  title: "Décryptage de messages secrets | Activité Team Building | En Scènes Acting",
+  description: "Plongez dans une aventure immersive de décryptage avec 'Polyxène et le mystérieux message'. Une activité de team building originale où votre équipe devra résoudre des énigmes linguistiques en Haute-Savoie.",
+  openGraph: {
+    title: "Décryptage de messages secrets | Activité Team Building | En Scènes Acting",
+    description: "Plongez dans une aventure immersive de décryptage avec 'Polyxène et le mystérieux message'. Une activité de team building originale où votre équipe devra résoudre des énigmes linguistiques en Haute-Savoie.",
+  }
+};
+
 export default function DecryptagePage() {
   return (
     <AdventureLayout
