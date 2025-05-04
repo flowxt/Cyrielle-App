@@ -52,6 +52,18 @@ const partners = [
     name: "Sauterelle",
     link: "https://linktr.ee/sauterelle.jeux"
   },
+  { 
+    src: "/D&B.png", 
+    alt: "Partenaire Desk & Breakfast", 
+    name: "Desk & Breakfast",
+    link: "https://deskandbreakfast.com/fr"
+  },
+  { 
+    src: "/eloa.jpg", 
+    alt: "Partenaire Eloa photographie", 
+    name: "Eloa PHOTOGRAPHIE",
+    link: "https://www.eloaphotographie.com"
+  },
 ];
 
 const TrustedPartners = () => {

@@ -22,7 +22,7 @@ const Hero = ({ backgroundImageSrc, title, subtitle, description }) => {
         <div className="absolute inset-0 z-0">
           <Image
             src={backgroundImageSrc}
-            alt="Background"
+            alt={`Image d'en-tête illustrant ${title} - En Scènes Acting`}
             fill
             priority
             sizes="100vw"

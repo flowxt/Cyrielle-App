@@ -3,6 +3,7 @@ import "./globals.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import CookieConsent from "./components/CookieConsent";
+import FloatingBookButton from "./components/FloatingBookButton";
 import { Analytics } from "@vercel/analytics/react";
 
 const geistSans = Geist({
@@ -95,7 +96,7 @@ export default function RootLayout({ children }) {
       >
         <NavBar />
         {children}
-
+        <FloatingBookButton />
         <Footer />
         <CookieConsent />
         <Analytics />
