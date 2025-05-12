@@ -27,7 +27,7 @@ export default function TeamBuildingClient() {
         subtitle={
           <>
             Découvrez nos activités stimulantes et {" "}
-            <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">fédératrice</span>
+            <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">fédératrices</span>
           </>
         }
         description={
