@@ -78,9 +78,14 @@ const Footer = () => {
           </a>
         </div>
        
+        <div className="mt-8 flex flex-col items-center gap-4">
+          <Link href="/politique-confidentialite" className="text-gray-400 hover:text-red-400 transition-colors">
+            Politique de confidentialité
+          </Link>
           <Link href="/contact">
             <CustomButton text="Contact" />
           </Link>
+        </div>
    
   </div>
 </footer>
