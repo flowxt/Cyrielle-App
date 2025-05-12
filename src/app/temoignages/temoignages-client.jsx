@@ -8,7 +8,7 @@ export default function TemoignagesClient() {
   return (
     <>
       <Hero
-        backgroundImageSrc="/images/test-cyrielle.png"
+        backgroundImageSrc="/temoignage.png"
         title="TÉMOIGNAGES"
         subtitle={
           <>
