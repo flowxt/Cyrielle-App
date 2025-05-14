@@ -28,64 +28,96 @@ export default function FormationsClient() {
       <CardFormation />
       
       
-      <section className="border-t-2 border-red-700 bg-gradient-to-b from-gray-200 to-gray-400 dark:text-gray-700">
-  <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8 max-w-4xl">
-    <div className="flex justify-center items-center">
-      <div className="flex justify-center text-center w-full">
-        <div className="max-w-2xl w-full">
-          <h2 className="font-poppins text-4xl font-semibold">
-            Vous souhaitez aborder une{' '}
-            <span className="text-gray-100 bg-gradient-to-r from-red-600 to-red-900 p-2 inline-block ">
-              thématique
-            </span>{' '}
-            précise ?
-          </h2>
+      <section className="border-t-2 border-red-700 bg-gradient-to-b from-white to-gray-100">
+        <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8 max-w-5xl">
+          <div className="flex justify-center items-center">
+            <div className="flex justify-center text-center w-full">
+              <div className="max-w-3xl w-full bg-white rounded-2xl shadow-xl p-10 transform hover:scale-[1.02] transition-transform duration-300">
+                <h2 className="font-poppins text-3xl md:text-4xl font-bold text-gray-800">
+                  Vous souhaitez aborder une{' '}
+                  <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">
+                    thématique
+                  </span>{' '}
+                  précise ?
+                </h2>
 
-          <p className="font-roboto mt-6 text-lg font-light">
-            Dites nous en plus, donnez nous votre{' '}
-            <strong>
-              cahier des charges
-            </strong>{' '}
-            et nous vous proposerons un{' '}
-            <strong>
-              programme sur mesure
-            </strong>
-          </p>
+                <p className="font-roboto mt-8 text-lg text-gray-600 max-w-2xl mx-auto">
+                  Partagez votre{' '}
+                  <span className="font-semibold text-gray-800">
+                    cahier des charges
+                  </span>{' '}
+                  et nous élaborerons ensemble un{' '}
+                  <span className="font-semibold text-gray-800">
+                    programme sur mesure
+                  </span>{' '}
+                  adapté à vos objectifs.
+                </p>
 
-          <div className="mt-8">
-  <Link 
-    href="/contact"
-    className="inline-block px-6 py-3 bg-gradient-to-b from-red-700 to-red-900 hover:bg-red-950 hover:scale-105 text-white font-poppins shadow-lg hover:shadow-xl transition-all text-center"
-  >
-    Je vous explique ce que je veux
-  </Link>
-</div>
-          
-          {/* Section certification */}
-          <div className="mt-12 pt-12 border-t border-red-700/30">
-            <div className="flex flex-col md:flex-row justify-around items-center gap-8">
-              <div className="w-72 lg:w-96 h-32 relative">
-              <Image
-  src="/cce.png"
-  width={500} // Ajustez selon vos besoins
-  height={300} // Ajustez selon vos besoins
-  alt="CCE Logo"
-  className="w-full h-auto object-cover" // Pour un comportement responsive
-/>
+                <div className="mt-10 flex justify-center">
+                  <Link 
+                    href="/contact"
+                    className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-red-600 to-red-800 text-white font-poppins px-8 py-4 rounded-xl text-lg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+                  >
+                    <svg 
+                      className="w-5 h-5" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        strokeWidth={2} 
+                        d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                      />
+                    </svg>
+                    Détaillez-nous votre projet
+                    <svg 
+                      className="w-5 h-5 transform transition-transform group-hover:translate-x-1" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        strokeWidth={2} 
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      />
+                    </svg>
+                  </Link>
+                </div>
+                
+                {/* Section certification avec design modernisé */}
+                <div className="mt-16 pt-12 border-t border-gray-200">
+                  <div className="flex flex-col md:flex-row justify-around items-center gap-8">
+                    <div className="w-72 lg:w-96 h-32 relative transform hover:scale-105 transition-transform duration-300">
+                      <Image
+                        src="/cce.png"
+                        width={500}
+                        height={300}
+                        alt="CCE Logo"
+                        className="w-full h-auto object-cover"
+                      />
+                    </div>
+                    <div className="space-y-3 text-left">
+                      <h3 className="font-poppins font-semibold text-xl text-gray-800">
+                        Votre formatrice certifiée
+                      </h3>
+                      <ul className="font-roboto space-y-2">
+                        <li className="text-lg font-medium text-gray-800">Cyrielle Schepens</li>
+                        <li className="text-gray-600">Certification obtenue le 11/07/2024</li>
+                        <li className="text-gray-600">Auprès de la CCI Annecy</li>
+                        <li className="font-mono text-sm text-gray-500">N°2024-0021057-8</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <ul className="text-center font-roboto text-md md:text-lg space-y-2">
-                <li className="font-semibold text-gray-800">Votre formatrice certifiée Cyrielle Schepens</li>
-                <li className="text-gray-700">Certification obtenue le 11/07/2024</li>
-                <li className="text-gray-700">Auprès de la CCI Annecy</li>
-                <li className="text-gray-600 font-light">N°2024-0021057-8</li>
-              </ul>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
       </>
     );
   } 

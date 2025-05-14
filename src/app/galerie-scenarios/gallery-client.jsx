@@ -68,7 +68,7 @@ export default function GalleryClient() {
       <section className="pt-8 pb-4 bg-gradient-to-b from-gray-200 to-gray-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-2">
+            <h2 className="text-3xl md:text-4xl font-bold mb-2 text-gray-800">
               Un <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">team building</span> réussi
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
@@ -90,29 +90,46 @@ export default function GalleryClient() {
         </div>
       </div>
 
-      <section className="border-t-2 border-red-700 bg-gradient-to-b from-gray-200 to-gray-400 dark:text-gray-700">
-        <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8 max-w-4xl">
+      <section className="border-t-2 border-red-700 bg-gradient-to-b from-white to-gray-100">
+        <div className="container mx-auto px-4 py-20 sm:px-6 lg:px-8 max-w-5xl">
           <div className="flex justify-center items-center">
             <div className="flex justify-center text-center w-full">
-              <div className="max-w-2xl w-full">
-                <h2 className="font-poppins text-xl md:text-2xl lg:text-4xl font-semibold mb-12">
+              <div className="max-w-3xl w-full bg-white rounded-2xl shadow-xl p-8 transform hover:scale-[1.02] transition-transform duration-300">
+                <h2 className="font-poppins text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-gray-800">
                   Prêt pour une{' '}
-                  <span className="text-gray-100 bg-gradient-to-r from-red-600 to-red-900 p-1 inline-block">
+                  <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">
                     expérience
                   </span>{' '}
                   inoubliable <br />en{' '}
-                  <span className="text-gray-100 bg-gradient-to-r from-red-600 to-red-900 p-1 inline-block">
+                  <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">
                     Haute-Savoie
                   </span>{' '}
                   ?
                 </h2>
 
-                <div className="mt-8">
+                <p className="text-gray-600 mb-10 text-lg">
+                  Découvrez nos scénarios uniques et créez des moments mémorables avec votre équipe.
+                </p>
+
+                <div className="mt-8 flex justify-center">
                   <Link 
                     href="/contact" 
-                    className="inline-block bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white font-poppins px-4 py-2 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                    className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-red-600 to-red-800 text-white font-poppins px-8 py-4 rounded-lg text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:from-red-700 hover:to-red-900"
                   >
                     Contactez-nous dès maintenant
+                    <svg 
+                      className="w-5 h-5 transform transition-transform group-hover:translate-x-1" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        strokeWidth={2} 
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      />
+                    </svg>
                   </Link>
                 </div>
               </div>

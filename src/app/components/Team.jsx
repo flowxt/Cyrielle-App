@@ -6,7 +6,7 @@ export default function Team() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* En-tête de section */}
                 <div className="text-center mb-14">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
                         Notre <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">équipe</span>
                     </h2>
                     <p className="text-lg text-gray-700 max-w-3xl mx-auto">
@@ -37,7 +37,7 @@ export default function Team() {
                                 </div>
                             </div>
                         </div>
-                        <div className="p-6">
+                        <div className="p-6 text-gray-800">
                             <ul className="space-y-2">
                                 <li className="flex items-center gap-2">
                                     <span className="text-red-600 text-lg">⬦</span>
@@ -83,7 +83,7 @@ export default function Team() {
                                 </div>
                             </div>
                         </div>
-                        <div className="p-6">
+                        <div className="p-6 text-gray-800">
                             <ul className="space-y-2">
                                 <li className="flex items-center gap-2">
                                     <span className="text-red-600 text-lg">⬦</span>
