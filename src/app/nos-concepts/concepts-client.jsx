@@ -77,13 +77,11 @@ export default function ConceptsClient() {
             <div className="flex justify-center text-center w-full">
               <div className="max-w-3xl w-full bg-white rounded-2xl shadow-xl p-10 transform hover:scale-[1.02] transition-transform duration-300">
                 <h2 className="font-poppins text-3xl md:text-4xl font-bold text-gray-800 mb-8">
-                  <span className="whitespace-nowrap">
-                    Une idée précise de votre{' '}
-                    <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">
-                      événement
-                    </span>
-                    &nbsp;?
+                  Une idée précise de votre{' '}
+                  <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">
+                    événement
                   </span>
+                  &nbsp;?
                 </h2>
 
                 <div className="space-y-6">
