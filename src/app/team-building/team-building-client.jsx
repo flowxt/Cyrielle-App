@@ -43,9 +43,15 @@ export default function TeamBuildingClient() {
           <div className="flex justify-center w-full mt-8">
             <Link 
               href="/nos-concepts"
-              className="inline-block px-6 py-3 bg-gradient-to-b from-gray-900 to-black text-white font-poppins shadow-lg hover:bg-red-950 hover:scale-105 hover:shadow-xl transition-all text-center rounded-lg"
+              className="group relative inline-flex items-center justify-center px-8 py-4 font-poppins text-lg font-semibold tracking-wider text-white bg-gradient-to-r from-red-700 to-red-900 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-red-500/25 hover:shadow-xl"
             >
-              Découvrez nos différents concepts
+              <span className="absolute inset-0 w-full h-full transition-all duration-300 transform translate-x-0 bg-gradient-to-r from-black to-gray-900 group-hover:translate-x-full ease"></span>
+              <span className="relative flex items-center">
+                Découvrez nos différents concepts
+                <svg className="w-5 h-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </span>
             </Link>
           </div>
           {/* A crrer un bouton avec un bg black ici plutot que de prendre */}
@@ -105,9 +111,15 @@ export default function TeamBuildingClient() {
                   <div className="mt-8">
                     <Link 
                       href="/contact"
-                      className="inline-block px-6 py-3 bg-gradient-to-r from-red-700 to-red-900 hover:bg-red-950 hover:scale-105 text-white font-poppins shadow-lg hover:shadow-xl transition-all text-center"
+                      className="group relative inline-flex items-center justify-center px-8 py-4 font-poppins text-lg font-semibold tracking-wider text-white bg-gradient-to-r from-red-700 to-red-900 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-red-500/25 hover:shadow-xl"
                     >
-                      Créons ensemble votre team building
+                      <span className="absolute inset-0 w-full h-full transition-all duration-300 transform translate-x-0 bg-gradient-to-r from-black to-gray-900 group-hover:translate-x-full ease"></span>
+                      <span className="relative flex items-center">
+                        Créons ensemble votre team building
+                        <svg className="w-5 h-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
+                      </span>
                     </Link>
                   </div>
                 </div>
@@ -124,6 +136,48 @@ export default function TeamBuildingClient() {
                   priority
                 />
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section CTA finale */}
+        <section className="py-16 bg-gradient-to-b from-gray-400 to-gray-200">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins">
+              Prêt à vivre une{' '}
+              <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">
+                expérience unique
+              </span>
+              ?
+            </h2>
+            <p className="text-lg mb-8 max-w-2xl mx-auto text-gray-700">
+              Transformez votre équipe en une force unie et créative. Contactez-nous pour organiser votre événement sur mesure en Haute-Savoie.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Link 
+                href="/contact"
+                className="group relative inline-flex items-center justify-center px-8 py-4 font-poppins text-lg font-semibold tracking-wider text-white bg-gradient-to-r from-red-700 to-red-900 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-red-500/25 hover:shadow-xl"
+              >
+                <span className="absolute inset-0 w-full h-full transition-all duration-300 transform translate-x-0 bg-gradient-to-r from-black to-gray-900 group-hover:translate-x-full ease"></span>
+                <span className="relative flex items-center">
+                  Réserver maintenant
+                  <svg className="w-5 h-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </span>
+              </Link>
+              <Link 
+                href="/nos-concepts"
+                className="group relative inline-flex items-center justify-center px-8 py-4 font-poppins text-lg font-semibold tracking-wider text-gray-900 bg-white rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-red-500/25 hover:shadow-xl border-2 border-red-700"
+              >
+                <span className="absolute inset-0 w-full h-full transition-all duration-300 transform translate-x-full bg-gradient-to-r from-red-700 to-red-900 group-hover:translate-x-0 ease"></span>
+                <span className="relative flex items-center group-hover:text-white">
+                  En savoir plus
+                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </Link>
             </div>
           </div>
         </section>
