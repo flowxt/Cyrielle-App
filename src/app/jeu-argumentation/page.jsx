@@ -10,10 +10,29 @@ export const metadata = {
 };
 
 export default function ArgumentationPage() {
+  const retrospectivePhotos = [
+    {
+      src: "/teaser/photos-site/comtesse1.png",
+      alt: "Jurés analysant les preuves du procès",
+      caption: "Analyse des preuves"
+    },
+    {
+      src: "/teaser/photos-site/comtesse2.png", 
+      alt: "Débat et argumentation entre les participants",
+      caption: "Débat passionné"
+    },
+    {
+      src: "/teaser/photos-site/comtesse3.png",
+      alt: "Délibération pour le verdict final",
+      caption: "Délibération du jury"
+    }
+  ];
+
   return (
     <AdventureLayout
       title="Le jugement de la comtesse"
       videoSrc="/videos/aventure5.mp4"
+      retrospectivePhotos={retrospectivePhotos}
       description={
         <>
           <div className="space-y-6">

@@ -10,10 +10,29 @@ export const metadata = {
 };
 
 export default function NuptialPage() {
+  const retrospectivePhotos = [
+    {
+      src: "/teaser/photos-site/nuptial1.JPG",
+      alt: "Participants au mariage de Gustave et Soléa",
+      caption: "Célébration du mariage en 1958"
+    },
+    {
+      src: "/teaser/photos-site/nuptial2.JPG", 
+      alt: "Équipe interagissant avec la famille des mariés",
+      caption: "Rencontre avec la famille"
+    },
+    {
+      src: "/teaser/photos-site/nuptial3.JPG",
+      alt: "Découverte des mystères familiaux",
+      caption: "Révélation des secrets"
+    }
+  ];
+
   return (
     <AdventureLayout
       title="Nuptial - Le mariage de Gustave et Soléa"
       videoSrc="/videos/nuptial.mp4"
+      retrospectivePhotos={retrospectivePhotos}
       description={
         <>
           <div className="space-y-6">
