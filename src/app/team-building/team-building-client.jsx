@@ -57,7 +57,7 @@ export default function TeamBuildingClient() {
           {/* A crrer un bouton avec un bg black ici plutot que de prendre */}
         </section>
 
-        <section className="border-t-2 border-red-700 bg-gradient-to-b from-gray-200 to-gray-400 dark:text-gray-700">
+        <section className="border-t-2 border-red-700 bg-gradient-to-b from-gray-200 to-gray-400">
           <div className="mx-auto px-4 py-12 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:items-center lg:gap-12">
               {/* Partie Texte */}
