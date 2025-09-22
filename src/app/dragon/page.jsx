@@ -10,10 +10,29 @@ export const metadata = {
 };
 
 export default function DragonPage() {
+  const retrospectivePhotos = [
+    {
+      src: "/teaser/photos-site/dragon1.JPG",
+      alt: "Participants préparant la potion magique",
+      caption: "Les apprentis sorciers en action"
+    },
+    {
+      src: "/teaser/photos-site/dragon2.JPG", 
+      alt: "Équipe travaillant ensemble sur l'énigme",
+      caption: "Collaboration et réflexion collective"
+    },
+    {
+      src: "/teaser/photos-site/dragon3.JPG",
+      alt: "Moment de découverte dans l'aventure",
+      caption: "Moment de révélation"
+    }
+  ];
+
   return (
     <AdventureLayout
       title="Le dragon d'Elbevor et la princesse De Benevix"
       videoSrc="/videos/aventure4.mp4"
+      retrospectivePhotos={retrospectivePhotos}
       description={
         <>
           <div className="space-y-6">

@@ -10,10 +10,29 @@ export const metadata = {
 };
 
 export default function EnquetePage() {
+  const retrospectivePhotos = [
+    {
+      src: "/teaser/photos-site/disparition1.JPG",
+      alt: "Équipe analysant les indices de la disparition",
+      caption: "Recherche d'indices crucieux"
+    },
+    {
+      src: "/teaser/photos-site/disparaition2.JPG", 
+      alt: "Participants interrogeant les suspects",
+      caption: "Interrogatoire des suspects"
+    },
+    {
+      src: "/teaser/photos-site/disparition4.JPG", 
+      alt: "Participants menant l'enquête au château",
+      caption: "L'enquête bat son plein"
+    }
+  ];
+
   return (
     <AdventureLayout
       title="Disparition inquiétante au château"
       videoSrc="/videos/chateau.mp4"
+      retrospectivePhotos={retrospectivePhotos}
       description={
         <>
           <div className="space-y-6">

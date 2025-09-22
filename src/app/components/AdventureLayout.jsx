@@ -1,7 +1,8 @@
 "use client";
 import { useState, useRef } from 'react';
 import Link from 'next/link';
-const AdventureLayout = ({ title, description, videoSrc }) => {
+import Image from 'next/image';
+const AdventureLayout = ({ title, description, videoSrc, retrospectivePhotos }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef(null);
 
@@ -76,6 +77,33 @@ const AdventureLayout = ({ title, description, videoSrc }) => {
             </div>
           </div>
         </div>
+
+        {/* Section Rétrospectives si des photos sont fournies */}
+        {retrospectivePhotos && retrospectivePhotos.length > 0 && (
+          <div className="bg-white/90 p-8 rounded-xl shadow-lg">
+            <h2 className="text-3xl font-bold text-center text-gray-800 mb-8 font-poppins">
+              Rétrospectives
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {retrospectivePhotos.map((photo, index) => (
+                <div key={index} className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt || `Rétrospective ${index + 1}`}
+                    width={400}
+                    height={300}
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="absolute bottom-4 left-4 text-white">
+                      <p className="text-sm font-medium">{photo.caption || `Photo ${index + 1}`}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
