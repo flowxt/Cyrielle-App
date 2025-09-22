@@ -10,10 +10,29 @@ export const metadata = {
 };
 
 export default function DecryptagePage() {
+  const retrospectivePhotos = [
+    {
+      src: "/teaser/photos-site/poly1.png",
+      alt: "Participants décryptant le mystérieux poème",
+      caption: "Décryptage du message secret"
+    },
+    {
+      src: "/teaser/photos-site/poly2.png", 
+      alt: "Équipe analysant les indices linguistiques",
+      caption: "Analyse linguistique collaborative"
+    },
+    {
+      src: "/teaser/photos-site/poly3.png",
+      alt: "Révélation du secret enfoui de Polyxène",
+      caption: "Découverte du secret"
+    }
+  ];
+
   return (
     <AdventureLayout
       title="Polyxène et le mystérieux message"
       videoSrc="/videos/aventure1.mp4"
+      retrospectivePhotos={retrospectivePhotos}
       description={
         <>
           <div className="space-y-6">
