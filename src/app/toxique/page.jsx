@@ -10,10 +10,29 @@ export const metadata = {
 };
 
 export default function ToxiquePage() {
+  const retrospectivePhotos = [
+    {
+      src: "/teaser/photos-site/toxique1.JPG",
+      alt: "Participants dans l'univers mystérieux d'Hélios",
+      caption: "Immersion dans l'organisation Hélios"
+    },
+    {
+      src: "/teaser/photos-site/toxique2.JPG", 
+      alt: "Équipe analysant les indices toxiques",
+      caption: "Recherche d'indices mystérieux"
+    },
+    {
+      src: "/teaser/photos-site/toxique3.JPG",
+      alt: "Interrogatoire des membres de l'organisation",
+      caption: "Découverte des secrets"
+    }
+  ];
+
   return (
     <AdventureLayout
       title="Toxique"
       videoSrc="/videos/aventure2.mp4"
+      retrospectivePhotos={retrospectivePhotos}
       description={
         <>
           <div className="space-y-6">
