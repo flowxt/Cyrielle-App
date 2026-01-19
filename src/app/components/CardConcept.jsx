@@ -4,7 +4,7 @@ import Image from "next/image";
 const CardConcept = ({ image, title, paragraph, listItems, tag = "Concept" }) => {
   return (
     <div className="h-full">
-      <div className="group relative bg-white/90 backdrop-blur-sm rounded-2xl overflow-hidden min-h-[600px] md:h-[600px] shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl flex flex-col border border-white/20">
+      <div className="group relative bg-white/90 backdrop-blur-sm rounded-2xl overflow-hidden min-h-[550px] shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl flex flex-col border border-white/20">
         {/* Image avec overlay dégradé */}
         <div className="relative h-56 overflow-hidden flex-shrink-0">
           <Image 
@@ -52,11 +52,11 @@ const CardConcept = ({ image, title, paragraph, listItems, tag = "Concept" }) =>
           </div>
 
           {/* Liste avec icônes personnalisées */}
-          <ul className="space-y-3 mt-auto">
+          <ul className="space-y-2 mt-auto pb-4">
             {listItems.map((item, index) => (
               <li key={index} className="flex items-start text-gray-600">
-                <span className="text-red-600 mr-3 mt-1">&#9656;</span>
-                <span className="flex-1">{item}</span>
+                <span className="text-red-600 mr-3 mt-0.5 text-sm">&#9656;</span>
+                <span className="flex-1 text-sm">{item}</span>
               </li>
             ))}
           </ul>

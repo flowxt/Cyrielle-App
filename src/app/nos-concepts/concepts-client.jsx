@@ -17,9 +17,9 @@ export default function ConceptsClient() {
         }
         description={
           <>
-          <b>Plongez les spect'acteurs</b> au cœur d'<strong>aventures immersives en Haute-Savoie</strong>.  
+          <b>Plongez nos spect&apos;acteurs</b> au cœur d&apos;<strong>aventures immersives en Haute-Savoie</strong>.  
           <br /><br />
-          Découvrez ou redécouvrez votre entourage autrement grâce à des jeux adaptés à chaque environnement.  
+          Découvrez ou redécouvrez les dynamiques humaines qui vous relient grâce à des jeux adaptés à chaque environnement.  
           Une approche ludique et sur mesure pour une <strong>expérience authentique et enrichissante</strong>.<br /><br />
           <span className="italic text-red-800">Créez des liens uniques et des moments mémorables avec vos équipes.</span>
       </>

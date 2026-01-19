@@ -24,7 +24,7 @@ const CardConceptFull = () => {
       image: '/juge.png',
       title: "L'enquête",
       paragraph: "Vous voilà appelés pour dénouer le vrai du faux.\n \n En tant qu'**enquêteurs**, vous devrez interroger les différents suspects, définir vos **hypothèses** et **lever tous les mystères** de cette affaire.\n ",
-      listItems: ['Par équipe de 6 à 8 personnes', "Jusqu'à 50 personnes", 'Durée 2h30'],
+      listItems: ['Par équipe de 6 à 8 personnes', "Jusqu'à 120 personnes", 'Durée : 2h30'],
       tag: 'Investigation'
     },
     {
