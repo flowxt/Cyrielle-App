@@ -101,20 +101,20 @@ export default function TeamBuildingClient() {
               {/* Partie Texte */}
               <div className="flex justify-center text-center">
                 <div className="max-w-lg md:max-w-none">
-                  <h2 className="font-poppins text-4xl font-semibold">
+                  <h2 className="font-poppins text-4xl font-semibold text-gray-800">
                     Réinventons votre{' '}
                     <span className="text-gray-100 bg-gradient-to-r from-red-600 to-red-900 p-2 inline-block">
                       équipe
                     </span>
                   </h2>
 
-                  <p className="font-roboto mt-6 text-lg font-light">
+                  <p className="font-roboto mt-6 text-lg font-light text-gray-800">
                     Chez En Scènes Acting, nous sommes dévoués à{' '}
-                    <strong >
+                    <strong className="text-gray-900">
                       transformer votre équipe
                     </strong>{' '}
                     en une force unifiée, prête à relever tous les{' '}
-                    <strong >
+                    <strong className="text-gray-900">
                       défis
                     </strong>
                     .<br /><br />
@@ -127,20 +127,20 @@ export default function TeamBuildingClient() {
                     <br /><br />
                     
                     Nos activités ludiques en Haute Savoie plongent votre équipe dans des{' '}
-                    <strong >
+                    <strong className="text-gray-900">
                       scénarios interactifs
                     </strong>{' '}
                     où chaque membre joue un rôle crucial. Improvisations théâtrales, jeux de rôle stratégiques et défis 
                     de résolution de problèmes encouragent la{' '}
-                    <strong >
+                    <strong className="text-gray-900">
                       communication
                     </strong>
                     , la{' '}
-                    <strong>
+                    <strong className="text-gray-900">
                       créativité
                     </strong>{' '}
                     et le{' '}
-                    <strong>
+                    <strong className="text-gray-900">
                       leadership
                     </strong>
                     .
