@@ -299,6 +299,39 @@ const GoogleReviews = () => {
           ))}
         </div>
       </div>
+
+      {/* Bouton pour voir tous les avis sur Google */}
+      <div className="text-center mt-12 px-4">
+        <a
+          href="https://share.google/pNHuntyfPTtv4H6SQ"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex items-center gap-3 bg-white text-gray-800 font-poppins px-8 py-4 rounded-lg text-lg shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-gray-200 hover:border-red-600"
+        >
+          <span className="font-semibold text-xl">
+            <span className="text-[#4285F4]">G</span>
+            <span className="text-[#EA4335]">o</span>
+            <span className="text-[#FBBC05]">o</span>
+            <span className="text-[#4285F4]">g</span>
+            <span className="text-[#34A853]">l</span>
+            <span className="text-[#EA4335]">e</span>
+          </span>
+          <span>Voir tous nos avis</span>
+          <svg 
+            className="w-5 h-5 transform transition-transform group-hover:translate-x-1" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+          >
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth={2} 
+              d="M13 7l5 5m0 0l-5 5m5-5H6"
+            />
+          </svg>
+        </a>
+      </div>
     </section>
   );
 };
