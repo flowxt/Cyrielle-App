@@ -63,52 +63,8 @@ const FloatingBookButton = () => {
               <div className="h-px bg-gray-200 my-2"></div>
 
               <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wide px-3 my-2">
-                Aventures populaires
+                Nos événements
               </h4>
-
-              <a 
-                href="https://linktr.ee/Enscenesacting" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                onClick={closeMenu}
-                className="block p-3 hover:bg-red-50 rounded-lg transition-colors"
-              >
-                <div className="flex items-start">
-                  <div className="w-8 h-8 flex-shrink-0 bg-red-100 rounded-full flex items-center justify-center text-red-700 mt-0.5">
-                    🧙‍♂️
-                  </div>
-                  <div className="ml-3">
-                    <h4 className="font-medium text-gray-800">
-                      Jeux de piste (4-8 ans)
-                    </h4>
-                    <p className="text-xs text-gray-500">
-                      Au château de l'Échelle
-                    </p>
-                  </div>
-                </div>
-              </a>
-
-              <a 
-                href="https://linktr.ee/Enscenesacting" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                onClick={closeMenu}
-                className="block p-3 hover:bg-red-50 rounded-lg transition-colors"
-              >
-                <div className="flex items-start">
-                  <div className="w-8 h-8 flex-shrink-0 bg-red-100 rounded-full flex items-center justify-center text-red-700 mt-0.5">
-                    👸
-                  </div>
-                  <div className="ml-3">
-                    <h4 className="font-medium text-gray-800">
-                      Escape contes à énigmes (6-11 ans)
-                    </h4>
-                    <p className="text-xs text-gray-500">
-                      Au château de l'Échelle
-                    </p>
-                  </div>
-                </div>
-              </a>
 
               <a 
                 href="https://linktr.ee/Enscenesacting" 
@@ -123,10 +79,32 @@ const FloatingBookButton = () => {
                   </div>
                   <div className="ml-3">
                     <h4 className="font-medium text-gray-800">
-                      Enquête grandeur nature (Ados/Adultes)
+                      Enquête grandeur nature
                     </h4>
                     <p className="text-xs text-gray-500">
-                      Au château de l'Échelle
+                      Acquisition fatale
+                    </p>
+                  </div>
+                </div>
+              </a>
+
+              <a 
+                href="https://linktr.ee/Enscenesacting" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                onClick={closeMenu}
+                className="block p-3 hover:bg-red-50 rounded-lg transition-colors"
+              >
+                <div className="flex items-start">
+                  <div className="w-8 h-8 flex-shrink-0 bg-red-100 rounded-full flex items-center justify-center text-red-700 mt-0.5">
+                    ⚖️
+                  </div>
+                  <div className="ml-3">
+                    <h4 className="font-medium text-gray-800">
+                      Procès
+                    </h4>
+                    <p className="text-xs text-gray-500">
+                      Le jugement de la comtesse
                     </p>
                   </div>
                 </div>
