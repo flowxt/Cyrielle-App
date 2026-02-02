@@ -61,8 +61,20 @@ function EnigmeClient() {
       {/* Contenu principal */}
       <main className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
+          {/* Avertissement - Une seule énigme */}
+          <div className="bg-red-50 border-l-4 border-red-600 p-4 mb-8 rounded-lg max-w-3xl mx-auto">
+            <div className="flex items-center">
+              <svg className="w-6 h-6 text-red-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <p className="text-red-800 font-medium">
+                Attention : Les deux images ci-dessous forment <span className="font-bold">une seule et même énigme</span>. Analysez-les ensemble pour trouver la solution !
+              </p>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {/* Première énigme */}
+            {/* Indice 1 */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
@@ -70,7 +82,7 @@ function EnigmeClient() {
               className="bg-white/90 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg border border-white/20 p-6"
             >
               <h2 className="text-2xl font-bold text-gray-800 relative pb-4 mb-6">
-                Première partie du mystère
+                Indice A
                 <div className="absolute bottom-0 left-0 w-16 h-1 bg-red-600 rounded-full" />
               </h2>
               
@@ -80,7 +92,7 @@ function EnigmeClient() {
               >
                 <Image
                   src="/enigme1.png"
-                  alt="Première partie de l'énigme"
+                  alt="Premier indice de l'énigme"
                   fill
                   className="object-contain p-4 hover:scale-105 transition-transform duration-300"
                 />
@@ -94,11 +106,11 @@ function EnigmeClient() {
               </div>
               
               <p className="mt-6 text-gray-700">
-                Cette première partie cache un message codé. Observez attentivement chaque détail pour découvrir le premier indice.
+                Cet indice contient des informations cruciales. Cliquez pour agrandir l'image.
               </p>
             </motion.div>
 
-            {/* Deuxième énigme */}
+            {/* Indice 2 */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
@@ -106,7 +118,7 @@ function EnigmeClient() {
               className="bg-white/90 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg border border-white/20 p-6"
             >
               <h2 className="text-2xl font-bold text-gray-800 relative pb-4 mb-6">
-                Seconde partie du mystère
+                Indice B
                 <div className="absolute bottom-0 left-0 w-16 h-1 bg-red-600 rounded-full" />
               </h2>
               
@@ -116,7 +128,7 @@ function EnigmeClient() {
               >
                 <Image
                   src="/enigme2.png"
-                  alt="Seconde partie de l'énigme"
+                  alt="Second indice de l'énigme"
                   fill
                   className="object-contain p-4 hover:scale-105 transition-transform duration-300"
                 />
@@ -130,7 +142,7 @@ function EnigmeClient() {
               </div>
               
               <p className="mt-6 text-gray-700">
-                La seconde partie du mystère exige une réflexion approfondie. Combinez les indices pour avancer vers la solution finale.
+                Cet indice complète le premier. Combinez-les pour résoudre l'énigme !
               </p>
             </motion.div>
           </div>
@@ -158,7 +170,7 @@ function EnigmeClient() {
               
               <div className="mt-6 text-sm text-gray-500 flex justify-center items-center gap-2">
                 <span className="animate-pulse">💡</span>
-                Indice : Combinez les indices des deux énigmes pour révéler le code secret
+                Astuce : Analysez les deux indices ensemble pour révéler le code secret
               </div>
             </div>
           </motion.div>

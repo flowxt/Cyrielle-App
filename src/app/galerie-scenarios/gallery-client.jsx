@@ -20,11 +20,6 @@ export default function GalleryClient() {
       link: "/nuptial"
     },
     {
-      imageSrc: "/teaser/dragon.jpg",
-      title: "Le dragon d'Elbevor et la princesse De Benevix",
-      link: "/dragon"
-    },
-    {
       imageSrc: "/teaser/polyxene.jpg",
       title: "Polyxène et le mystérieux message",
       link: "/decryptage"
