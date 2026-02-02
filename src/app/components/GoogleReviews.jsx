@@ -4,6 +4,12 @@ import React from 'react';
 const reviews = [
   // Nouveaux avis
   {
+    author_name: "Thomas Richard-Mas",
+    relative_time_description: "il y a 2 semaines",
+    text: "Super prestation pour Le repas de fin d'année avec mon équipe. Je recommande vivement Cyrielle !",
+    rating: 5,
+  },
+  {
     author_name: "La Compagnie du Jeu",
     relative_time_description: "il y a 2 mois",
     text: "Très bonne expérience avec l'enquête grandeur nature au Château de l'Echelle à La Roche sur Foron ! Le scénario est adapté aux débutants, les règles sont claires et la démarche assez facile à suivre : on interroge des personnages (interprétés par des comédiens), on mène notre enquête, et on délivre un verdict ! Merci Cyrielle et Adèle pour ce bon jeu coopératif dans un décor très immersif !",
@@ -34,9 +40,39 @@ const reviews = [
     rating: 5,
   },
   {
-    author_name: "Thomas Richard-Mas",
-    relative_time_description: "il y a 6 jours",
-    text: "Super prestation pour le repas de fin d'année avec mon équipe. Je recommande vivement Cyrielle ! Visité en décembre 2025",
+    author_name: "Doriol Deborah",
+    relative_time_description: "il y a 7 mois",
+    text: "La Murder party a été organisée avec un professionnalisme et une créativité incroyable. L'intrigue était captivante, les personnages bien construits, et l'ambiance immersive du début à la fin. Les animateurs ont su parfaitement guider le jeu tout en laissant une grande liberté d'interprétation. Un moment de pur plaisir, idéal pour renforcer la cohésion d'équipe ou passer une soirée originale entre amis. Hâte de réorganiser cela pour l'année prochaine ! Visité en avril 2025",
+    rating: 5,
+  },
+  {
+    author_name: "Benjamin SOHIER",
+    relative_time_description: "il y a 9 mois",
+    text: "J'ai participé à une « Murder Party » façon Cluedo au Château de la Roche sur Foron. Le jeu des artistes et le scénario permettent de passer un excellent moment ! Visité en avril 2025",
+    rating: 5,
+  },
+  {
+    author_name: "Aline Favre",
+    relative_time_description: "il y a 10 mois",
+    text: "Super expérience ! Pendant 2h30, nous avons été totalement plongés dans l'intrigue grâce aux acteurs et au décor du Château de l'Échelle. L'ambiance était captivante, rendant chaque énigme encore plus prenante. Un excellent moment entre amis, mêlant réflexion et suspense !",
+    rating: 5,
+  },
+  {
+    author_name: "Anouck Durand Teixeira",
+    relative_time_description: "il y a 10 mois",
+    text: "Expérience géniale à la Roche-sur-Foron au Château de l'Echelle. Les acteurs et les organisateurs étaient au top ! On se prend vite au jeu et ne voit vraiment pas le temps passer ! C'était une enquête immersive et très bien ficelée. Visité en mars 2025",
+    rating: 5,
+  },
+  {
+    author_name: "Sylvie T",
+    relative_time_description: "il y a 11 mois",
+    text: "Captivant, très bons comédiens. Agréable moment d'enquête ! Tout était parfait, bravo. Visité en février 2025",
+    rating: 5,
+  },
+  {
+    author_name: "Olivier Lamer",
+    relative_time_description: "il y a un an",
+    text: "Cyrielle et la troupe de comédiens nous ont permis de passer un très bon moment lors de l'enquête sur la disparition du Roi. Le scénario était très réussi et le lieu nous mettait assurément dans l'ambiance. A refaire pour une prochaine enquête ! Visité en octobre 2024",
     rating: 5,
   },
   {
