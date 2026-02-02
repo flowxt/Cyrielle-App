@@ -32,10 +32,10 @@ const RetrospectivesSection = ({ retrospectives }) => {
         </div>
 
         <div className="relative">
-          {/* Boutons de navigation */}
+          {/* Boutons de navigation - cachés sur mobile, visibles sur tablette et desktop */}
           <button 
             onClick={scrollLeft} 
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-red-800 p-3 rounded-full shadow-lg transition-all"
+            className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-red-800 p-3 rounded-full shadow-lg transition-all"
             aria-label="Voir les aventures précédentes"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -45,7 +45,7 @@ const RetrospectivesSection = ({ retrospectives }) => {
           
           <button 
             onClick={scrollRight} 
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-red-800 p-3 rounded-full shadow-lg transition-all"
+            className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-red-800 p-3 rounded-full shadow-lg transition-all"
             aria-label="Voir les aventures suivantes"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -56,13 +56,17 @@ const RetrospectivesSection = ({ retrospectives }) => {
           {/* Conteneur défilant */}
           <div 
             ref={sliderRef} 
-            className="flex overflow-x-auto pb-8 hide-scrollbar snap-x snap-mandatory"
-            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+            className="flex overflow-x-auto pb-8 hide-scrollbar snap-x snap-mandatory touch-pan-x"
+            style={{ 
+              scrollbarWidth: 'none', 
+              msOverflowStyle: 'none',
+              WebkitOverflowScrolling: 'touch'
+            }}
           >
             {retrospectives.map((item, index) => (
               <div 
                 key={index}
-                className="flex-shrink-0 w-80 mx-4 snap-center first:ml-8 last:mr-8"
+                className="flex-shrink-0 w-80 mx-2 sm:mx-4 snap-center first:ml-4 last:mr-4 md:first:ml-8 md:last:mr-8"
               >
                 <Link 
                   href={item.link}
@@ -77,7 +81,7 @@ const RetrospectivesSection = ({ retrospectives }) => {
                       height={256}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-black/20 group-hover:from-black/90 transition-all duration-300"></div>
-                    <div className="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-medium opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
                       Voir le teaser
                     </div>
                     <h3 className="absolute bottom-4 left-4 right-4 text-xl font-bold text-white group-hover:text-red-300 transition-colors duration-300">
