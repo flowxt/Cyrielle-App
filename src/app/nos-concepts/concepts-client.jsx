@@ -28,6 +28,119 @@ export default function ConceptsClient() {
     <main className="bg-gradient-to-b from-gray-200 to-gray-400">
       <CardConceptFull />
 
+      {/* Section Grand jeu collaboratif */}
+      <section className="py-12 px-4 bg-gradient-to-b from-gray-300 to-gray-400">
+        <div className="max-w-7xl mx-auto">
+          {/* En-tête de section */}
+          <div className="text-center mb-10">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 font-poppins">
+              Grand jeu collaboratif{' '}
+              <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">
+                — Escape game
+              </span>
+            </h2>
+            <div className="mx-auto mt-3 w-20 h-1 bg-red-600 rounded-full mb-6" />
+            <p className="text-gray-700 max-w-2xl mx-auto text-lg">
+              Des formats de jeux collaboratifs conçus pour des groupes de <strong>12 à 200 personnes</strong>. Sans scénario théâtral, ces challenges proposent des défis & énigmes par équipe, pensés selon vos objectifs pédagogiques, la taille du groupe et le contexte de votre événement.
+            </p>
+            {/* Points clés */}
+            <div className="flex flex-wrap justify-center gap-4 mt-6 text-sm text-gray-700">
+              <span>🧑‍🧑‍🧒‍🧒 12 à 200 participants</span>
+              <span>⏱ 1h à 2h30</span>
+              <span>🎯 Coopération, communication, stratégie, créativité</span>
+              <span>📍 Intérieur / Extérieur</span>
+            </div>
+          </div>
+
+          {/* 2 vignettes côte à côte */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Vignette 1 - Escape game scénarisé */}
+            <div className="group relative bg-white/90 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl flex flex-col border border-white/20">
+              <div className="relative h-56 overflow-hidden flex-shrink-0">
+                <Image
+                  src="/aventure/aventure2.jpeg"
+                  alt="Escape game scénarisé - En Scènes Acting"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/30" />
+                <div className="absolute top-4 right-4 bg-red-600/90 text-white px-3 py-1 rounded-full text-sm font-medium shadow-md">
+                  Escape game
+                </div>
+              </div>
+
+              <div className="p-6 space-y-5 flex-grow flex flex-col">
+                <div className="relative pb-4">
+                  <h3 className="text-2xl font-bold text-gray-800 tracking-wide transition-colors duration-200 group-hover:text-red-700">
+                    Escape game scénarisé
+                  </h3>
+                  <div className="absolute bottom-0 left-0 w-16 h-1 bg-red-600 rounded-full group-hover:w-24 transition-all duration-300" />
+                </div>
+
+                <p className="text-gray-700">
+                  En équipe, résolvez des énigmes pour atteindre votre mission en moins d'une heure. Le chrono tourne… serez-vous suffisamment perspicaces ?
+                </p>
+
+                <ul className="space-y-2 mt-auto pb-4">
+                  <li className="flex items-start text-gray-600">
+                    <span className="text-red-600 mr-3 mt-0.5 text-sm">&#9656;</span>
+                    <span className="flex-1 text-sm">De 12 à 35 joueurs</span>
+                  </li>
+                  <li className="flex items-start text-gray-600">
+                    <span className="text-red-600 mr-3 mt-0.5 text-sm">&#9656;</span>
+                    <span className="flex-1 text-sm">Durée : environ 1h30</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="absolute inset-0 border-2 border-transparent group-hover:border-red-500/50 transition-all duration-300 rounded-2xl" />
+            </div>
+
+            {/* Vignette 2 - Challenge ton équipe */}
+            <div className="group relative bg-white/90 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl flex flex-col border border-white/20">
+              <div className="relative h-56 overflow-hidden flex-shrink-0">
+                <Image
+                  src="/aventure/aventure5.jpeg"
+                  alt="Challenge ton équipe - En Scènes Acting"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/30" />
+                <div className="absolute top-4 right-4 bg-red-600/90 text-white px-3 py-1 rounded-full text-sm font-medium shadow-md">
+                  Challenge
+                </div>
+              </div>
+
+              <div className="p-6 space-y-5 flex-grow flex flex-col">
+                <div className="relative pb-4">
+                  <h3 className="text-2xl font-bold text-gray-800 tracking-wide transition-colors duration-200 group-hover:text-red-700">
+                    Challenge ton équipe
+                  </h3>
+                  <div className="absolute bottom-0 left-0 w-16 h-1 bg-red-600 rounded-full group-hover:w-24 transition-all duration-300" />
+                </div>
+
+                <p className="text-gray-700">
+                  Défiez-vous autour de défis collectifs, parfois loufoques, parfois stratégiques, où il faudra bouger, réfléchir… et surtout coopérer pour faire gagner votre équipe !
+                </p>
+
+                <ul className="space-y-2 mt-auto pb-4">
+                  <li className="flex items-start text-gray-600">
+                    <span className="text-red-600 mr-3 mt-0.5 text-sm">&#9656;</span>
+                    <span className="flex-1 text-sm">De 35 à 200 joueurs</span>
+                  </li>
+                  <li className="flex items-start text-gray-600">
+                    <span className="text-red-600 mr-3 mt-0.5 text-sm">&#9656;</span>
+                    <span className="flex-1 text-sm">Durée : environ 2h30</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="absolute inset-0 border-2 border-transparent group-hover:border-red-500/50 transition-all duration-300 rounded-2xl" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="relative overflow-hidden dark:text-gray-800 py-16">
         <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:items-center">

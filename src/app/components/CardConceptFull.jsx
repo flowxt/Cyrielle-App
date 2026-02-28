@@ -85,7 +85,16 @@ const CardConceptFull = () => {
   return (
     <section className="py-12 px-4">
       <div className="max-w-7xl mx-auto">
-       
+        {/* Titre de la section */}
+        <div className="text-center mb-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 font-poppins">
+            Aventures grandeur nature{' '}
+            <span className="bg-gradient-to-r from-red-600 to-red-800 text-transparent bg-clip-text">
+              immersives avec comédiens
+            </span>
+          </h2>
+          <div className="mx-auto mt-3 w-20 h-1 bg-red-600 rounded-full" />
+        </div>
         
         {/* Slider pour toutes les versions */}
         <div className="pb-12 pt-4">
