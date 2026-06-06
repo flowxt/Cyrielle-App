@@ -10,6 +10,11 @@ export default function GalleryClient() {
   // Données pour les rétrospectives
   const retrospectives = [
     {
+      imageSrc: "/acquisition-fatale/78BE42F1-98FB-4BB7-9A9C-20E059380027.jpg",
+      title: "Acquisition Fatale",
+      link: "/acquisition-fatale"
+    },
+    {
       imageSrc: "/teaser/toxique.jpg",
       title: "Toxique",
       link: "/toxique"

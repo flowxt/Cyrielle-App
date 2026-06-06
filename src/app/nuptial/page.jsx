@@ -31,7 +31,7 @@ export default function NuptialPage() {
   return (
     <AdventureLayout
       title="Nuptial - Le mariage de Gustave et Soléa"
-      videoSrc="/videos/nuptial.mp4"
+      youtubeId="d1_0fmxq78A"
       retrospectivePhotos={retrospectivePhotos}
       description={
         <>
