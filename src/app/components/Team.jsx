@@ -23,11 +23,12 @@ export default function Team() {
                         <div className="bg-white rounded-2xl overflow-hidden shadow-2xl transform transition-all duration-300 hover:shadow-3xl hover:-translate-y-2">
                             <div className="relative h-[500px] overflow-hidden">
                                 <Image
-                                    src="/cyrielle.jpg"
+                                    src="/images/cyrielle.png"
                                     alt="Cyrielle Schepens - Fondatrice En Scènes Acting"
                                     fill
+                                    sizes="(max-width: 1024px) 100vw, 50vw"
                                     className="object-cover transform transition-transform duration-700 hover:scale-105"
-                                    style={{ objectPosition: "center 15%" }}
+                                    style={{ objectPosition: "78% 18%" }}
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                                 <div className="absolute bottom-0 left-0 right-0">
